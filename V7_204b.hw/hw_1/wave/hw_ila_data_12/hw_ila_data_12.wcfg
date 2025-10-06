@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="D:/5_obp/204B_prj/V7_204_test/V7_204b_1/V7_204b.hw/hw_1/wave/hw_ila_data_12/hw_ila_data_12.wdb" id="1">
+         <top_modules>
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0"></ZoomStartTime>
+      <ZoomEndTime time="22"></ZoomEndTime>
+      <Cursor1Time time="0"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="91"></NameColumnWidth>
+      <ValueColumnWidth column_width="90"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="18" />
+   <wvobject fp_name="top_emif_lvds_inst/emif_uart_exc_inst/uart_tx_data" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">top_emif_lvds_inst/emif_uart_exc_inst/uart_tx_data[7:0]</obj_property>
+      <obj_property name="ObjectShortName">uart_tx_data[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="top_emif_lvds_inst/emif_uart_exc_inst/uart_tx_data_valid" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">top_emif_lvds_inst/emif_uart_exc_inst/uart_tx_data_valid</obj_property>
+      <obj_property name="ObjectShortName">uart_tx_data_valid</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="top_emif_lvds_inst/emif_uart_exc_inst/uart_rx_data" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">top_emif_lvds_inst/emif_uart_exc_inst/uart_rx_data[7:0]</obj_property>
+      <obj_property name="ObjectShortName">uart_rx_data[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="top_emif_lvds_inst/emif_uart_exc_inst/uart_rx_data_valid" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">top_emif_lvds_inst/emif_uart_exc_inst/uart_rx_data_valid</obj_property>
+      <obj_property name="ObjectShortName">uart_rx_data_valid</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="top_emif_lvds_inst/emif_uart_exc_inst/emif_2_uart_din" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">top_emif_lvds_inst/emif_uart_exc_inst/emif_2_uart_din[7:0]</obj_property>
+      <obj_property name="ObjectShortName">emif_2_uart_din[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="top_emif_lvds_inst/emif_uart_exc_inst/emif_2_uart_wr_en" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">top_emif_lvds_inst/emif_uart_exc_inst/emif_2_uart_wr_en</obj_property>
+      <obj_property name="ObjectShortName">emif_2_uart_wr_en</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="top_emif_lvds_inst/emif_uart_exc_inst/emif_2_uart_rd_en" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">top_emif_lvds_inst/emif_uart_exc_inst/emif_2_uart_rd_en</obj_property>
+      <obj_property name="ObjectShortName">emif_2_uart_rd_en</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="top_emif_lvds_inst/emif_uart_exc_inst/emif_2_uart_dout" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">top_emif_lvds_inst/emif_uart_exc_inst/emif_2_uart_dout[7:0]</obj_property>
+      <obj_property name="ObjectShortName">emif_2_uart_dout[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="top_emif_lvds_inst/emif_uart_exc_inst/emif_uart_state" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">top_emif_lvds_inst/emif_uart_exc_inst/emif_uart_state[2:0]</obj_property>
+      <obj_property name="ObjectShortName">emif_uart_state[2:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="top_emif_lvds_inst/emif_uart_exc_inst/svm570_emif_2_uart_start" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">top_emif_lvds_inst/emif_uart_exc_inst/svm570_emif_2_uart_start</obj_property>
+      <obj_property name="ObjectShortName">svm570_emif_2_uart_start</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="top_emif_lvds_inst/emif_uart_exc_inst/svm570_emif_2_uart_end" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">top_emif_lvds_inst/emif_uart_exc_inst/svm570_emif_2_uart_end</obj_property>
+      <obj_property name="ObjectShortName">svm570_emif_2_uart_end</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="top_emif_lvds_inst/emif_uart_exc_inst/svm570_emif_2_uart_valid" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">top_emif_lvds_inst/emif_uart_exc_inst/svm570_emif_2_uart_valid</obj_property>
+      <obj_property name="ObjectShortName">svm570_emif_2_uart_valid</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="top_emif_lvds_inst/emif_uart_exc_inst/p_1_in" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">top_emif_lvds_inst/emif_uart_exc_inst/p_1_in[7:0]</obj_property>
+      <obj_property name="ObjectShortName">p_1_in[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="top_emif_lvds_inst/emif_uart_exc_inst/emif_uart_rd" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">top_emif_lvds_inst/emif_uart_exc_inst/emif_uart_rd</obj_property>
+      <obj_property name="ObjectShortName">emif_uart_rd</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="top_emif_lvds_inst/emif_uart_exc_inst/emif_uart_data" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">top_emif_lvds_inst/emif_uart_exc_inst/emif_uart_data[7:0]</obj_property>
+      <obj_property name="ObjectShortName">emif_uart_data[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="top_emif_lvds_inst/emif_uart_exc_inst/UCP_UART_IO" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">top_emif_lvds_inst/emif_uart_exc_inst/UCP_UART_IO</obj_property>
+      <obj_property name="ObjectShortName">UCP_UART_IO</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="top_emif_lvds_inst/emif_uart_exc_inst/i_uart_rx" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">top_emif_lvds_inst/emif_uart_exc_inst/i_uart_rx</obj_property>
+      <obj_property name="ObjectShortName">i_uart_rx</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="top_emif_lvds_inst/emif_uart_exc_inst/o_uart_tx" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">top_emif_lvds_inst/emif_uart_exc_inst/o_uart_tx</obj_property>
+      <obj_property name="ObjectShortName">o_uart_tx</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+</wave_config>

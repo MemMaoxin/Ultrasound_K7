@@ -1,0 +1,111 @@
+$date
+        2025-Aug-14 16:15:30
+$end
+$version
+        Vivado v2022.2 (64-bit)
+$end
+$timescale
+        1ps
+$end
+$scope module dut $end
+$var reg 1 " sysref $end
+$var reg 1 # tx_ready $end
+$var reg 64 $ tx_data [63:0] $end
+$var reg 1 d rx_sync_0 $end
+$var reg 1 e tx_sync_0 $end
+$var reg 1 f rx_valid_1 $end
+$var reg 1 g locked $end
+$var reg 1 h rst_204 $end
+$var reg 1 i rx_valid $end
+$var reg 64 j rx_data [63:0] $end
+$var reg 1 L" A3P_NOTICE_OBUF $end
+$var reg 1 M" tx_sync_1 $end
+$var reg 1 N" _TRIGGER $end
+$var reg 1 O" _WINDOW $end
+$var reg 1 P" _GAP $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+1"
+1#
+b0 $
+1d
+1e
+1f
+1g
+0h
+1i
+b0 j
+1L"
+1M"
+0N"
+1O"
+0P"
+$end
+#31
+0"
+#62
+1"
+#95
+0"
+#100
+1N"
+#126
+1"
+#159
+0"
+#190
+1"
+#223
+0"
+#254
+1"
+#287
+0"
+#318
+1"
+#351
+0"
+#382
+1"
+#415
+0"
+#446
+1"
+#479
+0"
+#510
+1"
+#543
+0"
+#574
+1"
+#607
+0"
+#638
+1"
+#671
+0"
+#702
+1"
+#735
+0"
+#766
+1"
+#799
+0"
+#830
+1"
+#863
+0"
+#894
+1"
+#927
+0"
+#958
+1"
+#991
+0"
+#1022
+1"

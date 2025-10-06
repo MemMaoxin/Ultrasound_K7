@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7k325tffg900-2" LaunchTime="1759485785">
+  <File Type="ROUTE-PWR" Name="JESD204_UDP_TOP_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="JESD204_UDP_TOP.tcl"/>
+  <File Type="BITSTR-MMI" Name="JESD204_UDP_TOP.mmi"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="JESD204_UDP_TOP_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="JESD204_UDP_TOP_timing_summary_init.rpt"/>
+  <File Type="ROUTE-PWR-SUM" Name="JESD204_UDP_TOP_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="JESD204_UDP_TOP_reports.tcl"/>
+  <File Type="OPT-TIMING" Name="JESD204_UDP_TOP_timing_summary_opted.rpt"/>
+  <File Type="OPT-DCP" Name="JESD204_UDP_TOP_opt.dcp"/>
+  <File Type="OPT-DRC" Name="JESD204_UDP_TOP_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="JESD204_UDP_TOP.hwdef"/>
+  <File Type="PWROPT-DCP" Name="JESD204_UDP_TOP_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="JESD204_UDP_TOP_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="JESD204_UDP_TOP_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="JESD204_UDP_TOP_placed.dcp"/>
+  <File Type="PLACE-IO" Name="JESD204_UDP_TOP_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="JESD204_UDP_TOP_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="JESD204_UDP_TOP_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="JESD204_UDP_TOP_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="JESD204_UDP_TOP_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="JESD204_UDP_TOP_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="JESD204_UDP_TOP_incremental_reuse_pre_placed.rpt"/>
+  <File Type="BG-BIN" Name="JESD204_UDP_TOP.bin"/>
+  <File Type="PLACE-TIMING" Name="JESD204_UDP_TOP_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="JESD204_UDP_TOP_postplace_pwropt.dcp"/>
+  <File Type="BITSTR-MSK" Name="JESD204_UDP_TOP.msk"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="JESD204_UDP_TOP_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="JESD204_UDP_TOP_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="JESD204_UDP_TOP_drc_physopted.rpt"/>
+  <File Type="BITSTR-RBT" Name="JESD204_UDP_TOP.rbt"/>
+  <File Type="PHYSOPT-TIMING" Name="JESD204_UDP_TOP_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="JESD204_UDP_TOP_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="JESD204_UDP_TOP_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="JESD204_UDP_TOP_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="JESD204_UDP_TOP_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="JESD204_UDP_TOP_drc_routed.pb"/>
+  <File Type="ROUTE-DRC-RPX" Name="JESD204_UDP_TOP_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="JESD204_UDP_TOP_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="JESD204_UDP_TOP_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="JESD204_UDP_TOP_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="JESD204_UDP_TOP_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="JESD204_UDP_TOP_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="JESD204_UDP_TOP_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="JESD204_UDP_TOP_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="JESD204_UDP_TOP_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="JESD204_UDP_TOP_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="JESD204_UDP_TOP_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="JESD204_UDP_TOP_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="JESD204_UDP_TOP_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="JESD204_UDP_TOP_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="JESD204_UDP_TOP_bus_skew_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="JESD204_UDP_TOP_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="JESD204_UDP_TOP_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="JESD204_UDP_TOP_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="JESD204_UDP_TOP_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="JESD204_UDP_TOP_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="JESD204_UDP_TOP_bus_skew_postroute_physopted.rpt"/>
+  <File Type="BG-BIT" Name="JESD204_UDP_TOP.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="JESD204_UDP_TOP_bus_skew_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="JESD204_UDP_TOP_bus_skew_postroute_physopted.rpx"/>
+  <File Type="BITSTR-NKY" Name="JESD204_UDP_TOP.nky"/>
+  <File Type="BITSTR-BMM" Name="JESD204_UDP_TOP_bd.bmm"/>
+  <File Type="PDI-FILE" Name="JESD204_UDP_TOP.pdi"/>
+  <File Type="RCFI_FILE" Name="JESD204_UDP_TOP.rcfi"/>
+  <File Type="CFI_FILE" Name="JESD204_UDP_TOP.cfi"/>
+  <File Type="RNPI_FILE" Name="JESD204_UDP_TOP.rnpi"/>
+  <File Type="NPI_FILE" Name="JESD204_UDP_TOP.npi"/>
+  <File Type="RBD_FILE" Name="JESD204_UDP_TOP.rbd"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="JESD204_UDP_TOP.ltx"/>
+  <File Type="BITSTR-SYSDEF" Name="JESD204_UDP_TOP.sysdef"/>
+  <File Type="BG-BGN" Name="JESD204_UDP_TOP.bgn"/>
+  <File Type="BG-DRC" Name="JESD204_UDP_TOP.drc"/>
+  <File Type="RDI-RDI" Name="JESD204_UDP_TOP.vdi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="ROUTE-RQS" Name="JESD204_UDP_TOP_routed.rqs"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS" Name="JESD204_UDP_TOP_postroute_physopted.rqs"/>
+  <File Type="ROUTE-RQS-RPT" Name="route_report_qor_suggestions_0.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS-RPT" Name="postroute_physopt_report_qor_suggestions_0.rpt"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/bd/design_1/design_1.bd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ip_rtl/RTL8211_Config_IP_0/RTL8211_Config_IP_0.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/SPI_Master_42Bit.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/TX7332.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/arp.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/arp_rx.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/arp_tx.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/crc32.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PGENDIR/sources_1/bd/design_1/hdl/design_1_wrapper.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/gmii_to_rgmii.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/net_ctrl.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/net_rstn.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/net_udp_loop.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/reset_204.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/rgmii_rx.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/rgmii_tx.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/top_jesd204.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/udp.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/udp_rx.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/udp_tx.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/JESD204_UDP_TOP.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ip_rtl/RTL8211_Config_IP_0.xcix">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/reg_init_data.mem">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="JESD204_UDP_TOP"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/top.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_1/new/top.xdc"/>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <File Path="$PSRCDIR/utils_1/imports/synth_1/top_jesd204.dcp">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedInSteps" Val="synth_1"/>
+        <Attr Name="UsedInSteps" Val="synth_1_copy_1"/>
+        <Attr Name="AutoDcp" Val="1"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2022"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream">
+      <Option Id="RawbitFileBool">1</Option>
+    </Step>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_jesd204_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_jesd204_0_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="ila_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_jesd204_phy_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="clk_wiz_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="fifo_jesd_2_eth"/>
+  <BlockFileSet Type="BlockSrcs" Name="fifo_4096x32"/>
+</GenRun>

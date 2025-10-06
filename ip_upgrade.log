@@ -1,0 +1,1329 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
+| Date         : Thu Sep  4 09:40:56 2025
+| Host         : llc running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7k325tffg900-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'vio_2'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of vio_2 (xilinx.com:ip:vio:3.0 (Rev. 23)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
+| Date         : Thu Sep  4 09:40:55 2025
+| Host         : llc running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7k325tffg900-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'vio_1'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of vio_1 (xilinx.com:ip:vio:3.0 (Rev. 23)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
+| Date         : Thu Sep  4 09:40:54 2025
+| Host         : llc running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7k325tffg900-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'vio_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of vio_0 (xilinx.com:ip:vio:3.0 (Rev. 23)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
+| Date         : Thu Sep  4 09:40:53 2025
+| Host         : llc running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7k325tffg900-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'uart_2_emif'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of uart_2_emif (xilinx.com:ip:fifo_generator:13.2 (Rev. 7)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
+| Date         : Thu Sep  4 09:40:52 2025
+| Host         : llc running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7k325tffg900-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'jesd204_receive'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the conversion of jesd204_receive (xilinx.com:ip:jesd204:7.2 (Rev. 16)) to Vivado generation flows.
+
+After upgrade, an IP may have parameter differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality.
+
+2. Customization warnings
+-------------------------
+
+An attempt to modify the value of disabled parameter 'Transceiver' from 'GTXE2' to 'GTHE2' has been ignored for IP 'jesd204_receive'
+
+
+3. Debug Commands
+-----------------
+
+  The following debug information can be passed to Vivado as Tcl commands,
+in order to validate or debug the output of the upgrade flow.
+  You may consult any warnings from within this upgrade, and alter or remove
+the configuration parameter(s) which caused the warning; then execute the Tcl
+commands, and use the IP Customization GUI to verify the IP configuration.
+
+create_ip -vlnv xilinx.com:ip:jesd204:7.2 -user_name jesd204_receive
+set_property -dict "\
+  CONFIG.AXICLK_FREQ {100.0} \
+  CONFIG.C_DEFAULT_F {8} \
+  CONFIG.C_DEFAULT_K {32} \
+  CONFIG.C_DEFAULT_SCR {1} \
+  CONFIG.C_DEFAULT_SYSREF_ALWAYS {0} \
+  CONFIG.C_DEFAULT_SYSREF_REQUIRED {0} \
+  CONFIG.C_LANES {4} \
+  CONFIG.C_LMFC_BUFFER_SIZE {1024} \
+  CONFIG.C_NODE_IS_TRANSMIT {0} \
+  CONFIG.C_PLL_SELECTION {3} \
+  CONFIG.C_SYSREF_SAMPLING_EDGE {0} \
+  CONFIG.Component_Name {jesd204_receive} \
+  CONFIG.DRPCLK_FREQ {100.0} \
+  CONFIG.GT_Line_Rate {9.8304} \
+  CONFIG.GT_REFCLK_FREQ {122.880} \
+  CONFIG.Global_clk_sel {true} \
+  CONFIG.SupportLevel {0} \
+  CONFIG.Transceiver {GTHE2} \
+  CONFIG.TransceiverControl {false} \
+  CONFIG.USE_JSPAT {false} \
+  CONFIG.USE_RPAT {false} \
+  CONFIG.m_axis_aresetn.INSERT_VIP {0} \
+  CONFIG.m_axis_aresetn.POLARITY {ACTIVE_LOW} \
+  CONFIG.m_axis_rx.CLK_DOMAIN {} \
+  CONFIG.m_axis_rx.FREQ_HZ {100000000} \
+  CONFIG.m_axis_rx.HAS_TKEEP {0} \
+  CONFIG.m_axis_rx.HAS_TLAST {0} \
+  CONFIG.m_axis_rx.HAS_TREADY {0} \
+  CONFIG.m_axis_rx.HAS_TSTRB {0} \
+  CONFIG.m_axis_rx.INSERT_VIP {0} \
+  CONFIG.m_axis_rx.LAYERED_METADATA {undef} \
+  CONFIG.m_axis_rx.PHASE {0.0} \
+  CONFIG.m_axis_rx.TDATA_NUM_BYTES {16} \
+  CONFIG.m_axis_rx.TDEST_WIDTH {0} \
+  CONFIG.m_axis_rx.TID_WIDTH {0} \
+  CONFIG.m_axis_rx.TUSER_WIDTH {0} \
+  CONFIG.rx_core_clk_port.ASSOCIATED_BUSIF {m_axis_rx} \
+  CONFIG.rx_core_clk_port.ASSOCIATED_PORT {} \
+  CONFIG.rx_core_clk_port.ASSOCIATED_RESET {rx_aresetn} \
+  CONFIG.rx_core_clk_port.CLK_DOMAIN {} \
+  CONFIG.rx_core_clk_port.FREQ_HZ {100000000} \
+  CONFIG.rx_core_clk_port.FREQ_TOLERANCE_HZ {0} \
+  CONFIG.rx_core_clk_port.INSERT_VIP {0} \
+  CONFIG.rx_core_clk_port.PHASE {0.0} \
+  CONFIG.s_axi.ADDR_WIDTH {12} \
+  CONFIG.s_axi.ARUSER_WIDTH {0} \
+  CONFIG.s_axi.AWUSER_WIDTH {0} \
+  CONFIG.s_axi.BUSER_WIDTH {0} \
+  CONFIG.s_axi.CLK_DOMAIN {} \
+  CONFIG.s_axi.DATA_WIDTH {32} \
+  CONFIG.s_axi.FREQ_HZ {100000000} \
+  CONFIG.s_axi.HAS_BRESP {1} \
+  CONFIG.s_axi.HAS_BURST {0} \
+  CONFIG.s_axi.HAS_CACHE {0} \
+  CONFIG.s_axi.HAS_LOCK {0} \
+  CONFIG.s_axi.HAS_PROT {0} \
+  CONFIG.s_axi.HAS_QOS {0} \
+  CONFIG.s_axi.HAS_REGION {0} \
+  CONFIG.s_axi.HAS_RRESP {1} \
+  CONFIG.s_axi.HAS_WSTRB {1} \
+  CONFIG.s_axi.ID_WIDTH {0} \
+  CONFIG.s_axi.INSERT_VIP {0} \
+  CONFIG.s_axi.MAX_BURST_LENGTH {1} \
+  CONFIG.s_axi.NUM_READ_OUTSTANDING {1} \
+  CONFIG.s_axi.NUM_READ_THREADS {1} \
+  CONFIG.s_axi.NUM_WRITE_OUTSTANDING {1} \
+  CONFIG.s_axi.NUM_WRITE_THREADS {1} \
+  CONFIG.s_axi.PHASE {0.0} \
+  CONFIG.s_axi.PROTOCOL {AXI4LITE} \
+  CONFIG.s_axi.READ_WRITE_MODE {READ_WRITE} \
+  CONFIG.s_axi.RUSER_BITS_PER_BYTE {0} \
+  CONFIG.s_axi.RUSER_WIDTH {0} \
+  CONFIG.s_axi.SUPPORTS_NARROW_BURST {0} \
+  CONFIG.s_axi.WUSER_BITS_PER_BYTE {0} \
+  CONFIG.s_axi.WUSER_WIDTH {0} \
+  CONFIG.s_axi_aclk.ASSOCIATED_BUSIF {s_axi} \
+  CONFIG.s_axi_aclk.ASSOCIATED_PORT {} \
+  CONFIG.s_axi_aclk.ASSOCIATED_RESET {s_axi_aresetn} \
+  CONFIG.s_axi_aclk.CLK_DOMAIN {} \
+  CONFIG.s_axi_aclk.FREQ_HZ {100000000} \
+  CONFIG.s_axi_aclk.FREQ_TOLERANCE_HZ {0} \
+  CONFIG.s_axi_aclk.INSERT_VIP {0} \
+  CONFIG.s_axi_aclk.PHASE {0.0} \
+  CONFIG.s_axi_aresetn.INSERT_VIP {0} \
+  CONFIG.s_axi_aresetn.POLARITY {ACTIVE_LOW} " [get_ips jesd204_receive]
+
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
+| Date         : Thu Sep  4 09:40:52 2025
+| Host         : llc running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7k325tffg900-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'jesd204_phy_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the conversion of jesd204_phy_0 (xilinx.com:ip:jesd204_phy:4.0 (Rev. 16)) to Vivado generation flows.
+
+After upgrade, an IP may have parameter differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality.
+
+2. Customization warnings
+-------------------------
+
+An attempt to modify the value of disabled parameter 'Transceiver' from 'GTXE2' to 'GTHE2' has been ignored for IP 'jesd204_phy_0'
+
+
+3. Debug Commands
+-----------------
+
+  The following debug information can be passed to Vivado as Tcl commands,
+in order to validate or debug the output of the upgrade flow.
+  You may consult any warnings from within this upgrade, and alter or remove
+the configuration parameter(s) which caused the warning; then execute the Tcl
+commands, and use the IP Customization GUI to verify the IP configuration.
+
+create_ip -vlnv xilinx.com:ip:jesd204_phy:4.0 -user_name jesd204_phy_0
+set_property -dict "\
+  CONFIG.AXICLK_FREQ {100.0} \
+  CONFIG.Axi_Lite {false} \
+  CONFIG.C_LANES {4} \
+  CONFIG.C_PLL_SELECTION {3} \
+  CONFIG.Component_Name {jesd204_phy_0} \
+  CONFIG.Config_Type {0} \
+  CONFIG.DRPCLK_FREQ {100.0} \
+  CONFIG.Equalization_Mode {Auto} \
+  CONFIG.GT_Line_Rate {9.8304} \
+  CONFIG.GT_Location {X0Y0} \
+  CONFIG.GT_REFCLK_FREQ {122.880} \
+  CONFIG.Ins_Loss {12} \
+  CONFIG.Max_Line_Rate {9.8304} \
+  CONFIG.Min_Line_Rate {9.8304} \
+  CONFIG.RX_GT_Line_Rate {9.8304} \
+  CONFIG.RX_GT_REFCLK_FREQ {122.880} \
+  CONFIG.RX_PLL_SELECTION {3} \
+  CONFIG.Rx_JesdVersion {0} \
+  CONFIG.Rx_MasterChan {1} \
+  CONFIG.Rx_use_64b {0} \
+  CONFIG.SupportLevel {1} \
+  CONFIG.Transceiver {GTHE2} \
+  CONFIG.TransceiverControl {false} \
+  CONFIG.Tx_JesdVersion {0} \
+  CONFIG.Tx_MasterChan {1} \
+  CONFIG.Tx_use_64b {0} \
+  CONFIG.drpclk_port.ASSOCIATED_BUSIF {} \
+  CONFIG.drpclk_port.ASSOCIATED_PORT {} \
+  CONFIG.drpclk_port.ASSOCIATED_RESET {} \
+  CONFIG.drpclk_port.CLK_DOMAIN {} \
+  CONFIG.drpclk_port.FREQ_HZ {100000000} \
+  CONFIG.drpclk_port.FREQ_TOLERANCE_HZ {0} \
+  CONFIG.drpclk_port.INSERT_VIP {0} \
+  CONFIG.drpclk_port.PHASE {0.0} \
+  CONFIG.gt_val_extended_timeout {false} \
+  CONFIG.qpll_refclk_port.ASSOCIATED_BUSIF {} \
+  CONFIG.qpll_refclk_port.ASSOCIATED_PORT {} \
+  CONFIG.qpll_refclk_port.ASSOCIATED_RESET {} \
+  CONFIG.qpll_refclk_port.CLK_DOMAIN {} \
+  CONFIG.qpll_refclk_port.FREQ_HZ {100000000} \
+  CONFIG.qpll_refclk_port.FREQ_TOLERANCE_HZ {0} \
+  CONFIG.qpll_refclk_port.INSERT_VIP {0} \
+  CONFIG.qpll_refclk_port.PHASE {0.0} \
+  CONFIG.rx_coreclk_port.ASSOCIATED_BUSIF {} \
+  CONFIG.rx_coreclk_port.ASSOCIATED_PORT {} \
+  CONFIG.rx_coreclk_port.ASSOCIATED_RESET {} \
+  CONFIG.rx_coreclk_port.CLK_DOMAIN {} \
+  CONFIG.rx_coreclk_port.FREQ_HZ {100000000} \
+  CONFIG.rx_coreclk_port.FREQ_TOLERANCE_HZ {0} \
+  CONFIG.rx_coreclk_port.INSERT_VIP {0} \
+  CONFIG.rx_coreclk_port.PHASE {0.0} \
+  CONFIG.rxoutclk.ASSOCIATED_BUSIF {} \
+  CONFIG.rxoutclk.ASSOCIATED_PORT {} \
+  CONFIG.rxoutclk.ASSOCIATED_RESET {} \
+  CONFIG.rxoutclk.CLK_DOMAIN {} \
+  CONFIG.rxoutclk.FREQ_HZ {100000000} \
+  CONFIG.rxoutclk.FREQ_TOLERANCE_HZ {0} \
+  CONFIG.rxoutclk.INSERT_VIP {0} \
+  CONFIG.rxoutclk.PHASE {0.0} \
+  CONFIG.tx_coreclk_port.ASSOCIATED_BUSIF {} \
+  CONFIG.tx_coreclk_port.ASSOCIATED_PORT {} \
+  CONFIG.tx_coreclk_port.ASSOCIATED_RESET {} \
+  CONFIG.tx_coreclk_port.CLK_DOMAIN {} \
+  CONFIG.tx_coreclk_port.FREQ_HZ {100000000} \
+  CONFIG.tx_coreclk_port.FREQ_TOLERANCE_HZ {0} \
+  CONFIG.tx_coreclk_port.INSERT_VIP {0} \
+  CONFIG.tx_coreclk_port.PHASE {0.0} \
+  CONFIG.txoutclk.ASSOCIATED_BUSIF {} \
+  CONFIG.txoutclk.ASSOCIATED_PORT {} \
+  CONFIG.txoutclk.ASSOCIATED_RESET {} \
+  CONFIG.txoutclk.CLK_DOMAIN {} \
+  CONFIG.txoutclk.FREQ_HZ {100000000} \
+  CONFIG.txoutclk.FREQ_TOLERANCE_HZ {0} \
+  CONFIG.txoutclk.INSERT_VIP {0} \
+  CONFIG.txoutclk.PHASE {0.0} " [get_ips jesd204_phy_0]
+
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
+| Date         : Thu Sep  4 09:40:51 2025
+| Host         : llc running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7k325tffg900-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'jesd204_Trans'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the conversion of jesd204_Trans (xilinx.com:ip:jesd204:7.2 (Rev. 16)) to Vivado generation flows.
+
+After upgrade, an IP may have parameter differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality.
+
+2. Customization warnings
+-------------------------
+
+An attempt to modify the value of disabled parameter 'Transceiver' from 'GTXE2' to 'GTHE2' has been ignored for IP 'jesd204_Trans'
+
+
+3. Debug Commands
+-----------------
+
+  The following debug information can be passed to Vivado as Tcl commands,
+in order to validate or debug the output of the upgrade flow.
+  You may consult any warnings from within this upgrade, and alter or remove
+the configuration parameter(s) which caused the warning; then execute the Tcl
+commands, and use the IP Customization GUI to verify the IP configuration.
+
+create_ip -vlnv xilinx.com:ip:jesd204:7.2 -user_name jesd204_Trans
+set_property -dict "\
+  CONFIG.AXICLK_FREQ {100.0} \
+  CONFIG.C_DEFAULT_F {8} \
+  CONFIG.C_DEFAULT_K {32} \
+  CONFIG.C_DEFAULT_SCR {1} \
+  CONFIG.C_DEFAULT_SYSREF_ALWAYS {0} \
+  CONFIG.C_DEFAULT_SYSREF_REQUIRED {0} \
+  CONFIG.C_LANES {4} \
+  CONFIG.C_LMFC_BUFFER_SIZE {1024} \
+  CONFIG.C_NODE_IS_TRANSMIT {1} \
+  CONFIG.C_PLL_SELECTION {3} \
+  CONFIG.C_SYSREF_SAMPLING_EDGE {0} \
+  CONFIG.Component_Name {jesd204_Trans} \
+  CONFIG.DRPCLK_FREQ {100.0} \
+  CONFIG.GT_Line_Rate {9.8304} \
+  CONFIG.GT_REFCLK_FREQ {122.880} \
+  CONFIG.Global_clk_sel {true} \
+  CONFIG.SupportLevel {0} \
+  CONFIG.Transceiver {GTHE2} \
+  CONFIG.TransceiverControl {false} \
+  CONFIG.USE_JSPAT {false} \
+  CONFIG.USE_RPAT {false} \
+  CONFIG.s_axi.ADDR_WIDTH {12} \
+  CONFIG.s_axi.ARUSER_WIDTH {0} \
+  CONFIG.s_axi.AWUSER_WIDTH {0} \
+  CONFIG.s_axi.BUSER_WIDTH {0} \
+  CONFIG.s_axi.CLK_DOMAIN {} \
+  CONFIG.s_axi.DATA_WIDTH {32} \
+  CONFIG.s_axi.FREQ_HZ {100000000} \
+  CONFIG.s_axi.HAS_BRESP {1} \
+  CONFIG.s_axi.HAS_BURST {0} \
+  CONFIG.s_axi.HAS_CACHE {0} \
+  CONFIG.s_axi.HAS_LOCK {0} \
+  CONFIG.s_axi.HAS_PROT {0} \
+  CONFIG.s_axi.HAS_QOS {0} \
+  CONFIG.s_axi.HAS_REGION {0} \
+  CONFIG.s_axi.HAS_RRESP {1} \
+  CONFIG.s_axi.HAS_WSTRB {1} \
+  CONFIG.s_axi.ID_WIDTH {0} \
+  CONFIG.s_axi.INSERT_VIP {0} \
+  CONFIG.s_axi.MAX_BURST_LENGTH {1} \
+  CONFIG.s_axi.NUM_READ_OUTSTANDING {1} \
+  CONFIG.s_axi.NUM_READ_THREADS {1} \
+  CONFIG.s_axi.NUM_WRITE_OUTSTANDING {1} \
+  CONFIG.s_axi.NUM_WRITE_THREADS {1} \
+  CONFIG.s_axi.PHASE {0.0} \
+  CONFIG.s_axi.PROTOCOL {AXI4LITE} \
+  CONFIG.s_axi.READ_WRITE_MODE {READ_WRITE} \
+  CONFIG.s_axi.RUSER_BITS_PER_BYTE {0} \
+  CONFIG.s_axi.RUSER_WIDTH {0} \
+  CONFIG.s_axi.SUPPORTS_NARROW_BURST {0} \
+  CONFIG.s_axi.WUSER_BITS_PER_BYTE {0} \
+  CONFIG.s_axi.WUSER_WIDTH {0} \
+  CONFIG.s_axi_aclk.ASSOCIATED_BUSIF {s_axi} \
+  CONFIG.s_axi_aclk.ASSOCIATED_PORT {} \
+  CONFIG.s_axi_aclk.ASSOCIATED_RESET {s_axi_aresetn} \
+  CONFIG.s_axi_aclk.CLK_DOMAIN {} \
+  CONFIG.s_axi_aclk.FREQ_HZ {100000000} \
+  CONFIG.s_axi_aclk.FREQ_TOLERANCE_HZ {0} \
+  CONFIG.s_axi_aclk.INSERT_VIP {0} \
+  CONFIG.s_axi_aclk.PHASE {0.0} \
+  CONFIG.s_axi_aresetn.INSERT_VIP {0} \
+  CONFIG.s_axi_aresetn.POLARITY {ACTIVE_LOW} \
+  CONFIG.s_axis_aresetn.INSERT_VIP {0} \
+  CONFIG.s_axis_aresetn.POLARITY {ACTIVE_LOW} \
+  CONFIG.s_axis_tx.CLK_DOMAIN {} \
+  CONFIG.s_axis_tx.FREQ_HZ {100000000} \
+  CONFIG.s_axis_tx.HAS_TKEEP {0} \
+  CONFIG.s_axis_tx.HAS_TLAST {0} \
+  CONFIG.s_axis_tx.HAS_TREADY {1} \
+  CONFIG.s_axis_tx.HAS_TSTRB {0} \
+  CONFIG.s_axis_tx.INSERT_VIP {0} \
+  CONFIG.s_axis_tx.LAYERED_METADATA {undef} \
+  CONFIG.s_axis_tx.PHASE {0.0} \
+  CONFIG.s_axis_tx.TDATA_NUM_BYTES {16} \
+  CONFIG.s_axis_tx.TDEST_WIDTH {0} \
+  CONFIG.s_axis_tx.TID_WIDTH {0} \
+  CONFIG.s_axis_tx.TUSER_WIDTH {0} \
+  CONFIG.tx_core_clk_port.ASSOCIATED_BUSIF {s_axis_tx} \
+  CONFIG.tx_core_clk_port.ASSOCIATED_PORT {} \
+  CONFIG.tx_core_clk_port.ASSOCIATED_RESET {tx_aresetn} \
+  CONFIG.tx_core_clk_port.CLK_DOMAIN {} \
+  CONFIG.tx_core_clk_port.FREQ_HZ {100000000} \
+  CONFIG.tx_core_clk_port.FREQ_TOLERANCE_HZ {0} \
+  CONFIG.tx_core_clk_port.INSERT_VIP {0} \
+  CONFIG.tx_core_clk_port.PHASE {0.0} " [get_ips jesd204_Trans]
+
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
+| Date         : Thu Sep  4 09:40:50 2025
+| Host         : llc running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7k325tffg900-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'ila_4'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of ila_4 (xilinx.com:ip:ila:6.2 (Rev. 12)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
+| Date         : Thu Sep  4 09:40:49 2025
+| Host         : llc running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7k325tffg900-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'ila_2'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of ila_2 (xilinx.com:ip:ila:6.2 (Rev. 12)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
+| Date         : Thu Sep  4 09:40:47 2025
+| Host         : llc running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7k325tffg900-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'ila_1'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of ila_1 (xilinx.com:ip:ila:6.2 (Rev. 12)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
+| Date         : Thu Sep  4 09:40:45 2025
+| Host         : llc running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7k325tffg900-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'ila_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of ila_0 (xilinx.com:ip:ila:6.2 (Rev. 12)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
+| Date         : Thu Sep  4 09:40:44 2025
+| Host         : llc running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7k325tffg900-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'fifo_generator_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of fifo_generator_0 (xilinx.com:ip:fifo_generator:13.2 (Rev. 7)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
+| Date         : Thu Sep  4 09:40:43 2025
+| Host         : llc running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7k325tffg900-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'emif_2_uart'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of emif_2_uart (xilinx.com:ip:fifo_generator:13.2 (Rev. 7)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
+| Date         : Thu Sep  4 09:40:42 2025
+| Host         : llc running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7k325tffg900-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_jesd204_phy_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the conversion of design_1_jesd204_phy_0_0 (xilinx.com:ip:jesd204_phy:4.0 (Rev. 16)) to Vivado generation flows.
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'design_1_jesd204_phy_0_0'. These changes may impact your design.
+
+
+-Upgrade has added port 'cpll_refclk'
+
+
+3. Customization warnings
+-------------------------
+
+The normal upgrade process failed due to validation failures in the given configuration. Attempting partial upgrade to set as many user parameters as possible. Please check the parameters whose values were not applied.
+
+An attempt to modify the value of disabled parameter 'Transceiver' from 'GTXE2' to 'GTHE2' has been ignored for IP 'design_1_jesd204_phy_0_0'
+
+Unable to set the value '4.8' on parameter 'RX GT Line Rate' due to the following failure - 
+Validation failed for parameter 'RX GT Line Rate(RX_GT_Line_Rate)' with value '4.8' for BD Cell 'design_1_jesd204_phy_0_0'. RX and TX line rates do not allow for PLL sharing
+. Restoring to an old valid value of '6.25'
+
+Unable to set the value '3' on parameter 'PLL Type' due to the following failure - 
+Value '3' is out of the range for parameter 'PLL Type(C_PLL_SELECTION)' for BD Cell 'design_1_jesd204_phy_0_0' . Valid values are - 0
+. Restoring to an old valid value of '0'
+
+An attempt to modify the value of disabled parameter 'Max_Line_Rate' from '6.25' to '4.8' has been ignored for IP 'design_1_jesd204_phy_0_0'
+
+Unable to set the value '120.000' on parameter 'RX GT REFCLK FREQ' due to the following failure - 
+Value '120.000' is out of the range for parameter 'RX GT REFCLK FREQ(RX_GT_REFCLK_FREQ)' for BD Cell 'design_1_jesd204_phy_0_0' . Valid values are - 62.500, 78.125, 94.697, 97.656, 125.000, 156.250, 187.500, 189.394, 195.313, 234.375, 250.000, 284.091, 292.969, 312.500, 378.788, 390.625, 468.750, 585.938, 625.000
+. Restoring to an old valid value of '156.250'
+
+
+4. Debug Commands
+-----------------
+
+  The following debug information can be passed to Vivado as Tcl commands,
+in order to validate or debug the output of the upgrade flow.
+  You may consult any warnings from within this upgrade, and alter or remove
+the configuration parameter(s) which caused the warning; then execute the Tcl
+commands, and use the IP Customization GUI to verify the IP configuration.
+
+create_ip -vlnv xilinx.com:ip:jesd204_phy:4.0 -user_name design_1_jesd204_phy_0_0
+set_property -dict "\
+  CONFIG.AXICLK_FREQ {100.0} \
+  CONFIG.Axi_Lite {false} \
+  CONFIG.C_LANES {4} \
+  CONFIG.C_PLL_SELECTION {3} \
+  CONFIG.Component_Name {design_1_jesd204_phy_0_0} \
+  CONFIG.Config_Type {0} \
+  CONFIG.DRPCLK_FREQ {100.0} \
+  CONFIG.Equalization_Mode {Auto} \
+  CONFIG.GT_Line_Rate {4.8} \
+  CONFIG.GT_Location {X0Y0} \
+  CONFIG.GT_REFCLK_FREQ {120.000} \
+  CONFIG.Ins_Loss {12} \
+  CONFIG.Max_Line_Rate {4.8} \
+  CONFIG.Min_Line_Rate {4.8} \
+  CONFIG.RX_GT_Line_Rate {4.8} \
+  CONFIG.RX_GT_REFCLK_FREQ {120.000} \
+  CONFIG.RX_PLL_SELECTION {3} \
+  CONFIG.Rx_JesdVersion {0} \
+  CONFIG.Rx_MasterChan {1} \
+  CONFIG.Rx_use_64b {0} \
+  CONFIG.SupportLevel {1} \
+  CONFIG.Transceiver {GTHE2} \
+  CONFIG.TransceiverControl {false} \
+  CONFIG.Tx_JesdVersion {0} \
+  CONFIG.Tx_MasterChan {1} \
+  CONFIG.Tx_use_64b {0} \
+  CONFIG.drpclk_port.ASSOCIATED_BUSIF {} \
+  CONFIG.drpclk_port.ASSOCIATED_PORT {} \
+  CONFIG.drpclk_port.ASSOCIATED_RESET {} \
+  CONFIG.drpclk_port.CLK_DOMAIN {design_1_s_axi_aclk_0} \
+  CONFIG.drpclk_port.FREQ_HZ {100000000} \
+  CONFIG.drpclk_port.FREQ_TOLERANCE_HZ {0} \
+  CONFIG.drpclk_port.INSERT_VIP {0} \
+  CONFIG.drpclk_port.PHASE {0.0} \
+  CONFIG.gt_val_extended_timeout {false} \
+  CONFIG.qpll_refclk_port.ASSOCIATED_BUSIF {} \
+  CONFIG.qpll_refclk_port.ASSOCIATED_PORT {} \
+  CONFIG.qpll_refclk_port.ASSOCIATED_RESET {} \
+  CONFIG.qpll_refclk_port.CLK_DOMAIN {design_1_qpll_refclk_0} \
+  CONFIG.qpll_refclk_port.FREQ_HZ {100000000} \
+  CONFIG.qpll_refclk_port.FREQ_TOLERANCE_HZ {0} \
+  CONFIG.qpll_refclk_port.INSERT_VIP {0} \
+  CONFIG.qpll_refclk_port.PHASE {0.0} \
+  CONFIG.rx_coreclk_port.ASSOCIATED_BUSIF {} \
+  CONFIG.rx_coreclk_port.ASSOCIATED_PORT {} \
+  CONFIG.rx_coreclk_port.ASSOCIATED_RESET {} \
+  CONFIG.rx_coreclk_port.CLK_DOMAIN {design_1_tx_core_clk_1} \
+  CONFIG.rx_coreclk_port.FREQ_HZ {245760000} \
+  CONFIG.rx_coreclk_port.FREQ_TOLERANCE_HZ {0} \
+  CONFIG.rx_coreclk_port.INSERT_VIP {0} \
+  CONFIG.rx_coreclk_port.PHASE {0.0} \
+  CONFIG.rxoutclk.ASSOCIATED_BUSIF {} \
+  CONFIG.rxoutclk.ASSOCIATED_PORT {} \
+  CONFIG.rxoutclk.ASSOCIATED_RESET {} \
+  CONFIG.rxoutclk.CLK_DOMAIN {design_1_jesd204_phy_0_0_rxoutclk} \
+  CONFIG.rxoutclk.FREQ_HZ {120000000.000} \
+  CONFIG.rxoutclk.FREQ_TOLERANCE_HZ {0} \
+  CONFIG.rxoutclk.INSERT_VIP {0} \
+  CONFIG.rxoutclk.PHASE {0.0} \
+  CONFIG.tx_coreclk_port.ASSOCIATED_BUSIF {} \
+  CONFIG.tx_coreclk_port.ASSOCIATED_PORT {} \
+  CONFIG.tx_coreclk_port.ASSOCIATED_RESET {} \
+  CONFIG.tx_coreclk_port.CLK_DOMAIN {design_1_tx_core_clk_1} \
+  CONFIG.tx_coreclk_port.FREQ_HZ {245760000} \
+  CONFIG.tx_coreclk_port.FREQ_TOLERANCE_HZ {0} \
+  CONFIG.tx_coreclk_port.INSERT_VIP {0} \
+  CONFIG.tx_coreclk_port.PHASE {0.0} \
+  CONFIG.txoutclk.ASSOCIATED_BUSIF {} \
+  CONFIG.txoutclk.ASSOCIATED_PORT {} \
+  CONFIG.txoutclk.ASSOCIATED_RESET {} \
+  CONFIG.txoutclk.CLK_DOMAIN {design_1_jesd204_phy_0_0_txoutclk} \
+  CONFIG.txoutclk.FREQ_HZ {120000000.000} \
+  CONFIG.txoutclk.FREQ_TOLERANCE_HZ {0} \
+  CONFIG.txoutclk.INSERT_VIP {0} \
+  CONFIG.txoutclk.PHASE {0.0} " [get_ips design_1_jesd204_phy_0_0]
+
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
+| Date         : Thu Sep  4 09:40:42 2025
+| Host         : llc running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7k325tffg900-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_jesd204_0_1'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the conversion of design_1_jesd204_0_1 (xilinx.com:ip:jesd204:7.2 (Rev. 16)) to Vivado generation flows.
+
+After upgrade, an IP may have parameter differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality.
+
+2. Customization warnings
+-------------------------
+
+An attempt to modify the value of disabled parameter 'Transceiver' from 'GTXE2' to 'GTHE2' has been ignored for IP 'design_1_jesd204_0_1'
+
+
+3. Debug Commands
+-----------------
+
+  The following debug information can be passed to Vivado as Tcl commands,
+in order to validate or debug the output of the upgrade flow.
+  You may consult any warnings from within this upgrade, and alter or remove
+the configuration parameter(s) which caused the warning; then execute the Tcl
+commands, and use the IP Customization GUI to verify the IP configuration.
+
+create_ip -vlnv xilinx.com:ip:jesd204:7.2 -user_name design_1_jesd204_0_1
+set_property -dict "\
+  CONFIG.AXICLK_FREQ {100.0} \
+  CONFIG.C_DEFAULT_F {4} \
+  CONFIG.C_DEFAULT_K {32} \
+  CONFIG.C_DEFAULT_SCR {0} \
+  CONFIG.C_DEFAULT_SYSREF_ALWAYS {0} \
+  CONFIG.C_DEFAULT_SYSREF_REQUIRED {0} \
+  CONFIG.C_LANES {4} \
+  CONFIG.C_LMFC_BUFFER_SIZE {1024} \
+  CONFIG.C_NODE_IS_TRANSMIT {0} \
+  CONFIG.C_PLL_SELECTION {3} \
+  CONFIG.C_SYSREF_SAMPLING_EDGE {0} \
+  CONFIG.Component_Name {design_1_jesd204_0_1} \
+  CONFIG.DRPCLK_FREQ {100.0} \
+  CONFIG.GT_Line_Rate {9.8304} \
+  CONFIG.GT_REFCLK_FREQ {122.880} \
+  CONFIG.Global_clk_sel {true} \
+  CONFIG.SupportLevel {0} \
+  CONFIG.Transceiver {GTHE2} \
+  CONFIG.TransceiverControl {false} \
+  CONFIG.USE_JSPAT {false} \
+  CONFIG.USE_RPAT {false} \
+  CONFIG.m_axis_aresetn.INSERT_VIP {0} \
+  CONFIG.m_axis_aresetn.POLARITY {ACTIVE_LOW} \
+  CONFIG.m_axis_rx.CLK_DOMAIN {design_1_tx_core_clk_1} \
+  CONFIG.m_axis_rx.FREQ_HZ {245760000} \
+  CONFIG.m_axis_rx.HAS_TKEEP {0} \
+  CONFIG.m_axis_rx.HAS_TLAST {0} \
+  CONFIG.m_axis_rx.HAS_TREADY {0} \
+  CONFIG.m_axis_rx.HAS_TSTRB {0} \
+  CONFIG.m_axis_rx.INSERT_VIP {0} \
+  CONFIG.m_axis_rx.LAYERED_METADATA {undef} \
+  CONFIG.m_axis_rx.PHASE {0.0} \
+  CONFIG.m_axis_rx.TDATA_NUM_BYTES {16} \
+  CONFIG.m_axis_rx.TDEST_WIDTH {0} \
+  CONFIG.m_axis_rx.TID_WIDTH {0} \
+  CONFIG.m_axis_rx.TUSER_WIDTH {0} \
+  CONFIG.rx_core_clk_port.ASSOCIATED_BUSIF {m_axis_rx} \
+  CONFIG.rx_core_clk_port.ASSOCIATED_PORT {} \
+  CONFIG.rx_core_clk_port.ASSOCIATED_RESET {rx_aresetn} \
+  CONFIG.rx_core_clk_port.CLK_DOMAIN {design_1_tx_core_clk_1} \
+  CONFIG.rx_core_clk_port.FREQ_HZ {245760000} \
+  CONFIG.rx_core_clk_port.FREQ_TOLERANCE_HZ {0} \
+  CONFIG.rx_core_clk_port.INSERT_VIP {0} \
+  CONFIG.rx_core_clk_port.PHASE {0.0} \
+  CONFIG.s_axi.ADDR_WIDTH {12} \
+  CONFIG.s_axi.ARUSER_WIDTH {0} \
+  CONFIG.s_axi.AWUSER_WIDTH {0} \
+  CONFIG.s_axi.BUSER_WIDTH {0} \
+  CONFIG.s_axi.CLK_DOMAIN {design_1_s_axi_aclk_0} \
+  CONFIG.s_axi.DATA_WIDTH {32} \
+  CONFIG.s_axi.FREQ_HZ {100000000} \
+  CONFIG.s_axi.HAS_BRESP {1} \
+  CONFIG.s_axi.HAS_BURST {0} \
+  CONFIG.s_axi.HAS_CACHE {0} \
+  CONFIG.s_axi.HAS_LOCK {0} \
+  CONFIG.s_axi.HAS_PROT {0} \
+  CONFIG.s_axi.HAS_QOS {0} \
+  CONFIG.s_axi.HAS_REGION {0} \
+  CONFIG.s_axi.HAS_RRESP {1} \
+  CONFIG.s_axi.HAS_WSTRB {1} \
+  CONFIG.s_axi.ID_WIDTH {0} \
+  CONFIG.s_axi.INSERT_VIP {0} \
+  CONFIG.s_axi.MAX_BURST_LENGTH {1} \
+  CONFIG.s_axi.NUM_READ_OUTSTANDING {1} \
+  CONFIG.s_axi.NUM_READ_THREADS {1} \
+  CONFIG.s_axi.NUM_WRITE_OUTSTANDING {1} \
+  CONFIG.s_axi.NUM_WRITE_THREADS {1} \
+  CONFIG.s_axi.PHASE {0.0} \
+  CONFIG.s_axi.PROTOCOL {AXI4LITE} \
+  CONFIG.s_axi.READ_WRITE_MODE {READ_WRITE} \
+  CONFIG.s_axi.RUSER_BITS_PER_BYTE {0} \
+  CONFIG.s_axi.RUSER_WIDTH {0} \
+  CONFIG.s_axi.SUPPORTS_NARROW_BURST {0} \
+  CONFIG.s_axi.WUSER_BITS_PER_BYTE {0} \
+  CONFIG.s_axi.WUSER_WIDTH {0} \
+  CONFIG.s_axi_aclk.ASSOCIATED_BUSIF {s_axi} \
+  CONFIG.s_axi_aclk.ASSOCIATED_PORT {} \
+  CONFIG.s_axi_aclk.ASSOCIATED_RESET {s_axi_aresetn} \
+  CONFIG.s_axi_aclk.CLK_DOMAIN {design_1_s_axi_aclk_0} \
+  CONFIG.s_axi_aclk.FREQ_HZ {100000000} \
+  CONFIG.s_axi_aclk.FREQ_TOLERANCE_HZ {0} \
+  CONFIG.s_axi_aclk.INSERT_VIP {0} \
+  CONFIG.s_axi_aclk.PHASE {0.0} \
+  CONFIG.s_axi_aresetn.INSERT_VIP {0} \
+  CONFIG.s_axi_aresetn.POLARITY {ACTIVE_LOW} " [get_ips design_1_jesd204_0_1]
+
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
+| Date         : Thu Sep  4 09:40:42 2025
+| Host         : llc running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7k325tffg900-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_jesd204_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the conversion of design_1_jesd204_0_0 (xilinx.com:ip:jesd204:7.2 (Rev. 16)) to Vivado generation flows.
+
+After upgrade, an IP may have parameter differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality.
+
+2. Customization warnings
+-------------------------
+
+An attempt to modify the value of disabled parameter 'Transceiver' from 'GTXE2' to 'GTHE2' has been ignored for IP 'design_1_jesd204_0_0'
+
+
+3. Debug Commands
+-----------------
+
+  The following debug information can be passed to Vivado as Tcl commands,
+in order to validate or debug the output of the upgrade flow.
+  You may consult any warnings from within this upgrade, and alter or remove
+the configuration parameter(s) which caused the warning; then execute the Tcl
+commands, and use the IP Customization GUI to verify the IP configuration.
+
+create_ip -vlnv xilinx.com:ip:jesd204:7.2 -user_name design_1_jesd204_0_0
+set_property -dict "\
+  CONFIG.AXICLK_FREQ {100.0} \
+  CONFIG.C_DEFAULT_F {4} \
+  CONFIG.C_DEFAULT_K {32} \
+  CONFIG.C_DEFAULT_SCR {0} \
+  CONFIG.C_DEFAULT_SYSREF_ALWAYS {0} \
+  CONFIG.C_DEFAULT_SYSREF_REQUIRED {0} \
+  CONFIG.C_LANES {4} \
+  CONFIG.C_LMFC_BUFFER_SIZE {1024} \
+  CONFIG.C_NODE_IS_TRANSMIT {1} \
+  CONFIG.C_PLL_SELECTION {3} \
+  CONFIG.C_SYSREF_SAMPLING_EDGE {0} \
+  CONFIG.Component_Name {design_1_jesd204_0_0} \
+  CONFIG.DRPCLK_FREQ {100.0} \
+  CONFIG.GT_Line_Rate {9.8304} \
+  CONFIG.GT_REFCLK_FREQ {122.880} \
+  CONFIG.Global_clk_sel {true} \
+  CONFIG.SupportLevel {0} \
+  CONFIG.Transceiver {GTHE2} \
+  CONFIG.TransceiverControl {false} \
+  CONFIG.USE_JSPAT {false} \
+  CONFIG.USE_RPAT {false} \
+  CONFIG.s_axi.ADDR_WIDTH {12} \
+  CONFIG.s_axi.ARUSER_WIDTH {0} \
+  CONFIG.s_axi.AWUSER_WIDTH {0} \
+  CONFIG.s_axi.BUSER_WIDTH {0} \
+  CONFIG.s_axi.CLK_DOMAIN {design_1_s_axi_aclk_0} \
+  CONFIG.s_axi.DATA_WIDTH {32} \
+  CONFIG.s_axi.FREQ_HZ {100000000} \
+  CONFIG.s_axi.HAS_BRESP {1} \
+  CONFIG.s_axi.HAS_BURST {0} \
+  CONFIG.s_axi.HAS_CACHE {0} \
+  CONFIG.s_axi.HAS_LOCK {0} \
+  CONFIG.s_axi.HAS_PROT {0} \
+  CONFIG.s_axi.HAS_QOS {0} \
+  CONFIG.s_axi.HAS_REGION {0} \
+  CONFIG.s_axi.HAS_RRESP {1} \
+  CONFIG.s_axi.HAS_WSTRB {1} \
+  CONFIG.s_axi.ID_WIDTH {0} \
+  CONFIG.s_axi.INSERT_VIP {0} \
+  CONFIG.s_axi.MAX_BURST_LENGTH {1} \
+  CONFIG.s_axi.NUM_READ_OUTSTANDING {1} \
+  CONFIG.s_axi.NUM_READ_THREADS {1} \
+  CONFIG.s_axi.NUM_WRITE_OUTSTANDING {1} \
+  CONFIG.s_axi.NUM_WRITE_THREADS {1} \
+  CONFIG.s_axi.PHASE {0.0} \
+  CONFIG.s_axi.PROTOCOL {AXI4LITE} \
+  CONFIG.s_axi.READ_WRITE_MODE {READ_WRITE} \
+  CONFIG.s_axi.RUSER_BITS_PER_BYTE {0} \
+  CONFIG.s_axi.RUSER_WIDTH {0} \
+  CONFIG.s_axi.SUPPORTS_NARROW_BURST {0} \
+  CONFIG.s_axi.WUSER_BITS_PER_BYTE {0} \
+  CONFIG.s_axi.WUSER_WIDTH {0} \
+  CONFIG.s_axi_aclk.ASSOCIATED_BUSIF {s_axi} \
+  CONFIG.s_axi_aclk.ASSOCIATED_PORT {} \
+  CONFIG.s_axi_aclk.ASSOCIATED_RESET {s_axi_aresetn} \
+  CONFIG.s_axi_aclk.CLK_DOMAIN {design_1_s_axi_aclk_0} \
+  CONFIG.s_axi_aclk.FREQ_HZ {100000000} \
+  CONFIG.s_axi_aclk.FREQ_TOLERANCE_HZ {0} \
+  CONFIG.s_axi_aclk.INSERT_VIP {0} \
+  CONFIG.s_axi_aclk.PHASE {0.0} \
+  CONFIG.s_axi_aresetn.INSERT_VIP {0} \
+  CONFIG.s_axi_aresetn.POLARITY {ACTIVE_LOW} \
+  CONFIG.s_axis_aresetn.INSERT_VIP {0} \
+  CONFIG.s_axis_aresetn.POLARITY {ACTIVE_LOW} \
+  CONFIG.s_axis_tx.CLK_DOMAIN {design_1_tx_core_clk_1} \
+  CONFIG.s_axis_tx.FREQ_HZ {245760000} \
+  CONFIG.s_axis_tx.HAS_TKEEP {0} \
+  CONFIG.s_axis_tx.HAS_TLAST {0} \
+  CONFIG.s_axis_tx.HAS_TREADY {1} \
+  CONFIG.s_axis_tx.HAS_TSTRB {0} \
+  CONFIG.s_axis_tx.INSERT_VIP {0} \
+  CONFIG.s_axis_tx.LAYERED_METADATA {undef} \
+  CONFIG.s_axis_tx.PHASE {0.0} \
+  CONFIG.s_axis_tx.TDATA_NUM_BYTES {16} \
+  CONFIG.s_axis_tx.TDEST_WIDTH {0} \
+  CONFIG.s_axis_tx.TID_WIDTH {0} \
+  CONFIG.s_axis_tx.TUSER_WIDTH {0} \
+  CONFIG.tx_core_clk_port.ASSOCIATED_BUSIF {s_axis_tx} \
+  CONFIG.tx_core_clk_port.ASSOCIATED_PORT {} \
+  CONFIG.tx_core_clk_port.ASSOCIATED_RESET {tx_aresetn} \
+  CONFIG.tx_core_clk_port.CLK_DOMAIN {design_1_tx_core_clk_1} \
+  CONFIG.tx_core_clk_port.FREQ_HZ {245760000} \
+  CONFIG.tx_core_clk_port.FREQ_TOLERANCE_HZ {0} \
+  CONFIG.tx_core_clk_port.INSERT_VIP {0} \
+  CONFIG.tx_core_clk_port.PHASE {0.0} " [get_ips design_1_jesd204_0_0]
+
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
+| Date         : Thu Sep  4 09:40:40 2025
+| Host         : llc running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7k325tffg900-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'dds_compiler_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of dds_compiler_0 (xilinx.com:ip:dds_compiler:6.0 (Rev. 22)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
+| Date         : Thu Sep  4 09:40:39 2025
+| Host         : llc running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7k325tffg900-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'clk_wiz_1'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of clk_wiz_1 (xilinx.com:ip:clk_wiz:6.0 (Rev. 11)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
+| Date         : Thu Sep  4 09:40:38 2025
+| Host         : llc running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7k325tffg900-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'clk_wiz_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of clk_wiz_0 (xilinx.com:ip:clk_wiz:6.0 (Rev. 11)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
+| Date         : Tue Jul  8 13:53:36 2025
+| Host         : llc running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7vx690tffg1761-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'jesd204_receive'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of jesd204_receive (xilinx.com:ip:jesd204:7.2 (Rev. 16)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
+| Date         : Tue Jul  8 13:53:35 2025
+| Host         : llc running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7vx690tffg1761-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'jesd204_phy_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of jesd204_phy_0 (xilinx.com:ip:jesd204_phy:4.0 (Rev. 16)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
+| Date         : Tue Jul  8 13:53:33 2025
+| Host         : llc running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7vx690tffg1761-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'jesd204_Trans'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of jesd204_Trans (xilinx.com:ip:jesd204:7.2 (Rev. 16)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
+| Date         : Tue Jul  8 13:53:32 2025
+| Host         : llc running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7vx690tffg1761-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_jesd204_phy_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of design_1_jesd204_phy_0_0 (xilinx.com:ip:jesd204_phy:4.0 (Rev. 16)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
+| Date         : Tue Jul  8 13:53:32 2025
+| Host         : llc running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7vx690tffg1761-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_jesd204_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of design_1_jesd204_0_1 (xilinx.com:ip:jesd204:7.2 (Rev. 16)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
+| Date         : Tue Jul  8 13:53:32 2025
+| Host         : llc running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7vx690tffg1761-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_jesd204_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of design_1_jesd204_0_0 (xilinx.com:ip:jesd204:7.2 (Rev. 16)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
+| Date         : Mon Jun 30 15:41:34 2025
+| Host         : llc running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7vx690tffg1761-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'ila_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of ila_0 (xilinx.com:ip:ila:6.2 (Rev. 12)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
+| Date         : Mon Jun 30 15:41:30 2025
+| Host         : llc running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7vx690tffg1761-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'clk_wiz_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of clk_wiz_0 (xilinx.com:ip:clk_wiz:6.0 (Rev. 11)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
+| Date         : Tue Jun 24 16:41:44 2025
+| Host         : llc running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7vx690tffg1761-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'emif_2_uart'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of emif_2_uart (xilinx.com:ip:fifo_generator:13.2 (Rev. 7)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
+| Date         : Tue Jun 24 16:41:41 2025
+| Host         : llc running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7vx690tffg1761-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'uart_2_emif'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of uart_2_emif (xilinx.com:ip:fifo_generator:13.2 (Rev. 7)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
+| Date         : Tue Jun 24 16:41:33 2025
+| Host         : llc running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7vx690tffg1761-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'vio_1'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of vio_1 (xilinx.com:ip:vio:3.0 (Rev. 23)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
+| Date         : Tue Jun 24 16:41:29 2025
+| Host         : llc running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7vx690tffg1761-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'vio_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of vio_0 (xilinx.com:ip:vio:3.0 (Rev. 23)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
+| Date         : Tue Jun 24 16:41:26 2025
+| Host         : llc running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7vx690tffg1761-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'ila_1'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of ila_1 (xilinx.com:ip:ila:6.2 (Rev. 12)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
+| Date         : Tue Jun 24 16:41:21 2025
+| Host         : llc running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7vx690tffg1761-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'clk_wiz_1'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of clk_wiz_1 (xilinx.com:ip:clk_wiz:6.0 (Rev. 11)) to Vivado generation flows.
+

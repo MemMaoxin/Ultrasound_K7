@@ -1,0 +1,1727 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Sat Sep  6 14:19:05 2025" VIVADOVERSION="2022.2">
+
+  <SYSTEMINFO ARCH="kintex7" DEVICE="7k325t" NAME="design_1" PACKAGE="ffg900" SPEEDGRADE="-2"/>
+
+  <EXTERNALPORTS>
+    <PORT DIR="I" LEFT="11" NAME="trans_axi_lite_araddr" RIGHT="0" SIGIS="undef" SIGNAME="jesd204_trans_s_axi_araddr">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="jesd204_trans" PORT="s_axi_araddr"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="trans_axi_lite_arready" SIGIS="undef" SIGNAME="jesd204_trans_s_axi_arready">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="jesd204_trans" PORT="s_axi_arready"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="trans_axi_lite_arvalid" SIGIS="undef" SIGNAME="jesd204_trans_s_axi_arvalid">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="jesd204_trans" PORT="s_axi_arvalid"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="11" NAME="trans_axi_lite_awaddr" RIGHT="0" SIGIS="undef" SIGNAME="jesd204_trans_s_axi_awaddr">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="jesd204_trans" PORT="s_axi_awaddr"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="trans_axi_lite_awready" SIGIS="undef" SIGNAME="jesd204_trans_s_axi_awready">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="jesd204_trans" PORT="s_axi_awready"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="trans_axi_lite_awvalid" SIGIS="undef" SIGNAME="jesd204_trans_s_axi_awvalid">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="jesd204_trans" PORT="s_axi_awvalid"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="trans_axi_lite_bready" SIGIS="undef" SIGNAME="jesd204_trans_s_axi_bready">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="jesd204_trans" PORT="s_axi_bready"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="1" NAME="trans_axi_lite_bresp" RIGHT="0" SIGIS="undef" SIGNAME="jesd204_trans_s_axi_bresp">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="jesd204_trans" PORT="s_axi_bresp"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="trans_axi_lite_bvalid" SIGIS="undef" SIGNAME="jesd204_trans_s_axi_bvalid">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="jesd204_trans" PORT="s_axi_bvalid"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="31" NAME="trans_axi_lite_rdata" RIGHT="0" SIGIS="undef" SIGNAME="jesd204_trans_s_axi_rdata">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="jesd204_trans" PORT="s_axi_rdata"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="trans_axi_lite_rready" SIGIS="undef" SIGNAME="jesd204_trans_s_axi_rready">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="jesd204_trans" PORT="s_axi_rready"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="1" NAME="trans_axi_lite_rresp" RIGHT="0" SIGIS="undef" SIGNAME="jesd204_trans_s_axi_rresp">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="jesd204_trans" PORT="s_axi_rresp"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="trans_axi_lite_rvalid" SIGIS="undef" SIGNAME="jesd204_trans_s_axi_rvalid">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="jesd204_trans" PORT="s_axi_rvalid"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="31" NAME="trans_axi_lite_wdata" RIGHT="0" SIGIS="undef" SIGNAME="jesd204_trans_s_axi_wdata">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="jesd204_trans" PORT="s_axi_wdata"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="trans_axi_lite_wready" SIGIS="undef" SIGNAME="jesd204_trans_s_axi_wready">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="jesd204_trans" PORT="s_axi_wready"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="3" NAME="trans_axi_lite_wstrb" RIGHT="0" SIGIS="undef" SIGNAME="jesd204_trans_s_axi_wstrb">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="jesd204_trans" PORT="s_axi_wstrb"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="trans_axi_lite_wvalid" SIGIS="undef" SIGNAME="jesd204_trans_s_axi_wvalid">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="jesd204_trans" PORT="s_axi_wvalid"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="11" NAME="rec_axi_lite_araddr" RIGHT="0" SIGIS="undef" SIGNAME="jesd204_rec_s_axi_araddr">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="jesd204_rec" PORT="s_axi_araddr"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="rec_axi_lite_arready" SIGIS="undef" SIGNAME="jesd204_rec_s_axi_arready">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="jesd204_rec" PORT="s_axi_arready"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="rec_axi_lite_arvalid" SIGIS="undef" SIGNAME="jesd204_rec_s_axi_arvalid">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="jesd204_rec" PORT="s_axi_arvalid"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="11" NAME="rec_axi_lite_awaddr" RIGHT="0" SIGIS="undef" SIGNAME="jesd204_rec_s_axi_awaddr">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="jesd204_rec" PORT="s_axi_awaddr"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="rec_axi_lite_awready" SIGIS="undef" SIGNAME="jesd204_rec_s_axi_awready">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="jesd204_rec" PORT="s_axi_awready"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="rec_axi_lite_awvalid" SIGIS="undef" SIGNAME="jesd204_rec_s_axi_awvalid">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="jesd204_rec" PORT="s_axi_awvalid"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="rec_axi_lite_bready" SIGIS="undef" SIGNAME="jesd204_rec_s_axi_bready">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="jesd204_rec" PORT="s_axi_bready"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="1" NAME="rec_axi_lite_bresp" RIGHT="0" SIGIS="undef" SIGNAME="jesd204_rec_s_axi_bresp">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="jesd204_rec" PORT="s_axi_bresp"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="rec_axi_lite_bvalid" SIGIS="undef" SIGNAME="jesd204_rec_s_axi_bvalid">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="jesd204_rec" PORT="s_axi_bvalid"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="31" NAME="rec_axi_lite_rdata" RIGHT="0" SIGIS="undef" SIGNAME="jesd204_rec_s_axi_rdata">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="jesd204_rec" PORT="s_axi_rdata"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="rec_axi_lite_rready" SIGIS="undef" SIGNAME="jesd204_rec_s_axi_rready">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="jesd204_rec" PORT="s_axi_rready"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="1" NAME="rec_axi_lite_rresp" RIGHT="0" SIGIS="undef" SIGNAME="jesd204_rec_s_axi_rresp">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="jesd204_rec" PORT="s_axi_rresp"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="rec_axi_lite_rvalid" SIGIS="undef" SIGNAME="jesd204_rec_s_axi_rvalid">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="jesd204_rec" PORT="s_axi_rvalid"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="31" NAME="rec_axi_lite_wdata" RIGHT="0" SIGIS="undef" SIGNAME="jesd204_rec_s_axi_wdata">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="jesd204_rec" PORT="s_axi_wdata"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="rec_axi_lite_wready" SIGIS="undef" SIGNAME="jesd204_rec_s_axi_wready">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="jesd204_rec" PORT="s_axi_wready"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="3" NAME="rec_axi_lite_wstrb" RIGHT="0" SIGIS="undef" SIGNAME="jesd204_rec_s_axi_wstrb">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="jesd204_rec" PORT="s_axi_wstrb"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="rec_axi_lite_wvalid" SIGIS="undef" SIGNAME="jesd204_rec_s_axi_wvalid">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="jesd204_rec" PORT="s_axi_wvalid"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT CLKFREQUENCY="100000000" DIR="I" NAME="DRP_CLK" SIGIS="clk" SIGNAME="External_Ports_DRP_CLK">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="jesd204_trans" PORT="s_axi_aclk"/>
+        <CONNECTION INSTANCE="jesd204_rec" PORT="s_axi_aclk"/>
+        <CONNECTION INSTANCE="jesd204_phy_0" PORT="drpclk"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="rx_sync_0" SIGIS="undef" SIGNAME="jesd204_rec_rx_sync">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="jesd204_rec" PORT="rx_sync"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="jesd204_rst" SIGIS="undef" SIGNAME="External_Ports_jesd204_rst">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="jesd204_trans" PORT="tx_reset"/>
+        <CONNECTION INSTANCE="jesd204_rec" PORT="rx_reset"/>
+        <CONNECTION INSTANCE="jesd204_phy_0" PORT="tx_sys_reset"/>
+        <CONNECTION INSTANCE="jesd204_phy_0" PORT="rx_sys_reset"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="sysref" SIGIS="undef" SIGNAME="External_Ports_sysref">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="jesd204_trans" PORT="tx_sysref"/>
+        <CONNECTION INSTANCE="jesd204_rec" PORT="rx_sysref"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="tx_sync_0" SIGIS="undef" SIGNAME="External_Ports_tx_sync_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="jesd204_trans" PORT="tx_sync"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT CLKFREQUENCY="100000000" DIR="I" NAME="qpll_refclk_0" SIGIS="clk" SIGNAME="External_Ports_qpll_refclk_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="jesd204_phy_0" PORT="cpll_refclk"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="axi_lite_rstn" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="External_Ports_axi_lite_rstn">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="jesd204_trans" PORT="s_axi_aresetn"/>
+        <CONNECTION INSTANCE="jesd204_rec" PORT="s_axi_aresetn"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT CLKFREQUENCY="245760000" DIR="I" NAME="core_clk" SIGIS="clk" SIGNAME="External_Ports_core_clk">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="jesd204_trans" PORT="tx_core_clk"/>
+        <CONNECTION INSTANCE="jesd204_rec" PORT="rx_core_clk"/>
+        <CONNECTION INSTANCE="jesd204_phy_0" PORT="tx_core_clk"/>
+        <CONNECTION INSTANCE="jesd204_phy_0" PORT="rx_core_clk"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="127" NAME="s_axis_tx_0_tdata" RIGHT="0" SIGIS="undef" SIGNAME="jesd204_trans_tx_tdata">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="jesd204_trans" PORT="tx_tdata"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="s_axis_tx_0_tready" SIGIS="undef" SIGNAME="jesd204_trans_tx_tready">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="jesd204_trans" PORT="tx_tready"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="7" NAME="txp_out_0" RIGHT="0" SIGIS="undef" SIGNAME="jesd204_phy_0_txp_out">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="jesd204_phy_0" PORT="txp_out"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="7" NAME="txn_out_0" RIGHT="0" SIGIS="undef" SIGNAME="jesd204_phy_0_txn_out">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="jesd204_phy_0" PORT="txn_out"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="255" NAME="m_axis_rx_0_tdata" RIGHT="0" SIGIS="undef" SIGNAME="jesd204_rec_rx_tdata">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="jesd204_rec" PORT="rx_tdata"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="m_axis_rx_0_tvalid" SIGIS="undef" SIGNAME="jesd204_rec_rx_tvalid">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="jesd204_rec" PORT="rx_tvalid"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="7" NAME="rxp_in_0" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_rxp_in_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="jesd204_phy_0" PORT="rxp_in"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="7" NAME="rxn_in_0" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_rxn_in_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="jesd204_phy_0" PORT="rxn_in"/>
+      </CONNECTIONS>
+    </PORT>
+  </EXTERNALPORTS>
+
+  <EXTERNALINTERFACES>
+    <BUSINTERFACE BUSNAME="External_Interface_trans_axi_lite" DATAWIDTH="32" NAME="trans_axi_lite" TYPE="SLAVE">
+      <PARAMETER NAME="DATA_WIDTH" VALUE="32"/>
+      <PARAMETER NAME="PROTOCOL" VALUE="AXI4LITE"/>
+      <PARAMETER NAME="FREQ_HZ" VALUE="100000000"/>
+      <PARAMETER NAME="ID_WIDTH" VALUE="0"/>
+      <PARAMETER NAME="ADDR_WIDTH" VALUE="12"/>
+      <PARAMETER NAME="AWUSER_WIDTH" VALUE="0"/>
+      <PARAMETER NAME="ARUSER_WIDTH" VALUE="0"/>
+      <PARAMETER NAME="WUSER_WIDTH" VALUE="0"/>
+      <PARAMETER NAME="RUSER_WIDTH" VALUE="0"/>
+      <PARAMETER NAME="BUSER_WIDTH" VALUE="0"/>
+      <PARAMETER NAME="READ_WRITE_MODE" VALUE="READ_WRITE"/>
+      <PARAMETER NAME="HAS_BURST" VALUE="0"/>
+      <PARAMETER NAME="HAS_LOCK" VALUE="0"/>
+      <PARAMETER NAME="HAS_PROT" VALUE="0"/>
+      <PARAMETER NAME="HAS_CACHE" VALUE="0"/>
+      <PARAMETER NAME="HAS_QOS" VALUE="0"/>
+      <PARAMETER NAME="HAS_REGION" VALUE="0"/>
+      <PARAMETER NAME="HAS_WSTRB" VALUE="1"/>
+      <PARAMETER NAME="HAS_BRESP" VALUE="1"/>
+      <PARAMETER NAME="HAS_RRESP" VALUE="1"/>
+      <PARAMETER NAME="SUPPORTS_NARROW_BURST" VALUE="0"/>
+      <PARAMETER NAME="NUM_READ_OUTSTANDING" VALUE="1"/>
+      <PARAMETER NAME="NUM_WRITE_OUTSTANDING" VALUE="1"/>
+      <PARAMETER NAME="MAX_BURST_LENGTH" VALUE="1"/>
+      <PARAMETER NAME="PHASE" VALUE="0.0"/>
+      <PARAMETER NAME="CLK_DOMAIN" VALUE="design_1_s_axi_aclk_0"/>
+      <PARAMETER NAME="NUM_READ_THREADS" VALUE="1"/>
+      <PARAMETER NAME="NUM_WRITE_THREADS" VALUE="1"/>
+      <PARAMETER NAME="RUSER_BITS_PER_BYTE" VALUE="0"/>
+      <PARAMETER NAME="WUSER_BITS_PER_BYTE" VALUE="0"/>
+      <PARAMETER NAME="INSERT_VIP" VALUE="0"/>
+      <PORTMAPS>
+        <PORTMAP LOGICAL="ARADDR" PHYSICAL="trans_axi_lite_araddr"/>
+        <PORTMAP LOGICAL="ARREADY" PHYSICAL="trans_axi_lite_arready"/>
+        <PORTMAP LOGICAL="ARVALID" PHYSICAL="trans_axi_lite_arvalid"/>
+        <PORTMAP LOGICAL="AWADDR" PHYSICAL="trans_axi_lite_awaddr"/>
+        <PORTMAP LOGICAL="AWREADY" PHYSICAL="trans_axi_lite_awready"/>
+        <PORTMAP LOGICAL="AWVALID" PHYSICAL="trans_axi_lite_awvalid"/>
+        <PORTMAP LOGICAL="BREADY" PHYSICAL="trans_axi_lite_bready"/>
+        <PORTMAP LOGICAL="BRESP" PHYSICAL="trans_axi_lite_bresp"/>
+        <PORTMAP LOGICAL="BVALID" PHYSICAL="trans_axi_lite_bvalid"/>
+        <PORTMAP LOGICAL="RDATA" PHYSICAL="trans_axi_lite_rdata"/>
+        <PORTMAP LOGICAL="RREADY" PHYSICAL="trans_axi_lite_rready"/>
+        <PORTMAP LOGICAL="RRESP" PHYSICAL="trans_axi_lite_rresp"/>
+        <PORTMAP LOGICAL="RVALID" PHYSICAL="trans_axi_lite_rvalid"/>
+        <PORTMAP LOGICAL="WDATA" PHYSICAL="trans_axi_lite_wdata"/>
+        <PORTMAP LOGICAL="WREADY" PHYSICAL="trans_axi_lite_wready"/>
+        <PORTMAP LOGICAL="WSTRB" PHYSICAL="trans_axi_lite_wstrb"/>
+        <PORTMAP LOGICAL="WVALID" PHYSICAL="trans_axi_lite_wvalid"/>
+      </PORTMAPS>
+      <MEMORYMAP>
+        <MEMRANGE ADDRESSBLOCK="Reg" BASENAME="C_BASEADDR" BASEVALUE="0x00000000" HIGHNAME="C_HIGHADDR" HIGHVALUE="0x00000FFF" INSTANCE="jesd204_trans" IS_DATA="TRUE" IS_INSTRUCTION="TRUE" MASTERBUSINTERFACE="trans_axi_lite" MEMTYPE="REGISTER" SLAVEBUSINTERFACE="s_axi"/>
+      </MEMORYMAP>
+      <PERIPHERALS>
+        <PERIPHERAL INSTANCE="jesd204_trans"/>
+      </PERIPHERALS>
+    </BUSINTERFACE>
+    <BUSINTERFACE BUSNAME="External_Interface_rec_axi_lite" DATAWIDTH="32" NAME="rec_axi_lite" TYPE="SLAVE">
+      <PARAMETER NAME="DATA_WIDTH" VALUE="32"/>
+      <PARAMETER NAME="PROTOCOL" VALUE="AXI4LITE"/>
+      <PARAMETER NAME="FREQ_HZ" VALUE="100000000"/>
+      <PARAMETER NAME="ID_WIDTH" VALUE="0"/>
+      <PARAMETER NAME="ADDR_WIDTH" VALUE="12"/>
+      <PARAMETER NAME="AWUSER_WIDTH" VALUE="0"/>
+      <PARAMETER NAME="ARUSER_WIDTH" VALUE="0"/>
+      <PARAMETER NAME="WUSER_WIDTH" VALUE="0"/>
+      <PARAMETER NAME="RUSER_WIDTH" VALUE="0"/>
+      <PARAMETER NAME="BUSER_WIDTH" VALUE="0"/>
+      <PARAMETER NAME="READ_WRITE_MODE" VALUE="READ_WRITE"/>
+      <PARAMETER NAME="HAS_BURST" VALUE="0"/>
+      <PARAMETER NAME="HAS_LOCK" VALUE="0"/>
+      <PARAMETER NAME="HAS_PROT" VALUE="0"/>
+      <PARAMETER NAME="HAS_CACHE" VALUE="0"/>
+      <PARAMETER NAME="HAS_QOS" VALUE="0"/>
+      <PARAMETER NAME="HAS_REGION" VALUE="0"/>
+      <PARAMETER NAME="HAS_WSTRB" VALUE="1"/>
+      <PARAMETER NAME="HAS_BRESP" VALUE="1"/>
+      <PARAMETER NAME="HAS_RRESP" VALUE="1"/>
+      <PARAMETER NAME="SUPPORTS_NARROW_BURST" VALUE="0"/>
+      <PARAMETER NAME="NUM_READ_OUTSTANDING" VALUE="1"/>
+      <PARAMETER NAME="NUM_WRITE_OUTSTANDING" VALUE="1"/>
+      <PARAMETER NAME="MAX_BURST_LENGTH" VALUE="1"/>
+      <PARAMETER NAME="PHASE" VALUE="0.0"/>
+      <PARAMETER NAME="CLK_DOMAIN" VALUE="design_1_s_axi_aclk_0"/>
+      <PARAMETER NAME="NUM_READ_THREADS" VALUE="1"/>
+      <PARAMETER NAME="NUM_WRITE_THREADS" VALUE="1"/>
+      <PARAMETER NAME="RUSER_BITS_PER_BYTE" VALUE="0"/>
+      <PARAMETER NAME="WUSER_BITS_PER_BYTE" VALUE="0"/>
+      <PARAMETER NAME="INSERT_VIP" VALUE="0"/>
+      <PORTMAPS>
+        <PORTMAP LOGICAL="ARADDR" PHYSICAL="rec_axi_lite_araddr"/>
+        <PORTMAP LOGICAL="ARREADY" PHYSICAL="rec_axi_lite_arready"/>
+        <PORTMAP LOGICAL="ARVALID" PHYSICAL="rec_axi_lite_arvalid"/>
+        <PORTMAP LOGICAL="AWADDR" PHYSICAL="rec_axi_lite_awaddr"/>
+        <PORTMAP LOGICAL="AWREADY" PHYSICAL="rec_axi_lite_awready"/>
+        <PORTMAP LOGICAL="AWVALID" PHYSICAL="rec_axi_lite_awvalid"/>
+        <PORTMAP LOGICAL="BREADY" PHYSICAL="rec_axi_lite_bready"/>
+        <PORTMAP LOGICAL="BRESP" PHYSICAL="rec_axi_lite_bresp"/>
+        <PORTMAP LOGICAL="BVALID" PHYSICAL="rec_axi_lite_bvalid"/>
+        <PORTMAP LOGICAL="RDATA" PHYSICAL="rec_axi_lite_rdata"/>
+        <PORTMAP LOGICAL="RREADY" PHYSICAL="rec_axi_lite_rready"/>
+        <PORTMAP LOGICAL="RRESP" PHYSICAL="rec_axi_lite_rresp"/>
+        <PORTMAP LOGICAL="RVALID" PHYSICAL="rec_axi_lite_rvalid"/>
+        <PORTMAP LOGICAL="WDATA" PHYSICAL="rec_axi_lite_wdata"/>
+        <PORTMAP LOGICAL="WREADY" PHYSICAL="rec_axi_lite_wready"/>
+        <PORTMAP LOGICAL="WSTRB" PHYSICAL="rec_axi_lite_wstrb"/>
+        <PORTMAP LOGICAL="WVALID" PHYSICAL="rec_axi_lite_wvalid"/>
+      </PORTMAPS>
+      <MEMORYMAP>
+        <MEMRANGE ADDRESSBLOCK="Reg" BASENAME="C_BASEADDR" BASEVALUE="0x00000000" HIGHNAME="C_HIGHADDR" HIGHVALUE="0x00000FFF" INSTANCE="jesd204_rec" IS_DATA="TRUE" IS_INSTRUCTION="TRUE" MASTERBUSINTERFACE="rec_axi_lite" MEMTYPE="REGISTER" SLAVEBUSINTERFACE="s_axi"/>
+      </MEMORYMAP>
+      <PERIPHERALS>
+        <PERIPHERAL INSTANCE="jesd204_rec"/>
+      </PERIPHERALS>
+    </BUSINTERFACE>
+    <BUSINTERFACE BUSNAME="External_Interface_s_axis_tx_0" NAME="s_axis_tx_0" TYPE="TARGET">
+      <PARAMETER NAME="TDATA_NUM_BYTES" VALUE="16"/>
+      <PARAMETER NAME="TDEST_WIDTH" VALUE="0"/>
+      <PARAMETER NAME="TID_WIDTH" VALUE="0"/>
+      <PARAMETER NAME="TUSER_WIDTH" VALUE="0"/>
+      <PARAMETER NAME="HAS_TREADY" VALUE="1"/>
+      <PARAMETER NAME="HAS_TSTRB" VALUE="0"/>
+      <PARAMETER NAME="HAS_TKEEP" VALUE="0"/>
+      <PARAMETER NAME="HAS_TLAST" VALUE="0"/>
+      <PARAMETER NAME="FREQ_HZ" VALUE="245760000"/>
+      <PARAMETER NAME="PHASE" VALUE="0.0"/>
+      <PARAMETER NAME="CLK_DOMAIN" VALUE="design_1_tx_core_clk_1"/>
+      <PARAMETER NAME="LAYERED_METADATA" VALUE="undef"/>
+      <PARAMETER NAME="INSERT_VIP" VALUE="0"/>
+      <PORTMAPS>
+        <PORTMAP LOGICAL="TDATA" PHYSICAL="s_axis_tx_0_tdata"/>
+        <PORTMAP LOGICAL="TREADY" PHYSICAL="s_axis_tx_0_tready"/>
+      </PORTMAPS>
+    </BUSINTERFACE>
+    <BUSINTERFACE BUSNAME="jesd204_rec_m_axis_rx" NAME="m_axis_rx_0" TYPE="INITIATOR">
+      <PARAMETER NAME="TDATA_NUM_BYTES" VALUE="32"/>
+      <PARAMETER NAME="TDEST_WIDTH" VALUE="0"/>
+      <PARAMETER NAME="TID_WIDTH" VALUE="0"/>
+      <PARAMETER NAME="TUSER_WIDTH" VALUE="0"/>
+      <PARAMETER NAME="HAS_TREADY" VALUE="0"/>
+      <PARAMETER NAME="HAS_TSTRB" VALUE="0"/>
+      <PARAMETER NAME="HAS_TKEEP" VALUE="0"/>
+      <PARAMETER NAME="HAS_TLAST" VALUE="0"/>
+      <PARAMETER NAME="FREQ_HZ" VALUE="245760000"/>
+      <PARAMETER NAME="PHASE" VALUE="0.0"/>
+      <PARAMETER NAME="CLK_DOMAIN" VALUE="design_1_tx_core_clk_1"/>
+      <PARAMETER NAME="LAYERED_METADATA" VALUE="undef"/>
+      <PARAMETER NAME="INSERT_VIP" VALUE="0"/>
+      <PORTMAPS>
+        <PORTMAP LOGICAL="TDATA" PHYSICAL="m_axis_rx_0_tdata"/>
+        <PORTMAP LOGICAL="TVALID" PHYSICAL="m_axis_rx_0_tvalid"/>
+      </PORTMAPS>
+    </BUSINTERFACE>
+  </EXTERNALINTERFACES>
+
+  <MODULES>
+    <MODULE COREREVISION="16" FULLNAME="/jesd204_phy_0" HWVERSION="4.0" INSTANCE="jesd204_phy_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="jesd204_phy" VLNV="xilinx.com:ip:jesd204_phy:4.0">
+      <DOCUMENTS>
+        <DOCUMENT SOURCE="http://www.xilinx.com/cgi-bin/docs/ipdoc?c=jesd204_phy;v=v4_0;d=pg198-jesd204-phy.pdf"/>
+      </DOCUMENTS>
+      <PARAMETERS>
+        <PARAMETER NAME="C_COMPONENT_NAME" VALUE="design_1_jesd204_phy_0_0"/>
+        <PARAMETER NAME="C_FAMILY" VALUE="kintex7"/>
+        <PARAMETER NAME="C_SILICON_REVISION"/>
+        <PARAMETER NAME="C_LANES" VALUE="8"/>
+        <PARAMETER NAME="C_SPEEDGRADE" VALUE="-2"/>
+        <PARAMETER NAME="C_SupportLevel" VALUE="1"/>
+        <PARAMETER NAME="C_TransceiverControl" VALUE="false"/>
+        <PARAMETER NAME="c_sub_core_name" VALUE="design_1_jesd204_phy_0_0_gt"/>
+        <PARAMETER NAME="C_GT_Line_Rate" VALUE="4.8"/>
+        <PARAMETER NAME="C_GT_REFCLK_FREQ" VALUE="120.000"/>
+        <PARAMETER NAME="C_DRPCLK_FREQ" VALUE="100.0"/>
+        <PARAMETER NAME="C_PLL_SELECTION" VALUE="0"/>
+        <PARAMETER NAME="C_RX_GT_Line_Rate" VALUE="4.8"/>
+        <PARAMETER NAME="C_RX_GT_REFCLK_FREQ" VALUE="120.000"/>
+        <PARAMETER NAME="C_RX_PLL_SELECTION" VALUE="0"/>
+        <PARAMETER NAME="C_QPLL_FBDIV" VALUE="40"/>
+        <PARAMETER NAME="C_QPLL_REFCLKDIV" VALUE="1"/>
+        <PARAMETER NAME="C_PLL0_FBDIV" VALUE="1"/>
+        <PARAMETER NAME="C_PLL0_FBDIV_45" VALUE="4"/>
+        <PARAMETER NAME="C_PLL0_REFCLKDIV" VALUE="1"/>
+        <PARAMETER NAME="C_PLL1_FBDIV" VALUE="1"/>
+        <PARAMETER NAME="C_PLL1_FBDIV_45" VALUE="4"/>
+        <PARAMETER NAME="C_PLL1_REFCLKDIV" VALUE="1"/>
+        <PARAMETER NAME="C_Axi_Lite" VALUE="false"/>
+        <PARAMETER NAME="C_AXICLK_FREQ" VALUE="100.0"/>
+        <PARAMETER NAME="C_Transceiver" VALUE="GTXE2"/>
+        <PARAMETER NAME="C_GT_Loc" VALUE="X0Y0"/>
+        <PARAMETER NAME="C_gt_val_extended_timeout" VALUE="false"/>
+        <PARAMETER NAME="C_Tx_JesdVersion" VALUE="0"/>
+        <PARAMETER NAME="C_Rx_JesdVersion" VALUE="0"/>
+        <PARAMETER NAME="C_Tx_use_64b" VALUE="0"/>
+        <PARAMETER NAME="C_Rx_use_64b" VALUE="0"/>
+        <PARAMETER NAME="C_CHANNEL_POS" VALUE="0"/>
+        <PARAMETER NAME="C_QUADS" VALUE="0"/>
+        <PARAMETER NAME="C_Equalization_Mode" VALUE="0"/>
+        <PARAMETER NAME="C_Rx_MasterChan" VALUE="1"/>
+        <PARAMETER NAME="C_Tx_MasterChan" VALUE="1"/>
+        <PARAMETER NAME="C_Ins_Loss" VALUE="12"/>
+        <PARAMETER NAME="C_Config_Type" VALUE="0"/>
+        <PARAMETER NAME="C_Min_Line_Rate" VALUE="4.8"/>
+        <PARAMETER NAME="C_Max_Line_Rate" VALUE="4.8"/>
+        <PARAMETER NAME="C_GT_ENUM" VALUE="2"/>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_jesd204_phy_0_0"/>
+        <PARAMETER NAME="Transceiver" VALUE="GTXE2"/>
+        <PARAMETER NAME="SupportLevel" VALUE="1"/>
+        <PARAMETER NAME="TransceiverControl" VALUE="false"/>
+        <PARAMETER NAME="GT_Line_Rate" VALUE="4.8"/>
+        <PARAMETER NAME="GT_REFCLK_FREQ" VALUE="120.000"/>
+        <PARAMETER NAME="DRPCLK_FREQ" VALUE="100.0"/>
+        <PARAMETER NAME="RX_GT_Line_Rate" VALUE="4.8"/>
+        <PARAMETER NAME="RX_GT_REFCLK_FREQ" VALUE="120.000"/>
+        <PARAMETER NAME="RX_PLL_SELECTION" VALUE="0"/>
+        <PARAMETER NAME="Axi_Lite" VALUE="false"/>
+        <PARAMETER NAME="AXICLK_FREQ" VALUE="100.0"/>
+        <PARAMETER NAME="GT_Location" VALUE="X0Y0"/>
+        <PARAMETER NAME="gt_val_extended_timeout" VALUE="false"/>
+        <PARAMETER NAME="Tx_JesdVersion" VALUE="0"/>
+        <PARAMETER NAME="Rx_JesdVersion" VALUE="0"/>
+        <PARAMETER NAME="Tx_use_64b" VALUE="0"/>
+        <PARAMETER NAME="Rx_use_64b" VALUE="0"/>
+        <PARAMETER NAME="Equalization_Mode" VALUE="Auto"/>
+        <PARAMETER NAME="Rx_MasterChan" VALUE="1"/>
+        <PARAMETER NAME="Tx_MasterChan" VALUE="1"/>
+        <PARAMETER NAME="Ins_Loss" VALUE="12"/>
+        <PARAMETER NAME="Config_Type" VALUE="0"/>
+        <PARAMETER NAME="Min_Line_Rate" VALUE="4.8"/>
+        <PARAMETER NAME="Max_Line_Rate" VALUE="4.8"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="cpll_refclk" SIGIS="clk" SIGNAME="External_Ports_qpll_refclk_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="qpll_refclk_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="drpclk" SIGIS="clk" SIGNAME="External_Ports_DRP_CLK">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="DRP_CLK"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="tx_reset_gt" SIGIS="undef" SIGNAME="jesd204_trans_tx_reset_gt">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="jesd204_trans" PORT="tx_reset_gt"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="rx_reset_gt" SIGIS="undef" SIGNAME="jesd204_rec_rx_reset_gt">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="jesd204_rec" PORT="rx_reset_gt"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="tx_sys_reset" SIGIS="undef" SIGNAME="External_Ports_jesd204_rst">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="jesd204_rst"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="rx_sys_reset" SIGIS="undef" SIGNAME="External_Ports_jesd204_rst">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="jesd204_rst"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="7" NAME="txp_out" RIGHT="0" SIGIS="undef" SIGNAME="jesd204_phy_0_txp_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="txp_out_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="7" NAME="txn_out" RIGHT="0" SIGIS="undef" SIGNAME="jesd204_phy_0_txn_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="txn_out_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="7" NAME="rxp_in" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_rxp_in_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="rxp_in_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="7" NAME="rxn_in" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_rxn_in_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="rxn_in_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="245760000" DIR="I" NAME="tx_core_clk" SIGIS="clk" SIGNAME="External_Ports_core_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="core_clk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="245760000" DIR="I" NAME="rx_core_clk" SIGIS="clk" SIGNAME="External_Ports_core_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="core_clk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="120000000.000" DIR="O" NAME="txoutclk" SIGIS="clk"/>
+        <PORT CLKFREQUENCY="120000000.000" DIR="O" NAME="rxoutclk" SIGIS="clk"/>
+        <PORT DIR="I" LEFT="2" NAME="gt_prbssel" RIGHT="0" SIGIS="undef" SIGNAME="jesd204_trans_gt_prbssel_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="jesd204_trans" PORT="gt_prbssel_out"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="gt0_txdata" RIGHT="0" SIGIS="undef" SIGNAME="jesd204_phy_0_gt0_txdata">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="jesd204_trans" PORT="gt0_txdata"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="gt0_txcharisk" RIGHT="0" SIGIS="undef" SIGNAME="jesd204_phy_0_gt0_txcharisk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="jesd204_trans" PORT="gt0_txcharisk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="gt1_txdata" RIGHT="0" SIGIS="undef" SIGNAME="jesd204_phy_0_gt1_txdata">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="jesd204_trans" PORT="gt1_txdata"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="gt1_txcharisk" RIGHT="0" SIGIS="undef" SIGNAME="jesd204_phy_0_gt1_txcharisk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="jesd204_trans" PORT="gt1_txcharisk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="gt2_txdata" RIGHT="0" SIGIS="undef" SIGNAME="jesd204_phy_0_gt2_txdata">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="jesd204_trans" PORT="gt2_txdata"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="gt2_txcharisk" RIGHT="0" SIGIS="undef" SIGNAME="jesd204_phy_0_gt2_txcharisk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="jesd204_trans" PORT="gt2_txcharisk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="gt3_txdata" RIGHT="0" SIGIS="undef" SIGNAME="jesd204_phy_0_gt3_txdata">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="jesd204_trans" PORT="gt3_txdata"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="gt3_txcharisk" RIGHT="0" SIGIS="undef" SIGNAME="jesd204_phy_0_gt3_txcharisk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="jesd204_trans" PORT="gt3_txcharisk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="gt4_txdata" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="I" LEFT="3" NAME="gt4_txcharisk" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="I" LEFT="31" NAME="gt5_txdata" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="I" LEFT="3" NAME="gt5_txcharisk" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="I" LEFT="31" NAME="gt6_txdata" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="I" LEFT="3" NAME="gt6_txcharisk" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="I" LEFT="31" NAME="gt7_txdata" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="I" LEFT="3" NAME="gt7_txcharisk" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="O" NAME="tx_reset_done" SIGIS="undef" SIGNAME="jesd204_phy_0_tx_reset_done">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="jesd204_trans" PORT="tx_reset_done"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="gt0_rxdata" RIGHT="0" SIGIS="undef" SIGNAME="jesd204_phy_0_gt0_rxdata">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="jesd204_rec" PORT="gt0_rxdata"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="gt0_rxcharisk" RIGHT="0" SIGIS="undef" SIGNAME="jesd204_phy_0_gt0_rxcharisk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="jesd204_rec" PORT="gt0_rxcharisk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="gt0_rxdisperr" RIGHT="0" SIGIS="undef" SIGNAME="jesd204_phy_0_gt0_rxdisperr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="jesd204_rec" PORT="gt0_rxdisperr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="gt0_rxnotintable" RIGHT="0" SIGIS="undef" SIGNAME="jesd204_phy_0_gt0_rxnotintable">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="jesd204_rec" PORT="gt0_rxnotintable"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="gt1_rxdata" RIGHT="0" SIGIS="undef" SIGNAME="jesd204_phy_0_gt1_rxdata">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="jesd204_rec" PORT="gt1_rxdata"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="gt1_rxcharisk" RIGHT="0" SIGIS="undef" SIGNAME="jesd204_phy_0_gt1_rxcharisk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="jesd204_rec" PORT="gt1_rxcharisk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="gt1_rxdisperr" RIGHT="0" SIGIS="undef" SIGNAME="jesd204_phy_0_gt1_rxdisperr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="jesd204_rec" PORT="gt1_rxdisperr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="gt1_rxnotintable" RIGHT="0" SIGIS="undef" SIGNAME="jesd204_phy_0_gt1_rxnotintable">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="jesd204_rec" PORT="gt1_rxnotintable"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="gt2_rxdata" RIGHT="0" SIGIS="undef" SIGNAME="jesd204_phy_0_gt2_rxdata">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="jesd204_rec" PORT="gt2_rxdata"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="gt2_rxcharisk" RIGHT="0" SIGIS="undef" SIGNAME="jesd204_phy_0_gt2_rxcharisk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="jesd204_rec" PORT="gt2_rxcharisk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="gt2_rxdisperr" RIGHT="0" SIGIS="undef" SIGNAME="jesd204_phy_0_gt2_rxdisperr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="jesd204_rec" PORT="gt2_rxdisperr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="gt2_rxnotintable" RIGHT="0" SIGIS="undef" SIGNAME="jesd204_phy_0_gt2_rxnotintable">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="jesd204_rec" PORT="gt2_rxnotintable"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="gt3_rxdata" RIGHT="0" SIGIS="undef" SIGNAME="jesd204_phy_0_gt3_rxdata">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="jesd204_rec" PORT="gt3_rxdata"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="gt3_rxcharisk" RIGHT="0" SIGIS="undef" SIGNAME="jesd204_phy_0_gt3_rxcharisk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="jesd204_rec" PORT="gt3_rxcharisk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="gt3_rxdisperr" RIGHT="0" SIGIS="undef" SIGNAME="jesd204_phy_0_gt3_rxdisperr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="jesd204_rec" PORT="gt3_rxdisperr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="gt3_rxnotintable" RIGHT="0" SIGIS="undef" SIGNAME="jesd204_phy_0_gt3_rxnotintable">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="jesd204_rec" PORT="gt3_rxnotintable"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="gt4_rxdata" RIGHT="0" SIGIS="undef" SIGNAME="jesd204_phy_0_gt4_rxdata">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="jesd204_rec" PORT="gt4_rxdata"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="gt4_rxcharisk" RIGHT="0" SIGIS="undef" SIGNAME="jesd204_phy_0_gt4_rxcharisk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="jesd204_rec" PORT="gt4_rxcharisk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="gt4_rxdisperr" RIGHT="0" SIGIS="undef" SIGNAME="jesd204_phy_0_gt4_rxdisperr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="jesd204_rec" PORT="gt4_rxdisperr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="gt4_rxnotintable" RIGHT="0" SIGIS="undef" SIGNAME="jesd204_phy_0_gt4_rxnotintable">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="jesd204_rec" PORT="gt4_rxnotintable"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="gt5_rxdata" RIGHT="0" SIGIS="undef" SIGNAME="jesd204_phy_0_gt5_rxdata">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="jesd204_rec" PORT="gt5_rxdata"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="gt5_rxcharisk" RIGHT="0" SIGIS="undef" SIGNAME="jesd204_phy_0_gt5_rxcharisk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="jesd204_rec" PORT="gt5_rxcharisk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="gt5_rxdisperr" RIGHT="0" SIGIS="undef" SIGNAME="jesd204_phy_0_gt5_rxdisperr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="jesd204_rec" PORT="gt5_rxdisperr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="gt5_rxnotintable" RIGHT="0" SIGIS="undef" SIGNAME="jesd204_phy_0_gt5_rxnotintable">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="jesd204_rec" PORT="gt5_rxnotintable"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="gt6_rxdata" RIGHT="0" SIGIS="undef" SIGNAME="jesd204_phy_0_gt6_rxdata">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="jesd204_rec" PORT="gt6_rxdata"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="gt6_rxcharisk" RIGHT="0" SIGIS="undef" SIGNAME="jesd204_phy_0_gt6_rxcharisk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="jesd204_rec" PORT="gt6_rxcharisk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="gt6_rxdisperr" RIGHT="0" SIGIS="undef" SIGNAME="jesd204_phy_0_gt6_rxdisperr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="jesd204_rec" PORT="gt6_rxdisperr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="gt6_rxnotintable" RIGHT="0" SIGIS="undef" SIGNAME="jesd204_phy_0_gt6_rxnotintable">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="jesd204_rec" PORT="gt6_rxnotintable"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="gt7_rxdata" RIGHT="0" SIGIS="undef" SIGNAME="jesd204_phy_0_gt7_rxdata">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="jesd204_rec" PORT="gt7_rxdata"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="gt7_rxcharisk" RIGHT="0" SIGIS="undef" SIGNAME="jesd204_phy_0_gt7_rxcharisk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="jesd204_rec" PORT="gt7_rxcharisk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="gt7_rxdisperr" RIGHT="0" SIGIS="undef" SIGNAME="jesd204_phy_0_gt7_rxdisperr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="jesd204_rec" PORT="gt7_rxdisperr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="gt7_rxnotintable" RIGHT="0" SIGIS="undef" SIGNAME="jesd204_phy_0_gt7_rxnotintable">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="jesd204_rec" PORT="gt7_rxnotintable"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="rx_reset_done" SIGIS="undef" SIGNAME="jesd204_phy_0_rx_reset_done">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="jesd204_rec" PORT="rx_reset_done"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="rxencommaalign" SIGIS="undef" SIGNAME="jesd204_rec_rxencommaalign_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="jesd204_rec" PORT="rxencommaalign_out"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES>
+        <BUSINTERFACE BUSNAME="jesd204_trans_gt0_tx" NAME="gt0_tx" TYPE="TARGET" VLNV="xilinx.com:display_jesd204:jesd204_tx_bus:1.0">
+          <PORTMAPS>
+            <PORTMAP LOGICAL="txcharisk" PHYSICAL="gt0_txcharisk"/>
+            <PORTMAP LOGICAL="txdata" PHYSICAL="gt0_txdata"/>
+          </PORTMAPS>
+        </BUSINTERFACE>
+        <BUSINTERFACE BUSNAME="jesd204_trans_gt1_tx" NAME="gt1_tx" TYPE="TARGET" VLNV="xilinx.com:display_jesd204:jesd204_tx_bus:1.0">
+          <PORTMAPS>
+            <PORTMAP LOGICAL="txcharisk" PHYSICAL="gt1_txcharisk"/>
+            <PORTMAP LOGICAL="txdata" PHYSICAL="gt1_txdata"/>
+          </PORTMAPS>
+        </BUSINTERFACE>
+        <BUSINTERFACE BUSNAME="jesd204_trans_gt2_tx" NAME="gt2_tx" TYPE="TARGET" VLNV="xilinx.com:display_jesd204:jesd204_tx_bus:1.0">
+          <PORTMAPS>
+            <PORTMAP LOGICAL="txcharisk" PHYSICAL="gt2_txcharisk"/>
+            <PORTMAP LOGICAL="txdata" PHYSICAL="gt2_txdata"/>
+          </PORTMAPS>
+        </BUSINTERFACE>
+        <BUSINTERFACE BUSNAME="jesd204_trans_gt3_tx" NAME="gt3_tx" TYPE="TARGET" VLNV="xilinx.com:display_jesd204:jesd204_tx_bus:1.0">
+          <PORTMAPS>
+            <PORTMAP LOGICAL="txcharisk" PHYSICAL="gt3_txcharisk"/>
+            <PORTMAP LOGICAL="txdata" PHYSICAL="gt3_txdata"/>
+          </PORTMAPS>
+        </BUSINTERFACE>
+        <BUSINTERFACE BUSNAME="__NOC__" NAME="gt4_tx" TYPE="TARGET" VLNV="xilinx.com:display_jesd204:jesd204_tx_bus:1.0">
+          <PORTMAPS>
+            <PORTMAP LOGICAL="txcharisk" PHYSICAL="gt4_txcharisk"/>
+            <PORTMAP LOGICAL="txdata" PHYSICAL="gt4_txdata"/>
+          </PORTMAPS>
+        </BUSINTERFACE>
+        <BUSINTERFACE BUSNAME="__NOC__" NAME="gt5_tx" TYPE="TARGET" VLNV="xilinx.com:display_jesd204:jesd204_tx_bus:1.0">
+          <PORTMAPS>
+            <PORTMAP LOGICAL="txcharisk" PHYSICAL="gt5_txcharisk"/>
+            <PORTMAP LOGICAL="txdata" PHYSICAL="gt5_txdata"/>
+          </PORTMAPS>
+        </BUSINTERFACE>
+        <BUSINTERFACE BUSNAME="__NOC__" NAME="gt6_tx" TYPE="TARGET" VLNV="xilinx.com:display_jesd204:jesd204_tx_bus:1.0">
+          <PORTMAPS>
+            <PORTMAP LOGICAL="txcharisk" PHYSICAL="gt6_txcharisk"/>
+            <PORTMAP LOGICAL="txdata" PHYSICAL="gt6_txdata"/>
+          </PORTMAPS>
+        </BUSINTERFACE>
+        <BUSINTERFACE BUSNAME="__NOC__" NAME="gt7_tx" TYPE="TARGET" VLNV="xilinx.com:display_jesd204:jesd204_tx_bus:1.0">
+          <PORTMAPS>
+            <PORTMAP LOGICAL="txcharisk" PHYSICAL="gt7_txcharisk"/>
+            <PORTMAP LOGICAL="txdata" PHYSICAL="gt7_txdata"/>
+          </PORTMAPS>
+        </BUSINTERFACE>
+        <BUSINTERFACE BUSNAME="jesd204_phy_0_gt0_rx" NAME="gt0_rx" TYPE="INITIATOR" VLNV="xilinx.com:display_jesd204:jesd204_rx_bus:1.0">
+          <PORTMAPS>
+            <PORTMAP LOGICAL="rxcharisk" PHYSICAL="gt0_rxcharisk"/>
+            <PORTMAP LOGICAL="rxdata" PHYSICAL="gt0_rxdata"/>
+            <PORTMAP LOGICAL="rxdisperr" PHYSICAL="gt0_rxdisperr"/>
+            <PORTMAP LOGICAL="rxnotintable" PHYSICAL="gt0_rxnotintable"/>
+          </PORTMAPS>
+        </BUSINTERFACE>
+        <BUSINTERFACE BUSNAME="jesd204_phy_0_gt1_rx" NAME="gt1_rx" TYPE="INITIATOR" VLNV="xilinx.com:display_jesd204:jesd204_rx_bus:1.0">
+          <PORTMAPS>
+            <PORTMAP LOGICAL="rxcharisk" PHYSICAL="gt1_rxcharisk"/>
+            <PORTMAP LOGICAL="rxdata" PHYSICAL="gt1_rxdata"/>
+            <PORTMAP LOGICAL="rxdisperr" PHYSICAL="gt1_rxdisperr"/>
+            <PORTMAP LOGICAL="rxnotintable" PHYSICAL="gt1_rxnotintable"/>
+          </PORTMAPS>
+        </BUSINTERFACE>
+        <BUSINTERFACE BUSNAME="jesd204_phy_0_gt2_rx" NAME="gt2_rx" TYPE="INITIATOR" VLNV="xilinx.com:display_jesd204:jesd204_rx_bus:1.0">
+          <PORTMAPS>
+            <PORTMAP LOGICAL="rxcharisk" PHYSICAL="gt2_rxcharisk"/>
+            <PORTMAP LOGICAL="rxdata" PHYSICAL="gt2_rxdata"/>
+            <PORTMAP LOGICAL="rxdisperr" PHYSICAL="gt2_rxdisperr"/>
+            <PORTMAP LOGICAL="rxnotintable" PHYSICAL="gt2_rxnotintable"/>
+          </PORTMAPS>
+        </BUSINTERFACE>
+        <BUSINTERFACE BUSNAME="jesd204_phy_0_gt3_rx" NAME="gt3_rx" TYPE="INITIATOR" VLNV="xilinx.com:display_jesd204:jesd204_rx_bus:1.0">
+          <PORTMAPS>
+            <PORTMAP LOGICAL="rxcharisk" PHYSICAL="gt3_rxcharisk"/>
+            <PORTMAP LOGICAL="rxdata" PHYSICAL="gt3_rxdata"/>
+            <PORTMAP LOGICAL="rxdisperr" PHYSICAL="gt3_rxdisperr"/>
+            <PORTMAP LOGICAL="rxnotintable" PHYSICAL="gt3_rxnotintable"/>
+          </PORTMAPS>
+        </BUSINTERFACE>
+        <BUSINTERFACE BUSNAME="jesd204_phy_0_gt4_rx" NAME="gt4_rx" TYPE="INITIATOR" VLNV="xilinx.com:display_jesd204:jesd204_rx_bus:1.0">
+          <PORTMAPS>
+            <PORTMAP LOGICAL="rxcharisk" PHYSICAL="gt4_rxcharisk"/>
+            <PORTMAP LOGICAL="rxdata" PHYSICAL="gt4_rxdata"/>
+            <PORTMAP LOGICAL="rxdisperr" PHYSICAL="gt4_rxdisperr"/>
+            <PORTMAP LOGICAL="rxnotintable" PHYSICAL="gt4_rxnotintable"/>
+          </PORTMAPS>
+        </BUSINTERFACE>
+        <BUSINTERFACE BUSNAME="jesd204_phy_0_gt5_rx" NAME="gt5_rx" TYPE="INITIATOR" VLNV="xilinx.com:display_jesd204:jesd204_rx_bus:1.0">
+          <PORTMAPS>
+            <PORTMAP LOGICAL="rxcharisk" PHYSICAL="gt5_rxcharisk"/>
+            <PORTMAP LOGICAL="rxdata" PHYSICAL="gt5_rxdata"/>
+            <PORTMAP LOGICAL="rxdisperr" PHYSICAL="gt5_rxdisperr"/>
+            <PORTMAP LOGICAL="rxnotintable" PHYSICAL="gt5_rxnotintable"/>
+          </PORTMAPS>
+        </BUSINTERFACE>
+        <BUSINTERFACE BUSNAME="jesd204_phy_0_gt6_rx" NAME="gt6_rx" TYPE="INITIATOR" VLNV="xilinx.com:display_jesd204:jesd204_rx_bus:1.0">
+          <PORTMAPS>
+            <PORTMAP LOGICAL="rxcharisk" PHYSICAL="gt6_rxcharisk"/>
+            <PORTMAP LOGICAL="rxdata" PHYSICAL="gt6_rxdata"/>
+            <PORTMAP LOGICAL="rxdisperr" PHYSICAL="gt6_rxdisperr"/>
+            <PORTMAP LOGICAL="rxnotintable" PHYSICAL="gt6_rxnotintable"/>
+          </PORTMAPS>
+        </BUSINTERFACE>
+        <BUSINTERFACE BUSNAME="jesd204_phy_0_gt7_rx" NAME="gt7_rx" TYPE="INITIATOR" VLNV="xilinx.com:display_jesd204:jesd204_rx_bus:1.0">
+          <PORTMAPS>
+            <PORTMAP LOGICAL="rxcharisk" PHYSICAL="gt7_rxcharisk"/>
+            <PORTMAP LOGICAL="rxdata" PHYSICAL="gt7_rxdata"/>
+            <PORTMAP LOGICAL="rxdisperr" PHYSICAL="gt7_rxdisperr"/>
+            <PORTMAP LOGICAL="rxnotintable" PHYSICAL="gt7_rxnotintable"/>
+          </PORTMAPS>
+        </BUSINTERFACE>
+      </BUSINTERFACES>
+    </MODULE>
+    <MODULE COREREVISION="16" FULLNAME="/jesd204_rec" HWVERSION="7.2" INSTANCE="jesd204_rec" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="jesd204" VLNV="xilinx.com:ip:jesd204:7.2">
+      <DOCUMENTS>
+        <DOCUMENT SOURCE="http://www.xilinx.com/cgi-bin/docs/ipdoc?c=jesd204;v=v7_2;d=pg066-jesd204.pdf"/>
+      </DOCUMENTS>
+      <PARAMETERS>
+        <PARAMETER NAME="C_COMPONENT_NAME" VALUE="design_1_jesd204_0_1"/>
+        <PARAMETER NAME="C_FAMILY" VALUE="kintex7"/>
+        <PARAMETER NAME="C_NODE_IS_TRANSMIT" VALUE="0"/>
+        <PARAMETER NAME="C_LANES" VALUE="8"/>
+        <PARAMETER NAME="C_SPEEDGRADE" VALUE="-2"/>
+        <PARAMETER NAME="C_LMFC_BUFFER_SIZE" VALUE="6"/>
+        <PARAMETER NAME="C_SupportLevel" VALUE="0"/>
+        <PARAMETER NAME="C_USE_RPAT" VALUE="false"/>
+        <PARAMETER NAME="C_USE_JSPAT" VALUE="false"/>
+        <PARAMETER NAME="C_TransceiverControl" VALUE="false"/>
+        <PARAMETER NAME="c_sub_core_name" VALUE="design_1_jesd204_0_1_phy"/>
+        <PARAMETER NAME="C_GT_Line_Rate" VALUE="9.8304"/>
+        <PARAMETER NAME="C_GT_REFCLK_FREQ" VALUE="122.880"/>
+        <PARAMETER NAME="C_DRPCLK_FREQ" VALUE="100.0"/>
+        <PARAMETER NAME="C_SYSREF_SAMPLING_EDGE" VALUE="0"/>
+        <PARAMETER NAME="C_PLL_SELECTION" VALUE="3"/>
+        <PARAMETER NAME="C_Global_clk_sel" VALUE="true"/>
+        <PARAMETER NAME="C_DEFAULT_SCR" VALUE="0"/>
+        <PARAMETER NAME="C_DEFAULT_F" VALUE="4"/>
+        <PARAMETER NAME="C_DEFAULT_K" VALUE="32"/>
+        <PARAMETER NAME="C_DEFAULT_SYSREF_ALWAYS" VALUE="0"/>
+        <PARAMETER NAME="C_DEFAULT_SYSREF_REQUIRED" VALUE="0"/>
+        <PARAMETER NAME="C_AXICLK_FREQ" VALUE="100.0"/>
+        <PARAMETER NAME="C_Transceiver" VALUE="GTXE2"/>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_jesd204_0_1"/>
+        <PARAMETER NAME="Transceiver" VALUE="GTXE2"/>
+        <PARAMETER NAME="SupportLevel" VALUE="0"/>
+        <PARAMETER NAME="USE_RPAT" VALUE="false"/>
+        <PARAMETER NAME="USE_JSPAT" VALUE="false"/>
+        <PARAMETER NAME="TransceiverControl" VALUE="false"/>
+        <PARAMETER NAME="GT_Line_Rate" VALUE="9.8304"/>
+        <PARAMETER NAME="GT_REFCLK_FREQ" VALUE="122.880"/>
+        <PARAMETER NAME="DRPCLK_FREQ" VALUE="100.0"/>
+        <PARAMETER NAME="Global_clk_sel" VALUE="true"/>
+        <PARAMETER NAME="AXICLK_FREQ" VALUE="100.0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+        <PARAMETER NAME="C_BASEADDR" VALUE="0x00000000"/>
+        <PARAMETER NAME="C_HIGHADDR" VALUE="0x00000FFF"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="31" NAME="gt0_rxdata" RIGHT="0" SIGIS="undef" SIGNAME="jesd204_phy_0_gt0_rxdata">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="jesd204_phy_0" PORT="gt0_rxdata"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="gt0_rxcharisk" RIGHT="0" SIGIS="undef" SIGNAME="jesd204_phy_0_gt0_rxcharisk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="jesd204_phy_0" PORT="gt0_rxcharisk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="gt0_rxdisperr" RIGHT="0" SIGIS="undef" SIGNAME="jesd204_phy_0_gt0_rxdisperr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="jesd204_phy_0" PORT="gt0_rxdisperr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="gt0_rxnotintable" RIGHT="0" SIGIS="undef" SIGNAME="jesd204_phy_0_gt0_rxnotintable">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="jesd204_phy_0" PORT="gt0_rxnotintable"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="gt1_rxdata" RIGHT="0" SIGIS="undef" SIGNAME="jesd204_phy_0_gt1_rxdata">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="jesd204_phy_0" PORT="gt1_rxdata"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="gt1_rxcharisk" RIGHT="0" SIGIS="undef" SIGNAME="jesd204_phy_0_gt1_rxcharisk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="jesd204_phy_0" PORT="gt1_rxcharisk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="gt1_rxdisperr" RIGHT="0" SIGIS="undef" SIGNAME="jesd204_phy_0_gt1_rxdisperr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="jesd204_phy_0" PORT="gt1_rxdisperr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="gt1_rxnotintable" RIGHT="0" SIGIS="undef" SIGNAME="jesd204_phy_0_gt1_rxnotintable">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="jesd204_phy_0" PORT="gt1_rxnotintable"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="gt2_rxdata" RIGHT="0" SIGIS="undef" SIGNAME="jesd204_phy_0_gt2_rxdata">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="jesd204_phy_0" PORT="gt2_rxdata"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="gt2_rxcharisk" RIGHT="0" SIGIS="undef" SIGNAME="jesd204_phy_0_gt2_rxcharisk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="jesd204_phy_0" PORT="gt2_rxcharisk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="gt2_rxdisperr" RIGHT="0" SIGIS="undef" SIGNAME="jesd204_phy_0_gt2_rxdisperr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="jesd204_phy_0" PORT="gt2_rxdisperr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="gt2_rxnotintable" RIGHT="0" SIGIS="undef" SIGNAME="jesd204_phy_0_gt2_rxnotintable">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="jesd204_phy_0" PORT="gt2_rxnotintable"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="gt3_rxdata" RIGHT="0" SIGIS="undef" SIGNAME="jesd204_phy_0_gt3_rxdata">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="jesd204_phy_0" PORT="gt3_rxdata"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="gt3_rxcharisk" RIGHT="0" SIGIS="undef" SIGNAME="jesd204_phy_0_gt3_rxcharisk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="jesd204_phy_0" PORT="gt3_rxcharisk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="gt3_rxdisperr" RIGHT="0" SIGIS="undef" SIGNAME="jesd204_phy_0_gt3_rxdisperr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="jesd204_phy_0" PORT="gt3_rxdisperr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="gt3_rxnotintable" RIGHT="0" SIGIS="undef" SIGNAME="jesd204_phy_0_gt3_rxnotintable">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="jesd204_phy_0" PORT="gt3_rxnotintable"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="gt4_rxdata" RIGHT="0" SIGIS="undef" SIGNAME="jesd204_phy_0_gt4_rxdata">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="jesd204_phy_0" PORT="gt4_rxdata"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="gt4_rxcharisk" RIGHT="0" SIGIS="undef" SIGNAME="jesd204_phy_0_gt4_rxcharisk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="jesd204_phy_0" PORT="gt4_rxcharisk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="gt4_rxdisperr" RIGHT="0" SIGIS="undef" SIGNAME="jesd204_phy_0_gt4_rxdisperr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="jesd204_phy_0" PORT="gt4_rxdisperr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="gt4_rxnotintable" RIGHT="0" SIGIS="undef" SIGNAME="jesd204_phy_0_gt4_rxnotintable">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="jesd204_phy_0" PORT="gt4_rxnotintable"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="gt5_rxdata" RIGHT="0" SIGIS="undef" SIGNAME="jesd204_phy_0_gt5_rxdata">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="jesd204_phy_0" PORT="gt5_rxdata"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="gt5_rxcharisk" RIGHT="0" SIGIS="undef" SIGNAME="jesd204_phy_0_gt5_rxcharisk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="jesd204_phy_0" PORT="gt5_rxcharisk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="gt5_rxdisperr" RIGHT="0" SIGIS="undef" SIGNAME="jesd204_phy_0_gt5_rxdisperr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="jesd204_phy_0" PORT="gt5_rxdisperr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="gt5_rxnotintable" RIGHT="0" SIGIS="undef" SIGNAME="jesd204_phy_0_gt5_rxnotintable">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="jesd204_phy_0" PORT="gt5_rxnotintable"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="gt6_rxdata" RIGHT="0" SIGIS="undef" SIGNAME="jesd204_phy_0_gt6_rxdata">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="jesd204_phy_0" PORT="gt6_rxdata"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="gt6_rxcharisk" RIGHT="0" SIGIS="undef" SIGNAME="jesd204_phy_0_gt6_rxcharisk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="jesd204_phy_0" PORT="gt6_rxcharisk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="gt6_rxdisperr" RIGHT="0" SIGIS="undef" SIGNAME="jesd204_phy_0_gt6_rxdisperr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="jesd204_phy_0" PORT="gt6_rxdisperr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="gt6_rxnotintable" RIGHT="0" SIGIS="undef" SIGNAME="jesd204_phy_0_gt6_rxnotintable">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="jesd204_phy_0" PORT="gt6_rxnotintable"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="gt7_rxdata" RIGHT="0" SIGIS="undef" SIGNAME="jesd204_phy_0_gt7_rxdata">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="jesd204_phy_0" PORT="gt7_rxdata"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="gt7_rxcharisk" RIGHT="0" SIGIS="undef" SIGNAME="jesd204_phy_0_gt7_rxcharisk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="jesd204_phy_0" PORT="gt7_rxcharisk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="gt7_rxdisperr" RIGHT="0" SIGIS="undef" SIGNAME="jesd204_phy_0_gt7_rxdisperr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="jesd204_phy_0" PORT="gt7_rxdisperr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="gt7_rxnotintable" RIGHT="0" SIGIS="undef" SIGNAME="jesd204_phy_0_gt7_rxnotintable">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="jesd204_phy_0" PORT="gt7_rxnotintable"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="rx_reset_done" SIGIS="undef" SIGNAME="jesd204_phy_0_rx_reset_done">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="jesd204_phy_0" PORT="rx_reset_done"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="rxencommaalign_out" SIGIS="undef" SIGNAME="jesd204_rec_rxencommaalign_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="jesd204_phy_0" PORT="rxencommaalign"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="rx_reset_gt" SIGIS="undef" SIGNAME="jesd204_rec_rx_reset_gt">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="jesd204_phy_0" PORT="rx_reset_gt"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="245760000" DIR="I" NAME="rx_core_clk" SIGIS="clk" SIGNAME="External_Ports_core_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="core_clk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="s_axi_aclk" SIGIS="clk" SIGNAME="External_Ports_DRP_CLK">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="DRP_CLK"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="s_axi_aresetn" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="External_Ports_axi_lite_rstn">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="axi_lite_rstn"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="11" NAME="s_axi_awaddr" RIGHT="0" SIGIS="undef" SIGNAME="jesd204_rec_s_axi_awaddr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="design_1_imp" PORT="rec_axi_lite_awaddr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="s_axi_awvalid" SIGIS="undef" SIGNAME="jesd204_rec_s_axi_awvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="design_1_imp" PORT="rec_axi_lite_awvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="s_axi_awready" SIGIS="undef" SIGNAME="jesd204_rec_s_axi_awready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="design_1_imp" PORT="rec_axi_lite_awready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="s_axi_wdata" RIGHT="0" SIGIS="undef" SIGNAME="jesd204_rec_s_axi_wdata">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="design_1_imp" PORT="rec_axi_lite_wdata"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="s_axi_wstrb" RIGHT="0" SIGIS="undef" SIGNAME="jesd204_rec_s_axi_wstrb">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="design_1_imp" PORT="rec_axi_lite_wstrb"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="s_axi_wvalid" SIGIS="undef" SIGNAME="jesd204_rec_s_axi_wvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="design_1_imp" PORT="rec_axi_lite_wvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="s_axi_wready" SIGIS="undef" SIGNAME="jesd204_rec_s_axi_wready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="design_1_imp" PORT="rec_axi_lite_wready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="1" NAME="s_axi_bresp" RIGHT="0" SIGIS="undef" SIGNAME="jesd204_rec_s_axi_bresp">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="design_1_imp" PORT="rec_axi_lite_bresp"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="s_axi_bvalid" SIGIS="undef" SIGNAME="jesd204_rec_s_axi_bvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="design_1_imp" PORT="rec_axi_lite_bvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="s_axi_bready" SIGIS="undef" SIGNAME="jesd204_rec_s_axi_bready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="design_1_imp" PORT="rec_axi_lite_bready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="11" NAME="s_axi_araddr" RIGHT="0" SIGIS="undef" SIGNAME="jesd204_rec_s_axi_araddr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="design_1_imp" PORT="rec_axi_lite_araddr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="s_axi_arvalid" SIGIS="undef" SIGNAME="jesd204_rec_s_axi_arvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="design_1_imp" PORT="rec_axi_lite_arvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="s_axi_arready" SIGIS="undef" SIGNAME="jesd204_rec_s_axi_arready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="design_1_imp" PORT="rec_axi_lite_arready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="s_axi_rdata" RIGHT="0" SIGIS="undef" SIGNAME="jesd204_rec_s_axi_rdata">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="design_1_imp" PORT="rec_axi_lite_rdata"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="1" NAME="s_axi_rresp" RIGHT="0" SIGIS="undef" SIGNAME="jesd204_rec_s_axi_rresp">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="design_1_imp" PORT="rec_axi_lite_rresp"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="s_axi_rvalid" SIGIS="undef" SIGNAME="jesd204_rec_s_axi_rvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="design_1_imp" PORT="rec_axi_lite_rvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="s_axi_rready" SIGIS="undef" SIGNAME="jesd204_rec_s_axi_rready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="design_1_imp" PORT="rec_axi_lite_rready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="rx_reset" SIGIS="undef" SIGNAME="External_Ports_jesd204_rst">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="jesd204_rst"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="rx_aresetn" POLARITY="ACTIVE_LOW" SIGIS="rst"/>
+        <PORT DIR="O" LEFT="255" NAME="rx_tdata" RIGHT="0" SIGIS="undef" SIGNAME="jesd204_rec_rx_tdata">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="design_1_imp" PORT="m_axis_rx_0_tdata"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="rx_tvalid" SIGIS="undef" SIGNAME="jesd204_rec_rx_tvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="design_1_imp" PORT="m_axis_rx_0_tvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="rx_start_of_frame" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="O" LEFT="3" NAME="rx_end_of_frame" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="O" LEFT="3" NAME="rx_start_of_multiframe" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="O" LEFT="3" NAME="rx_end_of_multiframe" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="O" LEFT="31" NAME="rx_frame_error" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="I" NAME="rx_sysref" SIGIS="undef" SIGNAME="External_Ports_sysref">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="sysref"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="rx_sync" SIGIS="undef" SIGNAME="jesd204_rec_rx_sync">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="rx_sync_0"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES>
+        <BUSINTERFACE BUSNAME="External_Interface_rec_axi_lite" DATAWIDTH="32" NAME="s_axi" TYPE="SLAVE" VLNV="xilinx.com:interface:aximm:1.0">
+          <PARAMETER NAME="DATA_WIDTH" VALUE="32"/>
+          <PARAMETER NAME="PROTOCOL" VALUE="AXI4LITE"/>
+          <PARAMETER NAME="FREQ_HZ" VALUE="100000000"/>
+          <PARAMETER NAME="ID_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="ADDR_WIDTH" VALUE="12"/>
+          <PARAMETER NAME="AWUSER_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="ARUSER_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="WUSER_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="RUSER_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="BUSER_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="READ_WRITE_MODE" VALUE="READ_WRITE"/>
+          <PARAMETER NAME="HAS_BURST" VALUE="0"/>
+          <PARAMETER NAME="HAS_LOCK" VALUE="0"/>
+          <PARAMETER NAME="HAS_PROT" VALUE="0"/>
+          <PARAMETER NAME="HAS_CACHE" VALUE="0"/>
+          <PARAMETER NAME="HAS_QOS" VALUE="0"/>
+          <PARAMETER NAME="HAS_REGION" VALUE="0"/>
+          <PARAMETER NAME="HAS_WSTRB" VALUE="1"/>
+          <PARAMETER NAME="HAS_BRESP" VALUE="1"/>
+          <PARAMETER NAME="HAS_RRESP" VALUE="1"/>
+          <PARAMETER NAME="SUPPORTS_NARROW_BURST" VALUE="0"/>
+          <PARAMETER NAME="NUM_READ_OUTSTANDING" VALUE="1"/>
+          <PARAMETER NAME="NUM_WRITE_OUTSTANDING" VALUE="1"/>
+          <PARAMETER NAME="MAX_BURST_LENGTH" VALUE="1"/>
+          <PARAMETER NAME="PHASE" VALUE="0.0"/>
+          <PARAMETER NAME="CLK_DOMAIN" VALUE="design_1_s_axi_aclk_0"/>
+          <PARAMETER NAME="NUM_READ_THREADS" VALUE="1"/>
+          <PARAMETER NAME="NUM_WRITE_THREADS" VALUE="1"/>
+          <PARAMETER NAME="RUSER_BITS_PER_BYTE" VALUE="0"/>
+          <PARAMETER NAME="WUSER_BITS_PER_BYTE" VALUE="0"/>
+          <PARAMETER NAME="INSERT_VIP" VALUE="0"/>
+          <PORTMAPS>
+            <PORTMAP LOGICAL="ARADDR" PHYSICAL="s_axi_araddr"/>
+            <PORTMAP LOGICAL="ARREADY" PHYSICAL="s_axi_arready"/>
+            <PORTMAP LOGICAL="ARVALID" PHYSICAL="s_axi_arvalid"/>
+            <PORTMAP LOGICAL="AWADDR" PHYSICAL="s_axi_awaddr"/>
+            <PORTMAP LOGICAL="AWREADY" PHYSICAL="s_axi_awready"/>
+            <PORTMAP LOGICAL="AWVALID" PHYSICAL="s_axi_awvalid"/>
+            <PORTMAP LOGICAL="BREADY" PHYSICAL="s_axi_bready"/>
+            <PORTMAP LOGICAL="BRESP" PHYSICAL="s_axi_bresp"/>
+            <PORTMAP LOGICAL="BVALID" PHYSICAL="s_axi_bvalid"/>
+            <PORTMAP LOGICAL="RDATA" PHYSICAL="s_axi_rdata"/>
+            <PORTMAP LOGICAL="RREADY" PHYSICAL="s_axi_rready"/>
+            <PORTMAP LOGICAL="RRESP" PHYSICAL="s_axi_rresp"/>
+            <PORTMAP LOGICAL="RVALID" PHYSICAL="s_axi_rvalid"/>
+            <PORTMAP LOGICAL="WDATA" PHYSICAL="s_axi_wdata"/>
+            <PORTMAP LOGICAL="WREADY" PHYSICAL="s_axi_wready"/>
+            <PORTMAP LOGICAL="WSTRB" PHYSICAL="s_axi_wstrb"/>
+            <PORTMAP LOGICAL="WVALID" PHYSICAL="s_axi_wvalid"/>
+          </PORTMAPS>
+        </BUSINTERFACE>
+        <BUSINTERFACE BUSNAME="jesd204_rec_m_axis_rx" NAME="m_axis_rx" TYPE="INITIATOR" VLNV="xilinx.com:interface:axis:1.0">
+          <PARAMETER NAME="TDATA_NUM_BYTES" VALUE="32"/>
+          <PARAMETER NAME="TDEST_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="TID_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="TUSER_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="HAS_TREADY" VALUE="0"/>
+          <PARAMETER NAME="HAS_TSTRB" VALUE="0"/>
+          <PARAMETER NAME="HAS_TKEEP" VALUE="0"/>
+          <PARAMETER NAME="HAS_TLAST" VALUE="0"/>
+          <PARAMETER NAME="FREQ_HZ" VALUE="245760000"/>
+          <PARAMETER NAME="PHASE" VALUE="0.0"/>
+          <PARAMETER NAME="CLK_DOMAIN" VALUE="design_1_tx_core_clk_1"/>
+          <PARAMETER NAME="LAYERED_METADATA" VALUE="undef"/>
+          <PARAMETER NAME="INSERT_VIP" VALUE="0"/>
+          <PORTMAPS>
+            <PORTMAP LOGICAL="TDATA" PHYSICAL="rx_tdata"/>
+            <PORTMAP LOGICAL="TVALID" PHYSICAL="rx_tvalid"/>
+          </PORTMAPS>
+        </BUSINTERFACE>
+        <BUSINTERFACE BUSNAME="jesd204_phy_0_gt0_rx" NAME="gt0_rx" TYPE="TARGET" VLNV="xilinx.com:display_jesd204:jesd204_rx_bus:1.0">
+          <PORTMAPS>
+            <PORTMAP LOGICAL="rxcharisk" PHYSICAL="gt0_rxcharisk"/>
+            <PORTMAP LOGICAL="rxdata" PHYSICAL="gt0_rxdata"/>
+            <PORTMAP LOGICAL="rxdisperr" PHYSICAL="gt0_rxdisperr"/>
+            <PORTMAP LOGICAL="rxnotintable" PHYSICAL="gt0_rxnotintable"/>
+          </PORTMAPS>
+        </BUSINTERFACE>
+        <BUSINTERFACE BUSNAME="jesd204_phy_0_gt1_rx" NAME="gt1_rx" TYPE="TARGET" VLNV="xilinx.com:display_jesd204:jesd204_rx_bus:1.0">
+          <PORTMAPS>
+            <PORTMAP LOGICAL="rxcharisk" PHYSICAL="gt1_rxcharisk"/>
+            <PORTMAP LOGICAL="rxdata" PHYSICAL="gt1_rxdata"/>
+            <PORTMAP LOGICAL="rxdisperr" PHYSICAL="gt1_rxdisperr"/>
+            <PORTMAP LOGICAL="rxnotintable" PHYSICAL="gt1_rxnotintable"/>
+          </PORTMAPS>
+        </BUSINTERFACE>
+        <BUSINTERFACE BUSNAME="jesd204_phy_0_gt2_rx" NAME="gt2_rx" TYPE="TARGET" VLNV="xilinx.com:display_jesd204:jesd204_rx_bus:1.0">
+          <PORTMAPS>
+            <PORTMAP LOGICAL="rxcharisk" PHYSICAL="gt2_rxcharisk"/>
+            <PORTMAP LOGICAL="rxdata" PHYSICAL="gt2_rxdata"/>
+            <PORTMAP LOGICAL="rxdisperr" PHYSICAL="gt2_rxdisperr"/>
+            <PORTMAP LOGICAL="rxnotintable" PHYSICAL="gt2_rxnotintable"/>
+          </PORTMAPS>
+        </BUSINTERFACE>
+        <BUSINTERFACE BUSNAME="jesd204_phy_0_gt3_rx" NAME="gt3_rx" TYPE="TARGET" VLNV="xilinx.com:display_jesd204:jesd204_rx_bus:1.0">
+          <PORTMAPS>
+            <PORTMAP LOGICAL="rxcharisk" PHYSICAL="gt3_rxcharisk"/>
+            <PORTMAP LOGICAL="rxdata" PHYSICAL="gt3_rxdata"/>
+            <PORTMAP LOGICAL="rxdisperr" PHYSICAL="gt3_rxdisperr"/>
+            <PORTMAP LOGICAL="rxnotintable" PHYSICAL="gt3_rxnotintable"/>
+          </PORTMAPS>
+        </BUSINTERFACE>
+        <BUSINTERFACE BUSNAME="jesd204_phy_0_gt4_rx" NAME="gt4_rx" TYPE="TARGET" VLNV="xilinx.com:display_jesd204:jesd204_rx_bus:1.0">
+          <PORTMAPS>
+            <PORTMAP LOGICAL="rxcharisk" PHYSICAL="gt4_rxcharisk"/>
+            <PORTMAP LOGICAL="rxdata" PHYSICAL="gt4_rxdata"/>
+            <PORTMAP LOGICAL="rxdisperr" PHYSICAL="gt4_rxdisperr"/>
+            <PORTMAP LOGICAL="rxnotintable" PHYSICAL="gt4_rxnotintable"/>
+          </PORTMAPS>
+        </BUSINTERFACE>
+        <BUSINTERFACE BUSNAME="jesd204_phy_0_gt5_rx" NAME="gt5_rx" TYPE="TARGET" VLNV="xilinx.com:display_jesd204:jesd204_rx_bus:1.0">
+          <PORTMAPS>
+            <PORTMAP LOGICAL="rxcharisk" PHYSICAL="gt5_rxcharisk"/>
+            <PORTMAP LOGICAL="rxdata" PHYSICAL="gt5_rxdata"/>
+            <PORTMAP LOGICAL="rxdisperr" PHYSICAL="gt5_rxdisperr"/>
+            <PORTMAP LOGICAL="rxnotintable" PHYSICAL="gt5_rxnotintable"/>
+          </PORTMAPS>
+        </BUSINTERFACE>
+        <BUSINTERFACE BUSNAME="jesd204_phy_0_gt6_rx" NAME="gt6_rx" TYPE="TARGET" VLNV="xilinx.com:display_jesd204:jesd204_rx_bus:1.0">
+          <PORTMAPS>
+            <PORTMAP LOGICAL="rxcharisk" PHYSICAL="gt6_rxcharisk"/>
+            <PORTMAP LOGICAL="rxdata" PHYSICAL="gt6_rxdata"/>
+            <PORTMAP LOGICAL="rxdisperr" PHYSICAL="gt6_rxdisperr"/>
+            <PORTMAP LOGICAL="rxnotintable" PHYSICAL="gt6_rxnotintable"/>
+          </PORTMAPS>
+        </BUSINTERFACE>
+        <BUSINTERFACE BUSNAME="jesd204_phy_0_gt7_rx" NAME="gt7_rx" TYPE="TARGET" VLNV="xilinx.com:display_jesd204:jesd204_rx_bus:1.0">
+          <PORTMAPS>
+            <PORTMAP LOGICAL="rxcharisk" PHYSICAL="gt7_rxcharisk"/>
+            <PORTMAP LOGICAL="rxdata" PHYSICAL="gt7_rxdata"/>
+            <PORTMAP LOGICAL="rxdisperr" PHYSICAL="gt7_rxdisperr"/>
+            <PORTMAP LOGICAL="rxnotintable" PHYSICAL="gt7_rxnotintable"/>
+          </PORTMAPS>
+        </BUSINTERFACE>
+      </BUSINTERFACES>
+    </MODULE>
+    <MODULE COREREVISION="16" FULLNAME="/jesd204_trans" HWVERSION="7.2" INSTANCE="jesd204_trans" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="jesd204" VLNV="xilinx.com:ip:jesd204:7.2">
+      <DOCUMENTS>
+        <DOCUMENT SOURCE="http://www.xilinx.com/cgi-bin/docs/ipdoc?c=jesd204;v=v7_2;d=pg066-jesd204.pdf"/>
+      </DOCUMENTS>
+      <PARAMETERS>
+        <PARAMETER NAME="C_COMPONENT_NAME" VALUE="design_1_jesd204_0_0"/>
+        <PARAMETER NAME="C_FAMILY" VALUE="kintex7"/>
+        <PARAMETER NAME="C_NODE_IS_TRANSMIT" VALUE="1"/>
+        <PARAMETER NAME="C_LANES" VALUE="4"/>
+        <PARAMETER NAME="C_SPEEDGRADE" VALUE="-2"/>
+        <PARAMETER NAME="C_LMFC_BUFFER_SIZE" VALUE="6"/>
+        <PARAMETER NAME="C_SupportLevel" VALUE="0"/>
+        <PARAMETER NAME="C_USE_RPAT" VALUE="false"/>
+        <PARAMETER NAME="C_USE_JSPAT" VALUE="false"/>
+        <PARAMETER NAME="C_TransceiverControl" VALUE="false"/>
+        <PARAMETER NAME="c_sub_core_name" VALUE="design_1_jesd204_0_0_phy"/>
+        <PARAMETER NAME="C_GT_Line_Rate" VALUE="9.8304"/>
+        <PARAMETER NAME="C_GT_REFCLK_FREQ" VALUE="122.880"/>
+        <PARAMETER NAME="C_DRPCLK_FREQ" VALUE="100.0"/>
+        <PARAMETER NAME="C_SYSREF_SAMPLING_EDGE" VALUE="0"/>
+        <PARAMETER NAME="C_PLL_SELECTION" VALUE="3"/>
+        <PARAMETER NAME="C_Global_clk_sel" VALUE="true"/>
+        <PARAMETER NAME="C_DEFAULT_SCR" VALUE="0"/>
+        <PARAMETER NAME="C_DEFAULT_F" VALUE="4"/>
+        <PARAMETER NAME="C_DEFAULT_K" VALUE="32"/>
+        <PARAMETER NAME="C_DEFAULT_SYSREF_ALWAYS" VALUE="0"/>
+        <PARAMETER NAME="C_DEFAULT_SYSREF_REQUIRED" VALUE="0"/>
+        <PARAMETER NAME="C_AXICLK_FREQ" VALUE="100.0"/>
+        <PARAMETER NAME="C_Transceiver" VALUE="GTXE2"/>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_jesd204_0_0"/>
+        <PARAMETER NAME="Transceiver" VALUE="GTXE2"/>
+        <PARAMETER NAME="SupportLevel" VALUE="0"/>
+        <PARAMETER NAME="USE_RPAT" VALUE="false"/>
+        <PARAMETER NAME="USE_JSPAT" VALUE="false"/>
+        <PARAMETER NAME="TransceiverControl" VALUE="false"/>
+        <PARAMETER NAME="GT_Line_Rate" VALUE="9.8304"/>
+        <PARAMETER NAME="GT_REFCLK_FREQ" VALUE="122.880"/>
+        <PARAMETER NAME="DRPCLK_FREQ" VALUE="100.0"/>
+        <PARAMETER NAME="Global_clk_sel" VALUE="true"/>
+        <PARAMETER NAME="AXICLK_FREQ" VALUE="100.0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+        <PARAMETER NAME="C_BASEADDR" VALUE="0x00000000"/>
+        <PARAMETER NAME="C_HIGHADDR" VALUE="0x00000FFF"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="O" LEFT="31" NAME="gt0_txdata" RIGHT="0" SIGIS="undef" SIGNAME="jesd204_phy_0_gt0_txdata">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="jesd204_phy_0" PORT="gt0_txdata"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="gt0_txcharisk" RIGHT="0" SIGIS="undef" SIGNAME="jesd204_phy_0_gt0_txcharisk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="jesd204_phy_0" PORT="gt0_txcharisk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="gt1_txdata" RIGHT="0" SIGIS="undef" SIGNAME="jesd204_phy_0_gt1_txdata">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="jesd204_phy_0" PORT="gt1_txdata"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="gt1_txcharisk" RIGHT="0" SIGIS="undef" SIGNAME="jesd204_phy_0_gt1_txcharisk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="jesd204_phy_0" PORT="gt1_txcharisk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="gt2_txdata" RIGHT="0" SIGIS="undef" SIGNAME="jesd204_phy_0_gt2_txdata">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="jesd204_phy_0" PORT="gt2_txdata"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="gt2_txcharisk" RIGHT="0" SIGIS="undef" SIGNAME="jesd204_phy_0_gt2_txcharisk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="jesd204_phy_0" PORT="gt2_txcharisk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="gt3_txdata" RIGHT="0" SIGIS="undef" SIGNAME="jesd204_phy_0_gt3_txdata">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="jesd204_phy_0" PORT="gt3_txdata"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="gt3_txcharisk" RIGHT="0" SIGIS="undef" SIGNAME="jesd204_phy_0_gt3_txcharisk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="jesd204_phy_0" PORT="gt3_txcharisk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="tx_reset_done" SIGIS="undef" SIGNAME="jesd204_phy_0_tx_reset_done">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="jesd204_phy_0" PORT="tx_reset_done"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="2" NAME="gt_prbssel_out" RIGHT="0" SIGIS="undef" SIGNAME="jesd204_trans_gt_prbssel_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="jesd204_phy_0" PORT="gt_prbssel"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="tx_reset_gt" SIGIS="undef" SIGNAME="jesd204_trans_tx_reset_gt">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="jesd204_phy_0" PORT="tx_reset_gt"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="245760000" DIR="I" NAME="tx_core_clk" SIGIS="clk" SIGNAME="External_Ports_core_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="core_clk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="s_axi_aclk" SIGIS="clk" SIGNAME="External_Ports_DRP_CLK">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="DRP_CLK"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="s_axi_aresetn" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="External_Ports_axi_lite_rstn">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="axi_lite_rstn"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="11" NAME="s_axi_awaddr" RIGHT="0" SIGIS="undef" SIGNAME="jesd204_trans_s_axi_awaddr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="design_1_imp" PORT="trans_axi_lite_awaddr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="s_axi_awvalid" SIGIS="undef" SIGNAME="jesd204_trans_s_axi_awvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="design_1_imp" PORT="trans_axi_lite_awvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="s_axi_awready" SIGIS="undef" SIGNAME="jesd204_trans_s_axi_awready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="design_1_imp" PORT="trans_axi_lite_awready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="s_axi_wdata" RIGHT="0" SIGIS="undef" SIGNAME="jesd204_trans_s_axi_wdata">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="design_1_imp" PORT="trans_axi_lite_wdata"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="s_axi_wstrb" RIGHT="0" SIGIS="undef" SIGNAME="jesd204_trans_s_axi_wstrb">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="design_1_imp" PORT="trans_axi_lite_wstrb"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="s_axi_wvalid" SIGIS="undef" SIGNAME="jesd204_trans_s_axi_wvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="design_1_imp" PORT="trans_axi_lite_wvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="s_axi_wready" SIGIS="undef" SIGNAME="jesd204_trans_s_axi_wready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="design_1_imp" PORT="trans_axi_lite_wready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="1" NAME="s_axi_bresp" RIGHT="0" SIGIS="undef" SIGNAME="jesd204_trans_s_axi_bresp">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="design_1_imp" PORT="trans_axi_lite_bresp"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="s_axi_bvalid" SIGIS="undef" SIGNAME="jesd204_trans_s_axi_bvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="design_1_imp" PORT="trans_axi_lite_bvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="s_axi_bready" SIGIS="undef" SIGNAME="jesd204_trans_s_axi_bready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="design_1_imp" PORT="trans_axi_lite_bready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="11" NAME="s_axi_araddr" RIGHT="0" SIGIS="undef" SIGNAME="jesd204_trans_s_axi_araddr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="design_1_imp" PORT="trans_axi_lite_araddr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="s_axi_arvalid" SIGIS="undef" SIGNAME="jesd204_trans_s_axi_arvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="design_1_imp" PORT="trans_axi_lite_arvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="s_axi_arready" SIGIS="undef" SIGNAME="jesd204_trans_s_axi_arready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="design_1_imp" PORT="trans_axi_lite_arready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="s_axi_rdata" RIGHT="0" SIGIS="undef" SIGNAME="jesd204_trans_s_axi_rdata">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="design_1_imp" PORT="trans_axi_lite_rdata"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="1" NAME="s_axi_rresp" RIGHT="0" SIGIS="undef" SIGNAME="jesd204_trans_s_axi_rresp">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="design_1_imp" PORT="trans_axi_lite_rresp"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="s_axi_rvalid" SIGIS="undef" SIGNAME="jesd204_trans_s_axi_rvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="design_1_imp" PORT="trans_axi_lite_rvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="s_axi_rready" SIGIS="undef" SIGNAME="jesd204_trans_s_axi_rready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="design_1_imp" PORT="trans_axi_lite_rready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="tx_reset" SIGIS="undef" SIGNAME="External_Ports_jesd204_rst">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="jesd204_rst"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="tx_sysref" SIGIS="undef" SIGNAME="External_Ports_sysref">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="sysref"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="tx_start_of_frame" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="O" LEFT="3" NAME="tx_start_of_multiframe" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="O" NAME="tx_aresetn" POLARITY="ACTIVE_LOW" SIGIS="rst"/>
+        <PORT DIR="I" LEFT="127" NAME="tx_tdata" RIGHT="0" SIGIS="undef" SIGNAME="jesd204_trans_tx_tdata">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="design_1_imp" PORT="s_axis_tx_0_tdata"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="tx_tready" SIGIS="undef" SIGNAME="jesd204_trans_tx_tready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="design_1_imp" PORT="s_axis_tx_0_tready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="tx_sync" SIGIS="undef" SIGNAME="External_Ports_tx_sync_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="tx_sync_0"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES>
+        <BUSINTERFACE BUSNAME="External_Interface_trans_axi_lite" DATAWIDTH="32" NAME="s_axi" TYPE="SLAVE" VLNV="xilinx.com:interface:aximm:1.0">
+          <PARAMETER NAME="DATA_WIDTH" VALUE="32"/>
+          <PARAMETER NAME="PROTOCOL" VALUE="AXI4LITE"/>
+          <PARAMETER NAME="FREQ_HZ" VALUE="100000000"/>
+          <PARAMETER NAME="ID_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="ADDR_WIDTH" VALUE="12"/>
+          <PARAMETER NAME="AWUSER_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="ARUSER_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="WUSER_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="RUSER_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="BUSER_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="READ_WRITE_MODE" VALUE="READ_WRITE"/>
+          <PARAMETER NAME="HAS_BURST" VALUE="0"/>
+          <PARAMETER NAME="HAS_LOCK" VALUE="0"/>
+          <PARAMETER NAME="HAS_PROT" VALUE="0"/>
+          <PARAMETER NAME="HAS_CACHE" VALUE="0"/>
+          <PARAMETER NAME="HAS_QOS" VALUE="0"/>
+          <PARAMETER NAME="HAS_REGION" VALUE="0"/>
+          <PARAMETER NAME="HAS_WSTRB" VALUE="1"/>
+          <PARAMETER NAME="HAS_BRESP" VALUE="1"/>
+          <PARAMETER NAME="HAS_RRESP" VALUE="1"/>
+          <PARAMETER NAME="SUPPORTS_NARROW_BURST" VALUE="0"/>
+          <PARAMETER NAME="NUM_READ_OUTSTANDING" VALUE="1"/>
+          <PARAMETER NAME="NUM_WRITE_OUTSTANDING" VALUE="1"/>
+          <PARAMETER NAME="MAX_BURST_LENGTH" VALUE="1"/>
+          <PARAMETER NAME="PHASE" VALUE="0.0"/>
+          <PARAMETER NAME="CLK_DOMAIN" VALUE="design_1_s_axi_aclk_0"/>
+          <PARAMETER NAME="NUM_READ_THREADS" VALUE="1"/>
+          <PARAMETER NAME="NUM_WRITE_THREADS" VALUE="1"/>
+          <PARAMETER NAME="RUSER_BITS_PER_BYTE" VALUE="0"/>
+          <PARAMETER NAME="WUSER_BITS_PER_BYTE" VALUE="0"/>
+          <PARAMETER NAME="INSERT_VIP" VALUE="0"/>
+          <PORTMAPS>
+            <PORTMAP LOGICAL="ARADDR" PHYSICAL="s_axi_araddr"/>
+            <PORTMAP LOGICAL="ARREADY" PHYSICAL="s_axi_arready"/>
+            <PORTMAP LOGICAL="ARVALID" PHYSICAL="s_axi_arvalid"/>
+            <PORTMAP LOGICAL="AWADDR" PHYSICAL="s_axi_awaddr"/>
+            <PORTMAP LOGICAL="AWREADY" PHYSICAL="s_axi_awready"/>
+            <PORTMAP LOGICAL="AWVALID" PHYSICAL="s_axi_awvalid"/>
+            <PORTMAP LOGICAL="BREADY" PHYSICAL="s_axi_bready"/>
+            <PORTMAP LOGICAL="BRESP" PHYSICAL="s_axi_bresp"/>
+            <PORTMAP LOGICAL="BVALID" PHYSICAL="s_axi_bvalid"/>
+            <PORTMAP LOGICAL="RDATA" PHYSICAL="s_axi_rdata"/>
+            <PORTMAP LOGICAL="RREADY" PHYSICAL="s_axi_rready"/>
+            <PORTMAP LOGICAL="RRESP" PHYSICAL="s_axi_rresp"/>
+            <PORTMAP LOGICAL="RVALID" PHYSICAL="s_axi_rvalid"/>
+            <PORTMAP LOGICAL="WDATA" PHYSICAL="s_axi_wdata"/>
+            <PORTMAP LOGICAL="WREADY" PHYSICAL="s_axi_wready"/>
+            <PORTMAP LOGICAL="WSTRB" PHYSICAL="s_axi_wstrb"/>
+            <PORTMAP LOGICAL="WVALID" PHYSICAL="s_axi_wvalid"/>
+          </PORTMAPS>
+        </BUSINTERFACE>
+        <BUSINTERFACE BUSNAME="External_Interface_s_axis_tx_0" NAME="s_axis_tx" TYPE="TARGET" VLNV="xilinx.com:interface:axis:1.0">
+          <PARAMETER NAME="TDATA_NUM_BYTES" VALUE="16"/>
+          <PARAMETER NAME="TDEST_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="TID_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="TUSER_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="HAS_TREADY" VALUE="1"/>
+          <PARAMETER NAME="HAS_TSTRB" VALUE="0"/>
+          <PARAMETER NAME="HAS_TKEEP" VALUE="0"/>
+          <PARAMETER NAME="HAS_TLAST" VALUE="0"/>
+          <PARAMETER NAME="FREQ_HZ" VALUE="245760000"/>
+          <PARAMETER NAME="PHASE" VALUE="0.0"/>
+          <PARAMETER NAME="CLK_DOMAIN" VALUE="design_1_tx_core_clk_1"/>
+          <PARAMETER NAME="LAYERED_METADATA" VALUE="undef"/>
+          <PARAMETER NAME="INSERT_VIP" VALUE="0"/>
+          <PORTMAPS>
+            <PORTMAP LOGICAL="TDATA" PHYSICAL="tx_tdata"/>
+            <PORTMAP LOGICAL="TREADY" PHYSICAL="tx_tready"/>
+          </PORTMAPS>
+        </BUSINTERFACE>
+        <BUSINTERFACE BUSNAME="jesd204_trans_gt0_tx" NAME="gt0_tx" TYPE="INITIATOR" VLNV="xilinx.com:display_jesd204:jesd204_tx_bus:1.0">
+          <PORTMAPS>
+            <PORTMAP LOGICAL="txcharisk" PHYSICAL="gt0_txcharisk"/>
+            <PORTMAP LOGICAL="txdata" PHYSICAL="gt0_txdata"/>
+          </PORTMAPS>
+        </BUSINTERFACE>
+        <BUSINTERFACE BUSNAME="jesd204_trans_gt1_tx" NAME="gt1_tx" TYPE="INITIATOR" VLNV="xilinx.com:display_jesd204:jesd204_tx_bus:1.0">
+          <PORTMAPS>
+            <PORTMAP LOGICAL="txcharisk" PHYSICAL="gt1_txcharisk"/>
+            <PORTMAP LOGICAL="txdata" PHYSICAL="gt1_txdata"/>
+          </PORTMAPS>
+        </BUSINTERFACE>
+        <BUSINTERFACE BUSNAME="jesd204_trans_gt2_tx" NAME="gt2_tx" TYPE="INITIATOR" VLNV="xilinx.com:display_jesd204:jesd204_tx_bus:1.0">
+          <PORTMAPS>
+            <PORTMAP LOGICAL="txcharisk" PHYSICAL="gt2_txcharisk"/>
+            <PORTMAP LOGICAL="txdata" PHYSICAL="gt2_txdata"/>
+          </PORTMAPS>
+        </BUSINTERFACE>
+        <BUSINTERFACE BUSNAME="jesd204_trans_gt3_tx" NAME="gt3_tx" TYPE="INITIATOR" VLNV="xilinx.com:display_jesd204:jesd204_tx_bus:1.0">
+          <PORTMAPS>
+            <PORTMAP LOGICAL="txcharisk" PHYSICAL="gt3_txcharisk"/>
+            <PORTMAP LOGICAL="txdata" PHYSICAL="gt3_txdata"/>
+          </PORTMAPS>
+        </BUSINTERFACE>
+      </BUSINTERFACES>
+    </MODULE>
+  </MODULES>
+
+</EDKSYSTEM>

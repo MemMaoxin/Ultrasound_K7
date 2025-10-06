@@ -1,0 +1,77 @@
+$date
+        2025-Jun-25 13:49:06
+$end
+$version
+        Vivado v2022.2 (64-bit)
+$end
+$timescale
+        1ps
+$end
+$scope module dut $end
+$var reg 8 " emif_uart_exc_inst/uart_tx_data [7:0] $end
+$var reg 1 * emif_uart_exc_inst/uart_tx_data_valid $end
+$var reg 8 + emif_uart_exc_inst/uart_rx_data [7:0] $end
+$var reg 1 3 emif_uart_exc_inst/uart_rx_data_valid $end
+$var reg 8 4 emif_uart_exc_inst/emif_2_uart_din [7:0] $end
+$var reg 1 < emif_uart_exc_inst/emif_2_uart_wr_en $end
+$var reg 1 = emif_uart_exc_inst/emif_2_uart_rd_en $end
+$var reg 8 > emif_uart_exc_inst/emif_2_uart_dout [7:0] $end
+$var reg 3 F emif_uart_exc_inst/emif_uart_state [2:0] $end
+$var reg 1 I emif_uart_exc_inst/svm570_emif_2_uart_start $end
+$var reg 1 J emif_uart_exc_inst/svm570_emif_2_uart_end $end
+$var reg 1 K emif_uart_exc_inst/svm570_emif_2_uart_valid $end
+$var reg 8 L emif_uart_exc_inst/svm570_emif_2_uart_data [7:0] $end
+$var reg 1 T emif_uart_exc_inst/emif_uart_rd $end
+$var reg 8 U emif_uart_exc_inst/emif_uart_data [7:0] $end
+$var reg 1 ] emif_uart_exc_inst/uart_4008_data_valid $end
+$var reg 1 ^ _TRIGGER $end
+$var reg 1 _ _WINDOW $end
+$var reg 1 ` _GAP $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b0 "
+0*
+b0 +
+03
+b0 4
+0<
+0=
+b11101011 >
+b1 F
+0I
+0J
+0K
+b11010111 L
+0T
+b0 U
+1]
+0^
+1_
+0`
+$end
+#41
+1K
+#42
+b11010111 4
+1<
+0K
+#43
+b0 4
+0<
+#198
+1J
+#199
+b10 F
+0J
+#200
+b11101011 "
+1*
+1=
+b11 F
+1^
+#201
+0*
+0=
+b10010000 >

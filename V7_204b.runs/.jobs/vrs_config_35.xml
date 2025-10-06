@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="emif_2_uart_synth_1" LaunchDir="D:/5_obp/204B_prj/V7_204_test/V7_204b/V7_204b.runs/emif_2_uart_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="uart_2_emif_synth_1" LaunchDir="D:/5_obp/204B_prj/V7_204_test/V7_204b/V7_204b.runs/uart_2_emif_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="emif_2_uart_synth_1"/>
+	</Run>
+	<Run Id="ila_1_synth_1" LaunchDir="D:/5_obp/204B_prj/V7_204_test/V7_204b/V7_204b.runs/ila_1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="clk_wiz_1_synth_1" LaunchDir="D:/5_obp/204B_prj/V7_204_test/V7_204b/V7_204b.runs/clk_wiz_1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="vio_1_synth_1" LaunchDir="D:/5_obp/204B_prj/V7_204_test/V7_204b/V7_204b.runs/vio_1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="vio_0_synth_1" LaunchDir="D:/5_obp/204B_prj/V7_204_test/V7_204b/V7_204b.runs/vio_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="synth_1" LaunchDir="D:/5_obp/204B_prj/V7_204_test/V7_204b/V7_204b.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="emif_2_uart_synth_1"/>
+		<Parent Id="uart_2_emif_synth_1"/>
+		<Parent Id="ila_1_synth_1"/>
+		<Parent Id="clk_wiz_1_synth_1"/>
+		<Parent Id="vio_1_synth_1"/>
+		<Parent Id="vio_0_synth_1"/>
+	</Run>
+	<Run Id="impl_1" LaunchDir="D:/5_obp/204B_prj/V7_204_test/V7_204b/V7_204b.runs/impl_1" FlowId="Vivado_Implementation" FromStepId="init_design" ToStepId="write_bitstream">
+		<Parent Id="synth_1"/>
+		<Parent Id="emif_2_uart_synth_1"/>
+		<Parent Id="uart_2_emif_synth_1"/>
+		<Parent Id="ila_1_synth_1"/>
+		<Parent Id="clk_wiz_1_synth_1"/>
+		<Parent Id="vio_1_synth_1"/>
+		<Parent Id="vio_0_synth_1"/>
+	</Run>
+	<Parameters>
+		<Parameter Name="runs.monitorLSFJobs" Val="true" Type="bool"/>
+		<Parameter Name="runs.enableClusterConf" Val="true" Type="bool"/>
+	</Parameters>
+</Runs>
+
