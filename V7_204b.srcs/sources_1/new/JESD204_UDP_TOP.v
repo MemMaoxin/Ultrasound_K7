@@ -148,8 +148,8 @@ localparam S_DELAY   = 2'b01; // 触发后延时状态
 localparam S_CAPTURE = 2'b10; // 捕获数据状态
 
 // 延时和捕获周期参数
-localparam DELAY_CYCLES   = 871;
-localparam CAPTURE_CYCLES = 2000;
+localparam DELAY_CYCLES   = 350; //871;
+localparam CAPTURE_CYCLES = 1500;
 
 // 寄存器定义
 reg capture_en = 1'b0;

@@ -95,14 +95,14 @@
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="ip/design_1_jesd204_phy_0_0/design_1_jesd204_phy_0_0.xci">
+          <Proxy FileSetName="design_1_jesd204_phy_0_0"/>
+        </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="ip/design_1_jesd204_0_0/design_1_jesd204_0_0.xci">
           <Proxy FileSetName="design_1_jesd204_0_0"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="ip/design_1_jesd204_0_1/design_1_jesd204_0_1.xci">
           <Proxy FileSetName="design_1_jesd204_0_1"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="ip/design_1_jesd204_phy_0_0/design_1_jesd204_phy_0_0.xci">
-          <Proxy FileSetName="design_1_jesd204_phy_0_0"/>
         </CompFileExtendedInfo>
       </File>
       <File Path="$PSRCDIR/sources_1/ip_rtl/RTL8211_Config_IP_0.xcix">

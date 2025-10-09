@@ -49,7 +49,7 @@ module TX7332(
              SYNCP_LOW = 14;
   // --- 修改结束 ---
 
-  localparam REG_COUNT = 247;
+  localparam REG_COUNT = 249;
 
   reg [5:0] r_State;
   reg [9:0] r_Address;
@@ -193,7 +193,7 @@ module TX7332(
 
         READ_CHECK_REG: begin
           if (w_TX_Ready) begin
-            Write_SPI(`REG_ADDR(244), 32'h00000000); 
+            Write_SPI(`REG_ADDR(246), 32'h00000000); 
             r_State <= WAIT_FOR_READ_AND_CHECK;
           end
         end
@@ -201,7 +201,7 @@ module TX7332(
         WAIT_FOR_READ_AND_CHECK: begin
           Stop_TX();
           if (w_RX_DV) begin
-            if (w_Read_Data == `REG_DATA(244)) begin
+            if (w_Read_Data == `REG_DATA(246)) begin
               r_State <= ALL_DONE;
             end else begin
               r_Retry_Wait_Count <= 0;
@@ -268,9 +268,9 @@ module TX7332(
         end
 
         SYNCP_LOW: begin
-          if (r_SYNCP_Low_Count >= 28'd1250000) begin
+          if (r_SYNCP_Low_Count >= 28'd625000) begin
             // --- 修改开始: 改变状态转换目标到新的写序列 ---
-            r_State <= PRE_WRITE_H016; // 原为 r_State <= ALL_DONE;
+            r_State <= ALL_DONE; // 原为 r_State <= ALL_DONE;
             // --- 修改结束 ---
           end else begin
             r_SYNCP_Low_Count <= r_SYNCP_Low_Count + 1;

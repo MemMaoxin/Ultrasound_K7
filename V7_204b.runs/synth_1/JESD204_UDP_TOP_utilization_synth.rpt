@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
-| Date         : Fri Oct  3 18:04:08 2025
+| Date         : Wed Oct  8 20:57:53 2025
 | Host         : LAPTOP-QE70SMI5 running 64-bit major release  (build 9200)
 | Command      : report_utilization -file JESD204_UDP_TOP_utilization_synth.rpt -pb JESD204_UDP_TOP_utilization_synth.pb
 | Design       : JESD204_UDP_TOP
@@ -31,14 +31,14 @@ Table of Contents
 +-------------------------+------+-------+------------+-----------+-------+
 |        Site Type        | Used | Fixed | Prohibited | Available | Util% |
 +-------------------------+------+-------+------------+-----------+-------+
-| Slice LUTs*             | 1246 |     0 |          0 |    203800 |  0.61 |
-|   LUT as Logic          | 1246 |     0 |          0 |    203800 |  0.61 |
+| Slice LUTs*             | 1291 |     0 |          0 |    203800 |  0.63 |
+|   LUT as Logic          | 1291 |     0 |          0 |    203800 |  0.63 |
 |   LUT as Memory         |    0 |     0 |          0 |     64000 |  0.00 |
 | Slice Registers         | 1034 |     0 |          0 |    407600 |  0.25 |
 |   Register as Flip Flop | 1034 |     0 |          0 |    407600 |  0.25 |
 |   Register as Latch     |    0 |     0 |          0 |    407600 |  0.00 |
-| F7 Muxes                |   15 |     0 |          0 |    101900 |  0.01 |
-| F8 Muxes                |    1 |     0 |          0 |     50950 | <0.01 |
+| F7 Muxes                |   13 |     0 |          0 |    101900 |  0.01 |
+| F8 Muxes                |    0 |     0 |          0 |     50950 |  0.00 |
 +-------------------------+------+-------+------------+-----------+-------+
 * Warning! The Final LUT count, after physical optimizations and full implementation, is typically lower. Run opt_design after synthesis, if not already completed, for a more realistic count.
 Warning! LUT value is adjusted to account for LUT combining.
@@ -157,25 +157,24 @@ Warning! LUT value is adjusted to account for LUT combining.
 |   Ref Name  | Used | Functional Category |
 +-------------+------+---------------------+
 | FDCE        |  860 |        Flop & Latch |
-| LUT6        |  516 |                 LUT |
-| LUT5        |  319 |                 LUT |
-| LUT4        |  276 |                 LUT |
-| LUT2        |  264 |                 LUT |
+| LUT6        |  533 |                 LUT |
+| LUT5        |  346 |                 LUT |
+| LUT4        |  273 |                 LUT |
+| LUT2        |  273 |                 LUT |
 | FDPE        |  137 |        Flop & Latch |
-| LUT3        |  110 |                 LUT |
+| LUT3        |  115 |                 LUT |
 | CARRY4      |   90 |          CarryLogic |
 | LUT1        |   46 |                 LUT |
 | FDRE        |   37 |        Flop & Latch |
 | IBUF        |   27 |                  IO |
-| MUXF7       |   15 |               MuxFx |
 | OBUF        |   13 |                  IO |
+| MUXF7       |   13 |               MuxFx |
 | ODDR        |    5 |                  IO |
 | IDELAYE2    |    5 |                  IO |
 | IDDR        |    5 |                  IO |
 | BUFG        |    3 |               Clock |
 | OBUFDS      |    2 |                  IO |
 | OBUFT       |    1 |                  IO |
-| MUXF8       |    1 |               MuxFx |
 | INV         |    1 |                 LUT |
 | IDELAYCTRL  |    1 |                  IO |
 | IBUFDS_GTE2 |    1 |                  IO |
