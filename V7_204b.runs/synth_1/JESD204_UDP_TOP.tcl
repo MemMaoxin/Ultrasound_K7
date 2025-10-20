@@ -70,7 +70,6 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
-set_param tcl.collectionResultDisplayLimit 0
 set_param chipscope.maxJobs 4
 set_param xicom.use_bs_reader 1
 OPTRACE "Creating in-memory project" START { }
@@ -141,12 +140,6 @@ set_property used_in_implementation false [get_files -all c:/Users/maoxi/Desktop
 read_ip -quiet C:/Users/maoxi/Desktop/CUHKProject/Ultrasonic/Kintex7/Code/V7_204b_2/V7_204b.srcs/sources_1/ip/fifo_4096x32/fifo_4096x32.xci
 set_property used_in_implementation false [get_files -all c:/Users/maoxi/Desktop/CUHKProject/Ultrasonic/Kintex7/Code/V7_204b_2/V7_204b.gen/sources_1/ip/fifo_4096x32/fifo_4096x32.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/maoxi/Desktop/CUHKProject/Ultrasonic/Kintex7/Code/V7_204b_2/V7_204b.gen/sources_1/ip/fifo_4096x32/fifo_4096x32_ooc.xdc]
-
-read_ip -quiet C:/Users/maoxi/Desktop/CUHKProject/Ultrasonic/Kintex7/Code/V7_204b_2/V7_204b.srcs/sources_1/ip/ila_0/ila_0.xci
-set_property used_in_synthesis false [get_files -all c:/Users/maoxi/Desktop/CUHKProject/Ultrasonic/Kintex7/Code/V7_204b_2/V7_204b.gen/sources_1/ip/ila_0/ila_v6_2/constraints/ila_impl.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/maoxi/Desktop/CUHKProject/Ultrasonic/Kintex7/Code/V7_204b_2/V7_204b.gen/sources_1/ip/ila_0/ila_v6_2/constraints/ila_impl.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/maoxi/Desktop/CUHKProject/Ultrasonic/Kintex7/Code/V7_204b_2/V7_204b.gen/sources_1/ip/ila_0/ila_v6_2/constraints/ila.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/maoxi/Desktop/CUHKProject/Ultrasonic/Kintex7/Code/V7_204b_2/V7_204b.gen/sources_1/ip/ila_0/ila_0_ooc.xdc]
 
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being

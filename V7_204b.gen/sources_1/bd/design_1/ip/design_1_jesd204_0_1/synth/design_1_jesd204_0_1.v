@@ -48,7 +48,7 @@
 
 `timescale 1ns / 1ps
 
-(* CORE_GENERATION_INFO = "design_1_jesd204_0_1,jesd204_v7_2_16,{x_ipProduct=Vivado 2022.2,x_ipVendor=xilinx.com,x_ipLibrary=ip,x_ipName=jesd204,x_ipVersion=7.2,x_ipCoreRevision=16,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,C_COMPONENT_NAME=design_1_jesd204_0_1,C_FAMILY=kintex7,C_NODE_IS_TRANSMIT=0,C_LANES=8,C_SPEEDGRADE=-2,C_LMFC_BUFFER_SIZE=6,C_SupportLevel=0,C_USE_RPAT=false,C_USE_JSPAT=false,C_TransceiverControl=false,c_sub_core_name=design_1_jesd204_0_1_phy,C_GT_Line_Rate=9.8304,C_GT_REFCLK_FREQ=122.880,C_DRPCLK_FREQ=100.0,C_SYSREF_SAMPLING_EDGE=0,C_PLL_SELECTION=3,C_Global_clk_sel=true,C_DEFAULT_SCR=0,C_DEFAULT_F=4,C_DEFAULT_K=32,C_DEFAULT_SYSREF_ALWAYS=0,C_DEFAULT_SYSREF_REQUIRED=0,C_AXICLK_FREQ=100.0,C_Transceiver=GTXE2,x_ipLicense=jesd204@2017.10(bought)}" *)
+(* CORE_GENERATION_INFO = "design_1_jesd204_0_1,jesd204_v7_2_16,{x_ipProduct=Vivado 2022.2,x_ipVendor=xilinx.com,x_ipLibrary=ip,x_ipName=jesd204,x_ipVersion=7.2,x_ipCoreRevision=16,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,C_COMPONENT_NAME=design_1_jesd204_0_1,C_FAMILY=kintex7,C_NODE_IS_TRANSMIT=0,C_LANES=8,C_SPEEDGRADE=-2,C_LMFC_BUFFER_SIZE=6,C_SupportLevel=0,C_USE_RPAT=false,C_USE_JSPAT=false,C_TransceiverControl=false,c_sub_core_name=design_1_jesd204_0_1_phy,C_GT_Line_Rate=9.8304,C_GT_REFCLK_FREQ=122.880,C_DRPCLK_FREQ=100.0,C_SYSREF_SAMPLING_EDGE=0,C_PLL_SELECTION=3,C_Global_clk_sel=true,C_DEFAULT_SCR=0,C_DEFAULT_F=4,C_DEFAULT_K=8,C_DEFAULT_SYSREF_ALWAYS=0,C_DEFAULT_SYSREF_REQUIRED=0,C_AXICLK_FREQ=100.0,C_Transceiver=GTXE2,x_ipLicense=jesd204@2017.10(bought)}" *)
 (* X_CORE_INFO = "jesd204_v7_2_16,Vivado 2022.2" *)
 
 (* DowngradeIPIdentifiedWarnings = "yes" *)

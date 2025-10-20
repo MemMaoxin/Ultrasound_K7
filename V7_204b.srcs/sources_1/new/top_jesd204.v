@@ -124,17 +124,17 @@ reset_204 reset_204_inst(
     );
 
 
-ila_0 ila_0_inst (
-	.clk(clk_120), // input wire clk
+//ila_0 ila_0_inst (
+//	.clk(clk_120), // input wire clk
 
 
-	.probe0(rx_data), // input wire [255:0]  probe0  
-	.probe1(rx_valid), // input wire [0:0]  probe1 
-	.probe2(sys_rst_n), // input wire [0:0]  probe2 
-	.probe3(rx_sync_0), // input wire [0:0]  probe3 
-	.probe4(sysref), // input wire [0:0]  probe4 
-	.probe5(rst_204)
-);
+//	.probe0(rx_data), // input wire [255:0]  probe0  
+//	.probe1(rx_valid), // input wire [0:0]  probe1 
+//	.probe2(sys_rst_n), // input wire [0:0]  probe2 
+//	.probe3(rx_sync_0), // input wire [0:0]  probe3 
+//	.probe4(sysref), // input wire [0:0]  probe4 
+//	.probe5(rst_204)
+//);
 
 
 

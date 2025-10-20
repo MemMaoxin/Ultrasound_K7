@@ -109,7 +109,8 @@ net_udp_loop  net_udp_loop_inst1(
     .net_rst_n (net_rst_n ),  //KSZ9031硬件复位信号，低电平有效  
     .capture_en(capture_en), 
     .ADC_DATA(ADC_DATA),
-    .ADC_valid(!empty)
+    .ADC_valid(!empty),
+    .o_del_num(o_del_num)
     );  
 
     
@@ -148,20 +149,21 @@ localparam S_DELAY   = 2'b01; // 触发后延时状态
 localparam S_CAPTURE = 2'b10; // 捕获数据状态
 
 // 延时和捕获周期参数
-localparam DELAY_CYCLES   = 350; //871;
-localparam CAPTURE_CYCLES = 1500;
+localparam DELAY_CYCLES   = 1000; //871;
+localparam CAPTURE_CYCLES = 10000; //1500;
 
 // 寄存器定义
 reg capture_en = 1'b0;
 reg [1:0]  capture_state;
-reg [10:0]  delay_counter;            // 计数到 871-1, 需要10位
-reg [10:0]  capture_duration_counter; // 计数到 2000-1, 需要11位
+reg [12:0]  delay_counter;            // 计数到 871-1, 需要10位
+reg [14:0]  capture_duration_counter; // 计数到 2000-1, 需要11位
+wire [7:0] o_del_num;
 
 // 上升沿检测逻辑 (在 clk_50m 域)
 reg  syncp_prev;
 wire syncp_rising_edge;
 
-always @(posedge clk_50m or negedge sys_rst_n) begin
+always @(posedge clk_200m or negedge sys_rst_n) begin
     if (!sys_rst_n) begin
         syncp_prev <= 1'b0;
     end else begin
@@ -172,7 +174,7 @@ end
 assign syncp_rising_edge = !syncp_prev && tx7332_syncp;
 
 // 主状态机 (在 clk_50m 域)
-always @(posedge clk_50m or negedge sys_rst_n) begin
+always @(posedge clk_200m or negedge sys_rst_n) begin
     if (!sys_rst_n) begin
         // 复位状态
         capture_state            <= S_IDLE;
@@ -251,7 +253,8 @@ end
         .o_SPI_Clk    (tx7332_spi_clk),    // SPI 时钟
         .o_SPI_CS_n   (tx7332_spi_csn),    // SPI 片选
         .o_SYNCP      (tx7332_syncp),      // 同步脉冲输出
-        .i_Clk        (clk_50m)            // 模块工作时钟
+        .i_Clk        (clk_200m),            // 模块工作时钟
+        .o_del_num    (o_del_num)
     );
     
 endmodule

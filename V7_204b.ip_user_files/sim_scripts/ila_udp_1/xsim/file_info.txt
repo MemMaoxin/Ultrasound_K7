@@ -1,0 +1,2 @@
+ila_udp.v,verilog,xil_defaultlib,../../../../V7_204b.gen/sources_1/ip/ila_udp_1/sim/ila_udp.v,incdir="../../../../V7_204b.gen/sources_1/ip/ila_udp_1/hdl/verilog"
+glbl.v,Verilog,xil_defaultlib,glbl.v

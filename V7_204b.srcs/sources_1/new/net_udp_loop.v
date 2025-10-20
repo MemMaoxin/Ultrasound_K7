@@ -14,7 +14,8 @@ module net_udp_loop(
     output             net_rst_n ,  //KSZ9031芯片复位信号，低电平有效 
     input               capture_en,
     input       [31 : 0] ADC_DATA,
-    input               ADC_valid 
+    input               ADC_valid,
+    input       [7:0]   o_del_num 
     );
 
 //parameter define
@@ -71,7 +72,7 @@ assign des_ip = src_ip;
 
 // <<-- 2. 修改 header_data 赋值，将 udp_sequence 放在倒数第二个字节
 // 将 header_data 的高16位设为0, 倒数第二个字节设为 udp_sequence, 最后一个字节设为 udp_number
-assign header_data = {16'h0000, udp_sequence, udp_number};
+assign header_data = {8'h00, o_del_num, udp_sequence, udp_number};
 
 //KSZ9031_phy复位
 net_rstn u_net_rstn(
@@ -168,7 +169,7 @@ udp
     .tx_req        (tx_req      )           
     ); 
 
-wire  [14 : 0] fifo_data_count;
+wire  [15 : 0] fifo_data_count;
 wire fifo_full,fifo_empty;
 
 // reg tx_start_en =0;
@@ -208,7 +209,7 @@ always @(posedge gmii_rx_clk or negedge sys_rst_n) begin
             else if(capture_en ==1'b0 && fifo_data_count > 15'd4 ) begin
                 cnt_state<=3'd1;
                 tx_start_en<=0;
-                tx_byte_num<= {fifo_data_count[13:0],2'd0} ;
+                tx_byte_num<= {fifo_data_count[14:0],2'd0} ;
                 udp_sequence <= 3;
                 udp_number <= udp_number + 1;
             end
@@ -266,7 +267,7 @@ fifo_4096x32 u_fifo_4096x32(
     .dout     (tx_data   ),  // output wire [31 : 0] dout
     .full      (fifo_full),              // output wire full
     .empty    (fifo_empty),            // output wire empty
-    .data_count(fifo_data_count)  // output wire [14 : 0] data_count   
+    .data_count(fifo_data_count)  // output wire [15 : 0] data_count   
     );    
 
 //以太网控制模块

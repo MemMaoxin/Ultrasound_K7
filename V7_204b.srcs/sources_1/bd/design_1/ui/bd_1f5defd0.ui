@@ -1,65 +1,65 @@
 {
    "ActiveEmotionalView":"Default View",
    "Default View_ScaleFactor":"1.35754",
-   "Default View_TopLeft":"-673,-850",
+   "Default View_TopLeft":"-259,-849",
    "ExpandedHierarchyInLayout":"",
    "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:10.0 non-TLS
 #  -string -flagsOSRD
 preplace port trans_axi_lite -pg 1 -lvl 0 -x -680 -y -720 -defaultsOSRD
 preplace port rec_axi_lite -pg 1 -lvl 0 -x -680 -y -360 -defaultsOSRD
 preplace port s_axis_tx_0 -pg 1 -lvl 0 -x -680 -y -700 -defaultsOSRD
-preplace port m_axis_rx_0 -pg 1 -lvl 4 -x 690 -y -610 -defaultsOSRD
+preplace port m_axis_rx_0 -pg 1 -lvl 4 -x 710 -y -610 -defaultsOSRD
 preplace port port-id_DRP_CLK -pg 1 -lvl 0 -x -680 -y -320 -defaultsOSRD
-preplace port port-id_rx_sync_0 -pg 1 -lvl 4 -x 690 -y -470 -defaultsOSRD
+preplace port port-id_rx_sync_0 -pg 1 -lvl 4 -x 710 -y -470 -defaultsOSRD
 preplace port port-id_jesd204_rst -pg 1 -lvl 0 -x -680 -y -340 -defaultsOSRD
 preplace port port-id_sysref -pg 1 -lvl 0 -x -680 -y -300 -defaultsOSRD
 preplace port port-id_tx_sync_0 -pg 1 -lvl 0 -x -680 -y -560 -defaultsOSRD
 preplace port port-id_qpll_refclk_0 -pg 1 -lvl 0 -x -680 -y -520 -defaultsOSRD
 preplace port port-id_axi_lite_rstn -pg 1 -lvl 0 -x -680 -y -540 -defaultsOSRD
 preplace port port-id_core_clk -pg 1 -lvl 0 -x -680 -y -660 -defaultsOSRD
-preplace portBus txp_out_0 -pg 1 -lvl 4 -x 690 -y -530 -defaultsOSRD
-preplace portBus txn_out_0 -pg 1 -lvl 4 -x 690 -y -510 -defaultsOSRD
+preplace portBus txp_out_0 -pg 1 -lvl 4 -x 710 -y -530 -defaultsOSRD
+preplace portBus txn_out_0 -pg 1 -lvl 4 -x 710 -y -510 -defaultsOSRD
 preplace portBus rxp_in_0 -pg 1 -lvl 0 -x -680 -y -440 -defaultsOSRD
 preplace portBus rxn_in_0 -pg 1 -lvl 0 -x -680 -y -420 -defaultsOSRD
 preplace inst jesd204_trans -pg 1 -lvl 1 -x -390 -y -640 -defaultsOSRD
-preplace inst jesd204_rec -pg 1 -lvl 3 -x 480 -y -520 -defaultsOSRD
+preplace inst jesd204_rec -pg 1 -lvl 3 -x 500 -y -520 -defaultsOSRD
 preplace inst jesd204_phy_0 -pg 1 -lvl 2 -x 40 -y -530 -defaultsOSRD
 preplace netloc jesd204_phy_0_rx_reset_done 1 2 1 200 -480n
 preplace netloc jesd204_phy_0_tx_reset_done 1 0 3 -600 -850 NJ -850 170
-preplace netloc jesd204_rec_rx_reset_gt 1 1 3 -170 -840 NJ -840 660
-preplace netloc jesd204_rec_rx_sync 1 3 1 660 -470n
-preplace netloc jesd204_rec_rxencommaalign_out 1 1 3 -160 -830 NJ -830 640
+preplace netloc jesd204_phy_0_txn_out 1 2 2 180J -320 670J
+preplace netloc jesd204_phy_0_txp_out 1 2 2 190J -310 660J
+preplace netloc jesd204_rec_rx_reset_gt 1 1 3 -170 -840 NJ -840 680
+preplace netloc jesd204_rec_rx_sync 1 3 1 680 -470n
+preplace netloc jesd204_rec_rxencommaalign_out 1 1 3 -160 -830 NJ -830 660
 preplace netloc jesd204_trans_gt_prbssel_out 1 1 1 -230 -640n
 preplace netloc jesd204_trans_tx_reset_gt 1 1 1 -210 -620n
 preplace netloc qpll_refclk_0_1 1 0 2 -630J -500 -220J
 preplace netloc rx_reset_0_1 1 0 3 -620J -790 -180 -790 240J
 preplace netloc rx_sysref_0_1 1 0 3 -640J -820 N -820 270J
+preplace netloc rxn_in_0_1 1 0 2 NJ -420 NJ
+preplace netloc rxp_in_0_1 1 0 2 NJ -440 NJ
 preplace netloc s_axi_aclk_0_1 1 0 3 -600J -450 -190 -280 250J
 preplace netloc s_axi_aresetn_0_1 1 0 3 -660 -810 NJ -810 280J
 preplace netloc tx_core_clk_1_1 1 0 3 -610 -780 -200 -780 250J
 preplace netloc tx_sync_0_1 1 0 1 NJ -560
-preplace netloc jesd204_phy_0_txp_out 1 2 2 190J -310 640J
-preplace netloc jesd204_phy_0_txn_out 1 2 2 180J -320 650J
-preplace netloc rxp_in_0_1 1 0 2 NJ -440 NJ
-preplace netloc rxn_in_0_1 1 0 2 NJ -420 NJ
 preplace netloc jesd204_phy_0_gt0_rx 1 2 1 310 -660n
 preplace netloc jesd204_phy_0_gt1_rx 1 2 1 300 -640n
-preplace netloc jesd204_trans_gt0_tx 1 1 1 N -720
-preplace netloc jesd204_trans_gt1_tx 1 1 1 N -700
-preplace netloc s_axi_0_1 1 0 1 NJ -720
-preplace netloc s_axi_0_2 1 0 3 -650J -800 NJ -800 320J
 preplace netloc jesd204_phy_0_gt2_rx 1 2 1 290 -620n
 preplace netloc jesd204_phy_0_gt3_rx 1 2 1 260 -600n
-preplace netloc jesd204_trans_gt2_tx 1 1 1 N -680
-preplace netloc jesd204_trans_gt3_tx 1 1 1 N -660
-preplace netloc s_axis_tx_0_1 1 0 1 N -700
 preplace netloc jesd204_phy_0_gt4_rx 1 2 1 230 -580n
 preplace netloc jesd204_phy_0_gt5_rx 1 2 1 220 -560n
 preplace netloc jesd204_phy_0_gt6_rx 1 2 1 210 -540n
 preplace netloc jesd204_phy_0_gt7_rx 1 2 1 200 -520n
 preplace netloc jesd204_rec_m_axis_rx 1 3 1 N -610
-levelinfo -pg 1 -680 -390 40 480 690
-pagesize -pg 1 -db -bbox -sgen -820 -870 830 330
+preplace netloc jesd204_trans_gt0_tx 1 1 1 N -720
+preplace netloc jesd204_trans_gt1_tx 1 1 1 N -700
+preplace netloc jesd204_trans_gt2_tx 1 1 1 N -680
+preplace netloc jesd204_trans_gt3_tx 1 1 1 N -660
+preplace netloc s_axi_0_1 1 0 1 NJ -720
+preplace netloc s_axi_0_2 1 0 3 -650J -800 NJ -800 320J
+preplace netloc s_axis_tx_0_1 1 0 1 N -700
+levelinfo -pg 1 -680 -390 40 500 710
+pagesize -pg 1 -db -bbox -sgen -820 -870 850 330
 "
 }
 {

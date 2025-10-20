@@ -10,11 +10,11 @@ vmap fifo_generator_v13_2_7 activehdl/fifo_generator_v13_2_7
 vmap xil_defaultlib activehdl/xil_defaultlib
 
 vlog -work xpm  -sv2k12 \
-"F:/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv" \
-"F:/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv" \
+"C:/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv" \
+"C:/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv" \
 
 vcom -work xpm -93  \
-"F:/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_VCOMP.vhd" \
+"C:/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_VCOMP.vhd" \
 
 vlog -work fifo_generator_v13_2_7  -v2k5 \
 "../../../ipstatic/simulation/fifo_generator_vlog_beh.v" \

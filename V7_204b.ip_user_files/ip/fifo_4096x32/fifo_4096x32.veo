@@ -63,7 +63,7 @@ fifo_4096x32 your_instance_name (
   .dout(dout),                // output wire [31 : 0] dout
   .full(full),                // output wire full
   .empty(empty),              // output wire empty
-  .data_count(data_count),    // output wire [14 : 0] data_count
+  .data_count(data_count),    // output wire [15 : 0] data_count
   .wr_rst_busy(wr_rst_busy),  // output wire wr_rst_busy
   .rd_rst_busy(rd_rst_busy)  // output wire rd_rst_busy
 );

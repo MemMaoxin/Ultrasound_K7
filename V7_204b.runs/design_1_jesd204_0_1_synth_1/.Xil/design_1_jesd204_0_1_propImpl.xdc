@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:d:/6_xianyu/22_jesd_udp/code/V7_204b_1/V7_204b.gen/sources_1/bd/design_1/ip/design_1_jesd204_0_1/synth/design_1_jesd204_0_1.xdc rfile:../../../V7_204b.gen/sources_1/bd/design_1/ip/design_1_jesd204_0_1/synth/design_1_jesd204_0_1.xdc id:1 order:EARLY scoped_inst:inst} [current_design]
+set_property SRC_FILE_INFO {cfile:c:/Users/maoxi/Desktop/CUHKProject/Ultrasonic/Kintex7/Code/V7_204b_2/V7_204b.gen/sources_1/bd/design_1/ip/design_1_jesd204_0_1/synth/design_1_jesd204_0_1.xdc rfile:../../../V7_204b.gen/sources_1/bd/design_1/ip/design_1_jesd204_0_1/synth/design_1_jesd204_0_1.xdc id:1 order:EARLY scoped_inst:inst} [current_design]
 current_instance inst
 set_property src_info {type:SCOPED_XDC file:1 line:78 export:INPUT save:INPUT read:READ} [current_design]
 set_multicycle_path -hold 2  -from [get_cells -hier -filter {name =~ *i_axi_lite_ipif/I_SLAVE_ATTACHMENT/bus2ip_addr_reg_reg* && IS_SEQUENTIAL}] -to [get_cells -hier -filter {name =~ *IP2Bus_Data_reg* && IS_SEQUENTIAL}]

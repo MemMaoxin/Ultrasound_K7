@@ -61,7 +61,7 @@ COMPONENT fifo_4096x32
     dout : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
     full : OUT STD_LOGIC;
     empty : OUT STD_LOGIC;
-    data_count : OUT STD_LOGIC_VECTOR(14 DOWNTO 0);
+    data_count : OUT STD_LOGIC_VECTOR(15 DOWNTO 0);
     wr_rst_busy : OUT STD_LOGIC;
     rd_rst_busy : OUT STD_LOGIC 
   );

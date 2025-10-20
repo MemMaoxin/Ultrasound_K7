@@ -27,7 +27,8 @@ module TX7332(
   output wire o_SPI_Clk,      // SPI 时钟
   output wire o_SPI_CS_n,     // SPI 片选
   output reg o_SYNCP,          // 同步脉冲输出
-  input wire i_Clk
+  input wire i_Clk,
+  output reg [7:0] o_del_num
 ); 
 
   // 状态机枚举和参数定义
@@ -80,7 +81,7 @@ module TX7332(
 
   // 实例化时钟分频器
   Clock_Divider #(
-    .DIVISOR(4)
+    .DIVISOR(16)
   ) Clock_Divider_Inst (
     .i_Clk(i_Clk),
     .i_Rst_L(i_Rst_L),
@@ -140,6 +141,7 @@ module TX7332(
       case (r_State)
         IDLE: begin
           o_SYNCP <= 1'b0;
+          o_del_num <= 8'b0;
           if (w_TX_Ready) begin
             Write_SPI(10'h000, 32'h00000000);
             r_State <= RESET_00H;
@@ -240,11 +242,30 @@ module TX7332(
           Stop_TX();
           if (w_TX_Ready) begin
             // 步骤3: 更新h016的数据以备下次循环使用
-            if (r_H016_Data == 32'hE004E004) begin
+            if (r_H016_Data >= 32'hE004E004) begin
               r_H016_Data <= 32'h00040004; // 到达最大值，回滚到初始值
-            end else begin
-              // r_H016_Data <= r_H016_Data + 32'h10001000; // 叠加步进值
+              o_del_num <= o_del_num + 1;
             end
+            else begin
+                 if (r_H016_Data == 32'h00040004) begin 
+                    o_del_num <= 0;
+                 end else begin
+                    o_del_num <= o_del_num + 1;
+                 end
+                 r_H016_Data <= r_H016_Data + 32'h10001000;
+            end
+//            else if(r_H016_Data == 32'h70047004) begin
+//              r_H016_Data <= 32'hE004E004; // 叠加步进值
+//              o_del_num <= 2;
+//            end
+//            else if(r_H016_Data == 32'h00040004) begin
+//                r_H016_Data <= 32'h70047004;
+//                o_del_num <= 1;
+//            end
+//            else begin
+//                r_H016_Data <= 32'h00040004;
+//                o_del_num <= 0;
+//            end
             // 写操作序列完成，返回到主循环的ALL_DONE状态
             r_State <= ALL_DONE;
           end
@@ -268,9 +289,9 @@ module TX7332(
         end
 
         SYNCP_LOW: begin
-          if (r_SYNCP_Low_Count >= 28'd625000) begin
+          if (r_SYNCP_Low_Count >= 28'd125000) begin
             // --- 修改开始: 改变状态转换目标到新的写序列 ---
-            r_State <= ALL_DONE; // 原为 r_State <= ALL_DONE;
+            r_State <= PRE_WRITE_H016; // 原为 r_State <= ALL_DONE;
             // --- 修改结束 ---
           end else begin
             r_SYNCP_Low_Count <= r_SYNCP_Low_Count + 1;
@@ -293,7 +314,7 @@ endmodule
 // 这个模块的定义现在被包含在同一个文件中，以解决 "undefined entity" 错误
 // ============================================================================
 module Clock_Divider #(
-  parameter DIVISOR = 4  // 分频系数，默认 10
+  parameter DIVISOR = 16  // 分频系数，默认 10
 )(
   input wire i_Clk,       // 输入时钟
   input wire i_Rst_L,     // 复位信号（低电平有效）

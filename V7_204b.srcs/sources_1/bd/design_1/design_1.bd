@@ -732,6 +732,9 @@
           "C_DEFAULT_F": {
             "value": "4"
           },
+          "C_DEFAULT_K": {
+            "value": "8"
+          },
           "C_DEFAULT_SCR": {
             "value": "0"
           },

@@ -10,11 +10,11 @@ vmap jesd204_v7_2_16 activehdl/jesd204_v7_2_16
 vmap xil_defaultlib activehdl/xil_defaultlib
 
 vlog -work xpm  -sv2k12 \
-"F:/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv" \
-"F:/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv" \
+"C:/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv" \
+"C:/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv" \
 
 vcom -work xpm -93  \
-"F:/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_VCOMP.vhd" \
+"C:/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_VCOMP.vhd" \
 
 vlog -work jesd204_v7_2_16  -v2k5 \
 "../../../../V7_204b.gen/sources_1/bd/design_1/ipshared/58ec/hdl/jesd204_v7_2_rfs.v" \

@@ -371,6 +371,7 @@ always @(posedge clk or negedge rst_n) begin
     end
 end            
 
+
 //发送完成信号及crc值复位信号
 always @(posedge clk or negedge rst_n) begin
     if(!rst_n) begin

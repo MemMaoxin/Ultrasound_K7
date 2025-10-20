@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Sat Sep  6 14:19:05 2025" VIVADOVERSION="2022.2">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Tue Oct 14 15:32:08 2025" VIVADOVERSION="2022.2">
 
   <SYSTEMINFO ARCH="kintex7" DEVICE="7k325t" NAME="design_1" PACKAGE="ffg900" SPEEDGRADE="-2"/>
 
@@ -174,6 +174,26 @@
         <CONNECTION INSTANCE="jesd204_rec" PORT="s_axi_wvalid"/>
       </CONNECTIONS>
     </PORT>
+    <PORT DIR="I" LEFT="127" NAME="s_axis_tx_0_tdata" RIGHT="0" SIGIS="undef" SIGNAME="jesd204_trans_tx_tdata">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="jesd204_trans" PORT="tx_tdata"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="s_axis_tx_0_tready" SIGIS="undef" SIGNAME="jesd204_trans_tx_tready">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="jesd204_trans" PORT="tx_tready"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="255" NAME="m_axis_rx_0_tdata" RIGHT="0" SIGIS="undef" SIGNAME="jesd204_rec_rx_tdata">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="jesd204_rec" PORT="rx_tdata"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="m_axis_rx_0_tvalid" SIGIS="undef" SIGNAME="jesd204_rec_rx_tvalid">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="jesd204_rec" PORT="rx_tvalid"/>
+      </CONNECTIONS>
+    </PORT>
     <PORT CLKFREQUENCY="100000000" DIR="I" NAME="DRP_CLK" SIGIS="clk" SIGNAME="External_Ports_DRP_CLK">
       <CONNECTIONS>
         <CONNECTION INSTANCE="jesd204_trans" PORT="s_axi_aclk"/>
@@ -224,16 +244,6 @@
         <CONNECTION INSTANCE="jesd204_phy_0" PORT="rx_core_clk"/>
       </CONNECTIONS>
     </PORT>
-    <PORT DIR="I" LEFT="127" NAME="s_axis_tx_0_tdata" RIGHT="0" SIGIS="undef" SIGNAME="jesd204_trans_tx_tdata">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="jesd204_trans" PORT="tx_tdata"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="O" NAME="s_axis_tx_0_tready" SIGIS="undef" SIGNAME="jesd204_trans_tx_tready">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="jesd204_trans" PORT="tx_tready"/>
-      </CONNECTIONS>
-    </PORT>
     <PORT DIR="O" LEFT="7" NAME="txp_out_0" RIGHT="0" SIGIS="undef" SIGNAME="jesd204_phy_0_txp_out">
       <CONNECTIONS>
         <CONNECTION INSTANCE="jesd204_phy_0" PORT="txp_out"/>
@@ -242,16 +252,6 @@
     <PORT DIR="O" LEFT="7" NAME="txn_out_0" RIGHT="0" SIGIS="undef" SIGNAME="jesd204_phy_0_txn_out">
       <CONNECTIONS>
         <CONNECTION INSTANCE="jesd204_phy_0" PORT="txn_out"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="O" LEFT="255" NAME="m_axis_rx_0_tdata" RIGHT="0" SIGIS="undef" SIGNAME="jesd204_rec_rx_tdata">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="jesd204_rec" PORT="rx_tdata"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="O" NAME="m_axis_rx_0_tvalid" SIGIS="undef" SIGNAME="jesd204_rec_rx_tvalid">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="jesd204_rec" PORT="rx_tvalid"/>
       </CONNECTIONS>
     </PORT>
     <PORT DIR="I" LEFT="7" NAME="rxp_in_0" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_rxp_in_0">
@@ -929,7 +929,7 @@
         <PARAMETER NAME="C_Global_clk_sel" VALUE="true"/>
         <PARAMETER NAME="C_DEFAULT_SCR" VALUE="0"/>
         <PARAMETER NAME="C_DEFAULT_F" VALUE="4"/>
-        <PARAMETER NAME="C_DEFAULT_K" VALUE="32"/>
+        <PARAMETER NAME="C_DEFAULT_K" VALUE="8"/>
         <PARAMETER NAME="C_DEFAULT_SYSREF_ALWAYS" VALUE="0"/>
         <PARAMETER NAME="C_DEFAULT_SYSREF_REQUIRED" VALUE="0"/>
         <PARAMETER NAME="C_AXICLK_FREQ" VALUE="100.0"/>
