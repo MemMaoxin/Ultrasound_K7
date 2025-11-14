@@ -11,9 +11,9 @@ echo "Please update the PATH and LD_LIBRARY_PATH variables below, before executi
 exit
 
 if [ -z "$PATH" ]; then
-  PATH=F:/Xilinx/Vivado/2022.2/ids_lite/ISE/bin/nt64;F:/Xilinx/Vivado/2022.2/ids_lite/ISE/lib/nt64:F:/Xilinx/Vivado/2022.2/bin
+  PATH=C:/Xilinx/Vitis/2022.2/bin;C:/Xilinx/Vivado/2022.2/ids_lite/ISE/bin/nt64;C:/Xilinx/Vivado/2022.2/ids_lite/ISE/lib/nt64:C:/Xilinx/Vivado/2022.2/bin
 else
-  PATH=F:/Xilinx/Vivado/2022.2/ids_lite/ISE/bin/nt64;F:/Xilinx/Vivado/2022.2/ids_lite/ISE/lib/nt64:F:/Xilinx/Vivado/2022.2/bin:$PATH
+  PATH=C:/Xilinx/Vitis/2022.2/bin;C:/Xilinx/Vivado/2022.2/ids_lite/ISE/bin/nt64;C:/Xilinx/Vivado/2022.2/ids_lite/ISE/lib/nt64:C:/Xilinx/Vivado/2022.2/bin:$PATH
 fi
 export PATH
 
@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='D:/6_xianyu/22_jesd_udp/code/V7_204b_1/V7_204b.runs/fifo_jesd_2_eth_synth_1'
+HD_PWD='C:/Users/maoxi/Desktop/CUHKProject/Ultrasonic/Kintex7/Code/V7_204b_2/V7_204b.runs/fifo_jesd_2_eth_synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
-| Date             : Mon Oct 20 19:00:07 2025
+| Date             : Mon Oct 20 20:16:23 2025
 | Host             : LAPTOP-QE70SMI5 running 64-bit major release  (build 9200)
 | Command          : report_power -file JESD204_UDP_TOP_power_routed.rpt -pb JESD204_UDP_TOP_power_summary_routed.pb -rpx JESD204_UDP_TOP_power_routed.rpx
 | Design           : JESD204_UDP_TOP
@@ -30,14 +30,14 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 2.150        |
+| Total On-Chip Power (W)  | 2.101        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 1.962        |
+| Dynamic (W)              | 1.912        |
 | Device Static (W)        | 0.189        |
 | Effective TJA (C/W)      | 1.8          |
-| Max Ambient (C)          | 81.2         |
-| Junction Temperature (C) | 28.8         |
+| Max Ambient (C)          | 81.3         |
+| Junction Temperature (C) | 28.7         |
 | Confidence Level         | Low          |
 | Setting File             | ---          |
 | Simulation Activity File | ---          |
@@ -52,24 +52,24 @@ Table of Contents
 +--------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
-| Clocks                   |     0.065 |       41 |       --- |             --- |
-| Slice Logic              |     0.020 |    17541 |       --- |             --- |
-|   LUT as Logic           |     0.013 |     7516 |    203800 |            3.69 |
-|   LUT as Distributed RAM |     0.005 |     1408 |     64000 |            2.20 |
-|   Register               |    <0.001 |     6128 |    407600 |            1.50 |
-|   CARRY4                 |    <0.001 |      369 |     50950 |            0.72 |
-|   F7/F8 Muxes            |    <0.001 |      285 |    203800 |            0.14 |
+| Clocks                   |     0.053 |       41 |       --- |             --- |
+| Slice Logic              |     0.009 |    13344 |       --- |             --- |
+|   LUT as Logic           |     0.008 |     5888 |    203800 |            2.89 |
+|   LUT as Distributed RAM |    <0.001 |      176 |     64000 |            0.28 |
+|   CARRY4                 |    <0.001 |      356 |     50950 |            0.70 |
+|   Register               |    <0.001 |     4997 |    407600 |            1.23 |
+|   F7/F8 Muxes            |    <0.001 |      256 |    203800 |            0.13 |
 |   LUT as Shift Register  |    <0.001 |       41 |     64000 |            0.06 |
 |   BUFG                   |    <0.001 |        2 |        32 |            6.25 |
-|   Others                 |     0.000 |      549 |       --- |             --- |
+|   Others                 |     0.000 |      526 |       --- |             --- |
 |   BUFR                   |     0.000 |        2 |       208 |            0.96 |
-| Signals                  |     0.035 |    13586 |       --- |             --- |
-| Block RAM                |     0.015 |       58 |       445 |           13.03 |
+| Signals                  |     0.012 |    10560 |       --- |             --- |
+| Block RAM                |     0.013 |       59 |       445 |           13.26 |
 | MMCM                     |     0.119 |        1 |        10 |           10.00 |
 | I/O                      |     0.098 |       28 |       500 |            5.60 |
 | GTX                      |     1.609 |        8 |        16 |           50.00 |
 | Static Power             |     0.189 |          |           |                 |
-| Total                    |     2.150 |          |           |                 |
+| Total                    |     2.101 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -79,7 +79,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
-| Vccint    |       1.000 |     0.363 |       0.282 |      0.081 |       NA    | Unspecified | NA         |
+| Vccint    |       1.000 |     0.313 |       0.233 |      0.080 |       NA    | Unspecified | NA         |
 | Vccaux    |       1.800 |     0.102 |       0.073 |      0.029 |       NA    | Unspecified | NA         |
 | Vcco33    |       3.300 |     0.013 |       0.012 |      0.001 |       NA    | Unspecified | NA         |
 | Vcco25    |       2.500 |     0.019 |       0.018 |      0.001 |       NA    | Unspecified | NA         |
@@ -99,17 +99,17 @@ Table of Contents
 1.3 Confidence Level
 --------------------
 
-+-----------------------------+------------+--------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
-| User Input Data             | Confidence | Details                                                | Action                                                                                                     |
-+-----------------------------+------------+--------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
-| Design implementation state | High       | Design is routed                                       |                                                                                                            |
-| Clock nodes activity        | High       | User specified more than 95% of clocks                 |                                                                                                            |
-| I/O nodes activity          | Low        | More than 75% of inputs are missing user specification | Provide missing input activity with simulation results or by editing the "By Resource Type -> I/Os" view   |
-| Internal nodes activity     | Medium     | User specified less than 25% of internal nodes         | Provide missing internal nodes activity with simulation results or by editing the "By Resource Type" views |
-| Device models               | High       | Device models are Production                           |                                                                                                            |
-|                             |            |                                                        |                                                                                                            |
-| Overall confidence level    | Low        |                                                        |                                                                                                            |
-+-----------------------------+------------+--------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
++-----------------------------+------------+--------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+
+| User Input Data             | Confidence | Details                                                | Action                                                                                                             |
++-----------------------------+------------+--------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+
+| Design implementation state | High       | Design is routed                                       |                                                                                                                    |
+| Clock nodes activity        | Medium     | More than 5% of clocks are missing user specification  | Provide missing clock activity with a constraint file, simulation results or by editing the "By Clock Domain" view |
+| I/O nodes activity          | Low        | More than 75% of inputs are missing user specification | Provide missing input activity with simulation results or by editing the "By Resource Type -> I/Os" view           |
+| Internal nodes activity     | Medium     | User specified less than 25% of internal nodes         | Provide missing internal nodes activity with simulation results or by editing the "By Resource Type" views         |
+| Device models               | High       | Device models are Production                           |                                                                                                                    |
+|                             |            |                                                        |                                                                                                                    |
+| Overall confidence level    | Low        |                                                        |                                                                                                                    |
++-----------------------------+------------+--------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+
 
 
 2. Settings
@@ -155,13 +155,12 @@ Table of Contents
 +------------------------------+-----------+
 | Name                         | Power (W) |
 +------------------------------+-----------+
-| JESD204_UDP_TOP              |     1.962 |
-|   fifo_jesd_2_eth_inst       |     0.018 |
-|     U0                       |     0.018 |
-|       inst_fifo_gen          |     0.018 |
-|   net_udp_loop_inst1         |     0.025 |
+| JESD204_UDP_TOP              |     1.912 |
+|   fifo_jesd_2_eth_inst       |     0.016 |
+|     U0                       |     0.016 |
+|       inst_fifo_gen          |     0.016 |
+|   net_udp_loop_inst1         |     0.024 |
 |     inst_RTL8211_Config_IP_0 |     0.001 |
-|       inst                   |     0.001 |
 |     u_arp                    |     0.005 |
 |       u_arp_rx               |     0.003 |
 |       u_arp_tx               |     0.001 |
@@ -172,11 +171,12 @@ Table of Contents
 |     u_udp                    |     0.006 |
 |       u_crc32_d8             |     0.001 |
 |       u_udp_tx               |     0.005 |
-|   top_jesd204_inst           |     1.743 |
-|     design_1_wrapper_inst    |     1.696 |
-|       design_1_i             |     1.696 |
+|   top_jesd204_inst           |     1.698 |
+|     design_1_wrapper_inst    |     1.650 |
+|       design_1_i             |     1.650 |
 |   u_TX7332                   |     0.004 |
-|     Clock_Divider_Inst       |     0.003 |
+|     Clock_Divider_Inst       |     0.002 |
+|     SPI_Master_Inst          |     0.001 |
 |   u_clk_wiz                  |     0.126 |
 |     inst                     |     0.126 |
 +------------------------------+-----------+

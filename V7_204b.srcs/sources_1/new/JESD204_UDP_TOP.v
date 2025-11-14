@@ -122,10 +122,14 @@ net_udp_loop  net_udp_loop_inst1(
 wire [255:0] rx_data;
 wire rx_valid;
 
+wire [15:0] fifo_din;
+assign fifo_din = rx_data[239:224];
+
+
  fifo_jesd_2_eth fifo_jesd_2_eth_inst (
   .wr_clk(clk_120),                // input wire wr_clk
   .rd_clk(net_rxc),                // input wire rd_clk
-  .din(rx_data),                      // input wire [127 : 0] din
+  .din(fifo_din),                      // input wire [127 : 0] din
   .wr_en(capture_en && rx_valid),                  // input wire wr_en
   .rd_en(!empty),                  // input wire rd_en
   .dout(ADC_DATA),                    // output wire [31 : 0] dout
