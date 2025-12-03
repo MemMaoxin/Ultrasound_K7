@@ -19,7 +19,6 @@
 // 
 //////////////////////////////////////////////////////////////////////////////////
 
-
 module TX7332(
   input wire i_Rst_L,         // 复位信号（低电平有效）
   input wire i_SPI_MISO,      // SPI 主从输入
@@ -289,9 +288,9 @@ module TX7332(
         end
 
         SYNCP_LOW: begin
-          if (r_SYNCP_Low_Count >= 28'd12500) begin
+          if (r_SYNCP_Low_Count >= 28'd125000) begin
             // --- 修改开始: 改变状态转换目标到新的写序列 ---
-            r_State <= PRE_WRITE_H016; // 原为 r_State <= ALL_DONE;
+            r_State <= ALL_DONE; // 原为 r_State <= ALL_DONE;
             // --- 修改结束 ---
           end else begin
             r_SYNCP_Low_Count <= r_SYNCP_Low_Count + 1;

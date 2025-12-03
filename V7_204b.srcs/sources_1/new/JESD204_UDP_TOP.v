@@ -24,7 +24,6 @@
 // 
 //////////////////////////////////////////////////////////////////////////////////
 
-
 module JESD204_UDP_TOP(
     input              sys_clk_p   , //系统时钟
     input              sys_clk_n   , //系统时钟    
@@ -78,8 +77,7 @@ clk_wiz_0 u_clk_wiz
     .reset    (~sys_rst_n)
 );
     
-    
-    
+  
     
     
     ///////////////////    udp_TOP  //////////////////////////////////////////////////////
@@ -115,15 +113,14 @@ net_udp_loop  net_udp_loop_inst1(
 
     
     
-    
     ///////////////////    204b_TOP  //////////////////////////////////////////////////////
     
 
 wire [255:0] rx_data;
 wire rx_valid;
 
-wire [15:0] fifo_din;
-assign fifo_din = rx_data[239:224];
+wire [32:0] fifo_din;
+assign fifo_din = rx_data[255:224];
 
 
  fifo_jesd_2_eth fifo_jesd_2_eth_inst (
@@ -247,8 +244,7 @@ end
   .rx_data        (rx_data ),
   .rx_valid       (rx_valid)
     ); 
-    
-    
+     
     // --- 实例化 TX7332 模块 ---
     TX7332 u_TX7332 (
         .i_Rst_L      (sys_rst_n),         // 复位信号（低电平有效）

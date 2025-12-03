@@ -1028,7 +1028,7 @@ module design_1_jesd204_0_1_block #(
   assign rx_sysref_captured = (rx_cfg_subclass == 2'h1) ? rx_sysref_captured_sync : 1'b0;
 
   // Capture SYSREF
-  always @(negedge rx_core_clk)
+  always @(posedge rx_core_clk)
     rx_sysref_r <= rx_sysref;
 
 endmodule

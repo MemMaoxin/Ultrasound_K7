@@ -193,7 +193,8 @@ set_property BITSTREAM.CONFIG.SPI_FALL_EDGE Yes [current_design]
 
 create_clock -period 8.000 -name eth_rxc [get_ports net_rxc]
 
-set_property -dict {PACKAGE_PIN AG10 IOSTANDARD LVDS} [get_ports sys_clk_p]
+#set_property -dict {PACKAGE_PIN AG10 IOSTANDARD LVDS} [get_ports sys_clk_p]
+set_property PACKAGE_PIN AE23 [get_ports sys_clk_p]
 set_property -dict {PACKAGE_PIN T26 IOSTANDARD LVCMOS33} [get_ports sys_rst_n]
 
 
@@ -241,6 +242,7 @@ set_property PACKAGE_PIN Y21 [get_ports sysref_p]
 set_property IOSTANDARD LVDS_25 [get_ports rx_sync_0_n]
 set_property IOSTANDARD LVDS_25 [get_ports rx_sync_0_p]
 set_property IOSTANDARD LVDS_25 [get_ports sysref_p]
+set_property IOSTANDARD LVDS_25 [get_ports sys_clk_p]
 
 
 

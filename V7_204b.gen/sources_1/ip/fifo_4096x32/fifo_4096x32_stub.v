@@ -1,10 +1,10 @@
 // Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
-// Date        : Fri Oct 10 17:02:00 2025
+// Date        : Fri Oct 10 17:01:59 2025
 // Host        : LAPTOP-QE70SMI5 running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode synth_stub
-//               c:/Users/maoxi/Desktop/CUHKProject/Ultrasonic/Kintex7/Code/V7_204b_2/V7_204b.gen/sources_1/ip/fifo_4096x32/fifo_4096x32_stub.v
+// Command     : write_verilog -force -mode synth_stub -rename_top fifo_4096x32 -prefix
+//               fifo_4096x32_ fifo_4096x32_stub.v
 // Design      : fifo_4096x32
 // Purpose     : Stub declaration of top-level module interface
 // Device      : xc7k325tffg900-2

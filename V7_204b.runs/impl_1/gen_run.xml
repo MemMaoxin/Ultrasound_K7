@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7k325tffg900-2" LaunchTime="1760962339">
+<GenRun Id="impl_1" LaunchPart="xc7k325tffg900-2" LaunchTime="1764578422">
   <File Type="ROUTE-PWR" Name="JESD204_UDP_TOP_power_routed.rpt"/>
   <File Type="PA-TCL" Name="JESD204_UDP_TOP.tcl"/>
   <File Type="BITSTR-MMI" Name="JESD204_UDP_TOP.mmi"/>
@@ -82,6 +82,13 @@
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/bd/design_1/design_1.bd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ip/fifo_4096x32/fifo_4096x32.xci">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -235,14 +242,6 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/ip/ila_0/ila_0.xci">
-      <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
     <File Path="$PSRCDIR/sources_1/ip/ila_udp_1/ila_udp.xci">
       <FileInfo>
         <Attr Name="AutoDisabled" Val="1"/>
@@ -306,8 +305,8 @@
   </Strategy>
   <BlockFileSet Type="BlockSrcs" Name="design_1_jesd204_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="design_1_jesd204_0_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="ila_0"/>
   <BlockFileSet Type="BlockSrcs" Name="design_1_jesd204_phy_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="clk_wiz_0"/>
   <BlockFileSet Type="BlockSrcs" Name="fifo_jesd_2_eth"/>
-  <BlockFileSet Type="BlockSrcs" Name="fifo_4096x32"/>
 </GenRun>

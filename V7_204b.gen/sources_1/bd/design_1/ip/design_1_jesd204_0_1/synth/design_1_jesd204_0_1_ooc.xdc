@@ -9,5 +9,5 @@
 # Set Core Clock to 245.76MHz
 create_clock -period 4.07 [get_ports rx_core_clk]
 
-# Set AXI-Lite Clock to 100.0MHz by default
-create_clock -period 10.000 -name design_1_jesd204_0_1_axi_aclk [get_ports s_axi_aclk]
+# Set AXI-Lite Clock to 120MHz by default
+create_clock -period 8.333 -name design_1_jesd204_0_1_axi_aclk [get_ports s_axi_aclk]

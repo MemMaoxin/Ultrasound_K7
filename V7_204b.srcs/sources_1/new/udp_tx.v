@@ -298,7 +298,7 @@ always @(posedge clk or negedge rst_n) begin
                     if(cnt == 5'd6) begin
                         skip_en <= 1'b1;   
                         cnt <= 5'd0;
-                        tx_req <= 1'b1;     
+                        // tx_req <= 1'b1;     
                     end    
                     else
                         cnt <= cnt + 5'd1;  
@@ -340,11 +340,13 @@ always @(posedge clk or negedge rst_n) begin
                     gmii_txd <= tx_data[23:16];                   
                 else if(tx_bit_sel == 3'd2) begin
                     gmii_txd <= tx_data[15:8];   
-                    if(data_cnt != tx_data_num - 16'd2)
+//                    if(data_cnt != tx_data_num - 16'd2)
                         tx_req <= 1'b1;  
                 end
                 else if(tx_bit_sel == 3'd3)
-                    gmii_txd <= tx_data[7:0];                                                                                                
+                    gmii_txd <= tx_data[7:0]; 
+//                    if(data_cnt != tx_data_num - 16'd1)
+//                       tx_req <= 1'b1;                                                                                                 
             end  
             udp_tx_crc      : begin                          //发送CRC校验值
                 gmii_tx_en <= 1'b1;

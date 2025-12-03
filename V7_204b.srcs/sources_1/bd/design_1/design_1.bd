@@ -729,6 +729,9 @@
         "xci_path": "ip\\design_1_jesd204_0_1\\design_1_jesd204_0_1.xci",
         "inst_hier_path": "jesd204_rec",
         "parameters": {
+          "AXICLK_FREQ": {
+            "value": "120"
+          },
           "C_DEFAULT_F": {
             "value": "4"
           },
@@ -736,6 +739,12 @@
             "value": "8"
           },
           "C_DEFAULT_SCR": {
+            "value": "0"
+          },
+          "C_DEFAULT_SYSREF_ALWAYS": {
+            "value": "0"
+          },
+          "C_DEFAULT_SYSREF_REQUIRED": {
             "value": "0"
           },
           "C_LANES": {
@@ -746,6 +755,9 @@
           },
           "C_PLL_SELECTION": {
             "value": "3"
+          },
+          "C_SYSREF_SAMPLING_EDGE": {
+            "value": "1"
           },
           "GT_Line_Rate": {
             "value": "9.8304"

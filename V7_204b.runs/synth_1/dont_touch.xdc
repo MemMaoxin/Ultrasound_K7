@@ -15,6 +15,9 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_je
 # IP: bd/design_1/ip/design_1_jesd204_phy_0_0/design_1_jesd204_phy_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_jesd204_phy_0_0 || ORIG_REF_NAME==design_1_jesd204_phy_0_0} -quiet] -quiet
 
+# IP: ip/fifo_4096x32/fifo_4096x32.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==fifo_4096x32 || ORIG_REF_NAME==fifo_4096x32} -quiet] -quiet
+
 # IP: ip_rtl/RTL8211_Config_IP_0/RTL8211_Config_IP_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==RTL8211_Config_IP_0 || ORIG_REF_NAME==RTL8211_Config_IP_0} -quiet] -quiet
 
