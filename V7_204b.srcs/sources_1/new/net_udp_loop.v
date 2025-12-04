@@ -259,23 +259,23 @@ end
 
 
 
-ila_0 ila_0_inst (
-	.clk(clk_200m), // input wire clk
+//ila_0 ila_0_inst (
+//	.clk(clk_200m), // input wire clk
 
 
-	.probe0(capture_en), // input wire [255:0]  probe0  
-	.probe1(fifo_data_count), // input wire [0:0]  probe1 
-	.probe2(udp_tx_done), // input wire [0:0]  probe2 
-	.probe3(cnt_state), // input wire [0:0]  probe3 
-	.probe4(fifo_full), // input wire [0:0]  probe4 
-	.probe5(fifo_empty),
-	.probe6(tx_byte_num),
-	.probe7(tx_req),
-	.probe8(tx_data),
-	.probe9(udp_gmii_txd),
-	.probe10(ADC_DATA),
-	.probe11(ADC_valid)
-);
+//	.probe0(capture_en), // input wire [255:0]  probe0  
+//	.probe1(fifo_data_count), // input wire [0:0]  probe1 
+//	.probe2(udp_tx_done), // input wire [0:0]  probe2 
+//	.probe3(cnt_state), // input wire [0:0]  probe3 
+//	.probe4(fifo_full), // input wire [0:0]  probe4 
+//	.probe5(fifo_empty),
+//	.probe6(tx_byte_num),
+//	.probe7(tx_req),
+//	.probe8(tx_data),
+//	.probe9(udp_gmii_txd),
+//	.probe10(ADC_DATA),
+//	.probe11(ADC_valid)
+//);
 
 
 //FIFO

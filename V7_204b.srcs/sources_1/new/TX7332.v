@@ -288,9 +288,9 @@ module TX7332(
         end
 
         SYNCP_LOW: begin
-          if (r_SYNCP_Low_Count >= 28'd125000) begin
+          if (r_SYNCP_Low_Count >= 28'd16666) begin
             // --- 修改开始: 改变状态转换目标到新的写序列 ---
-            r_State <= ALL_DONE; // 原为 r_State <= ALL_DONE;
+            r_State <= PRE_WRITE_H016; // 原为 r_State <= ALL_DONE;
             // --- 修改结束 ---
           end else begin
             r_SYNCP_Low_Count <= r_SYNCP_Low_Count + 1;
