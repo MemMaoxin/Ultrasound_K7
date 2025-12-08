@@ -31,7 +31,7 @@ module TX7332(
 ); 
 
   // 状态机枚举和参数定义
-  // --- 修改开始: 增加用于两步写的状态并重新排序 ---
+  // --- 修改开始: 增加用于写0x1B寄存器的状态并重新编号 ---
   localparam IDLE = 0,
              RESET_00H = 1,
              WAIT_50_CLK = 2,
@@ -41,15 +41,20 @@ module TX7332(
              READ_CHECK_REG = 6,
              WAIT_FOR_READ_AND_CHECK = 7,
              WAIT_FOR_RETRY = 8,
-             PRE_WRITE_H016 = 9,          // 新增状态: 准备向h016写之前的预备写
-             WRITE_H016_MAIN = 10,        // 新增状态: 真正向h016写数据
-             WAIT_H016_DONE = 11,         // 新增状态: 等待h016写入完成并更新数据
-             ALL_DONE = 12,
-             SYNCP_HIGH = 13,
-             SYNCP_LOW = 14;
+             PRE_WRITE_H016 = 9,
+             WRITE_H016_MAIN = 10,
+             WAIT_H016_DONE = 11,
+             WRITE_REG_1B = 12,           // 新增状态: 写0x1B寄存器
+             WAIT_REG_1B_DONE = 13,       // 新增状态: 等待写0x1B完成
+             ALL_DONE = 14,
+             SYNCP_HIGH = 15,
+             SYNCP_LOW = 16;
   // --- 修改结束 ---
 
-  localparam REG_COUNT = 249;
+  localparam REG_COUNT = 233;
+  // --- 修改开始: 为0x1B寄存器数据文件定义行数 ---
+  localparam REG_1B_COUNT = 14;
+  // --- 修改结束 ---
 
   reg [5:0] r_State;
   reg [9:0] r_Address;
@@ -71,11 +76,20 @@ module TX7332(
   reg [31:0] r_H016_Data;
 
   reg [41:0] r_Reg_Data [0:REG_COUNT-1];
+  
+  // --- 修改开始: 声明用于存储0x1B寄存器数据的存储器 ---
+  reg [41:0] r_Reg_1B_Data [0:REG_1B_COUNT-1];
+  // --- 修改结束 ---
+
 
   // initial 块用于从文件加载数据
   initial begin
     // 确保 reg_init_data.mem 文件与此 Verilog 文件在同一目录
     $readmemh("reg_init_data.mem", r_Reg_Data);
+    // --- 修改开始: 从 reg_1B_9channel.mem 文件加载数据 ---
+    // 确保 reg_1B_9channel.mem 文件与此 Verilog 文件在同一目录
+    $readmemh("reg_1B_9channel.mem", r_Reg_1B_Data);
+    // --- 修改结束 ---
   end
 
   // 实例化时钟分频器
@@ -91,6 +105,11 @@ module TX7332(
 
   `define REG_ADDR(idx) r_Reg_Data[idx][41:32]
   `define REG_DATA(idx) r_Reg_Data[idx][31:0]
+  
+  // --- 修改开始: 定义用于访问0x1B数据的宏 ---
+  `define REG_1B_ADDR(idx) r_Reg_1B_Data[idx][41:32]
+  `define REG_1B_DATA(idx) r_Reg_1B_Data[idx][31:0]
+  // --- 修改结束 ---
 
   // 假设 SPI_Master_42Bit 模块在项目中是可用的
   SPI_Master_42Bit #(.CLKS_PER_HALF_BIT(4)) SPI_Master_Inst (
@@ -136,6 +155,9 @@ module TX7332(
       o_SYNCP <= 1'b0;
       // 初始化h016的数据
       r_H016_Data <= 32'h00040004;
+      // --- 修改开始: 初始化 o_del_num ---
+      o_del_num <= 8'b0;
+      // --- 修改结束 ---
     end else begin
       case (r_State)
         IDLE: begin
@@ -194,7 +216,7 @@ module TX7332(
 
         READ_CHECK_REG: begin
           if (w_TX_Ready) begin
-            Write_SPI(`REG_ADDR(246), 32'h00000000); 
+            Write_SPI(`REG_ADDR(230), 32'h00000000); 
             r_State <= WAIT_FOR_READ_AND_CHECK;
           end
         end
@@ -202,7 +224,8 @@ module TX7332(
         WAIT_FOR_READ_AND_CHECK: begin
           Stop_TX();
           if (w_RX_DV) begin
-            if (w_Read_Data == `REG_DATA(246)) begin
+            if (w_Read_Data == `REG_DATA(230)) begin
+              // 首次进入循环时，直接进入 PRE_WRITE_H016 状态
               r_State <= ALL_DONE;
             end else begin
               r_Retry_Wait_Count <= 0;
@@ -219,7 +242,6 @@ module TX7332(
           end
         end
         
-        // --- 修改开始: 插入新的三状态写逻辑 ---
         PRE_WRITE_H016: begin
           if (w_TX_Ready) begin
             // 步骤1: 发送对h000的预备写操作
@@ -240,8 +262,9 @@ module TX7332(
         WAIT_H016_DONE: begin
           Stop_TX();
           if (w_TX_Ready) begin
+            // h016写入完成。准备更新下一次循环的值，并进入写0x1B的状态。
             // 步骤3: 更新h016的数据以备下次循环使用
-            if (r_H016_Data >= 32'hE004E004) begin
+            if (r_H016_Data >= 32'hD004D004) begin
               r_H016_Data <= 32'h00040004; // 到达最大值，回滚到初始值
               o_del_num <= o_del_num + 1;
             end
@@ -253,19 +276,38 @@ module TX7332(
                  end
                  r_H016_Data <= r_H016_Data + 32'h10001000;
             end
-//            else if(r_H016_Data == 32'h70047004) begin
-//              r_H016_Data <= 32'hE004E004; // 叠加步进值
-//              o_del_num <= 2;
-//            end
-//            else if(r_H016_Data == 32'h00040004) begin
-//                r_H016_Data <= 32'h70047004;
-//                o_del_num <= 1;
-//            end
-//            else begin
-//                r_H016_Data <= 32'h00040004;
-//                o_del_num <= 0;
-//            end
-            // 写操作序列完成，返回到主循环的ALL_DONE状态
+            
+            // --- 修改开始: 转换到写0x1B寄存器的状态，而不是ALL_DONE ---
+            r_State <= WRITE_REG_1B;
+            // --- 修改结束 ---
+          end
+        end
+        
+        // --- 修改开始: 插入用于写0x1B寄存器的新状态 ---
+        WRITE_REG_1B: begin
+          if (w_TX_Ready) begin
+            // 步骤4: 根据 o_del_num 的当前值，从内存中选择数据并写入0x1B寄存器
+            // o_del_num 的值是在上一个状态(WAIT_H016_DONE)中为下一次循环准备的，
+            // 但在这里我们使用它来选择与刚刚完成的h016写操作相对应的数据。
+            // 确保 o_del_num 不会超出内存数组的边界。
+            
+            if (o_del_num < REG_1B_COUNT) begin
+                Write_SPI(`REG_1B_ADDR(o_del_num), `REG_1B_DATA(o_del_num));
+            end else begin
+                // 如果 o_del_num 超出范围，可以写入一个默认值或第一个值
+                Write_SPI(`REG_1B_ADDR(0), `REG_1B_DATA(0));
+            end
+
+            // Write_SPI(`REG_1B_ADDR(5), `REG_1B_DATA(5));
+            
+            r_State <= WAIT_REG_1B_DONE;
+          end
+        end
+
+        WAIT_REG_1B_DONE: begin
+          Stop_TX();
+          if (w_TX_Ready) begin
+            // 步骤5: 0x1B寄存器写入完成，现在整个写序列完成，进入ALL_DONE
             r_State <= ALL_DONE;
           end
         end
@@ -288,10 +330,9 @@ module TX7332(
         end
 
         SYNCP_LOW: begin
-          if (r_SYNCP_Low_Count >= 28'd16666) begin
-            // --- 修改开始: 改变状态转换目标到新的写序列 ---
-            r_State <= PRE_WRITE_H016; // 原为 r_State <= ALL_DONE;
-            // --- 修改结束 ---
+          if (r_SYNCP_Low_Count >= 28'd166660) begin
+            // 循环结束，返回到写h016之前的准备状态，开始下一次循环
+            r_State <= ALL_DONE;
           end else begin
             r_SYNCP_Low_Count <= r_SYNCP_Low_Count + 1;
           end

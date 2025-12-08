@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7k325tffg900-2" LaunchTime="1764765698">
+<GenRun Id="impl_1" LaunchPart="xc7k325tffg900-2" LaunchTime="1764925542">
   <File Type="ROUTE-PWR" Name="JESD204_UDP_TOP_power_routed.rpt"/>
   <File Type="PA-TCL" Name="JESD204_UDP_TOP.tcl"/>
   <File Type="BITSTR-MMI" Name="JESD204_UDP_TOP.mmi"/>
@@ -82,13 +82,6 @@
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/bd/design_1/design_1.bd">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/ip/fifo_jesd_2_eth/fifo_jesd_2_eth.xci">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -263,6 +256,12 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
+    <File Path="$PSRCDIR/sources_1/new/reg_1B_9channel.mem">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
       <Option Name="TopModule" Val="JESD204_UDP_TOP"/>
@@ -313,5 +312,6 @@
   <BlockFileSet Type="BlockSrcs" Name="design_1_jesd204_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="design_1_jesd204_0_1"/>
   <BlockFileSet Type="BlockSrcs" Name="design_1_jesd204_phy_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="fifo_jesd_2_eth"/>
   <BlockFileSet Type="BlockSrcs" Name="clk_wiz_0"/>
 </GenRun>

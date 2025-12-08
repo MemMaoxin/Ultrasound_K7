@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
-| Date             : Wed Dec  3 20:45:39 2025
+| Date             : Fri Dec  5 17:10:37 2025
 | Host             : LAPTOP-QE70SMI5 running 64-bit major release  (build 9200)
 | Command          : report_power -file JESD204_UDP_TOP_power_routed.rpt -pb JESD204_UDP_TOP_power_summary_routed.pb -rpx JESD204_UDP_TOP_power_routed.rpx
 | Design           : JESD204_UDP_TOP
@@ -30,11 +30,11 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 2.104        |
+| Total On-Chip Power (W)  | 2.091        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 1.915        |
-| Device Static (W)        | 0.189        |
+| Dynamic (W)              | 1.904        |
+| Device Static (W)        | 0.187        |
 | Effective TJA (C/W)      | 1.8          |
 | Max Ambient (C)          | 81.3         |
 | Junction Temperature (C) | 28.7         |
@@ -52,24 +52,24 @@ Table of Contents
 +--------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
-| Clocks                   |     0.054 |       41 |       --- |             --- |
-| Slice Logic              |     0.009 |    13327 |       --- |             --- |
-|   LUT as Logic           |     0.008 |     5882 |    203800 |            2.89 |
+| Clocks                   |     0.049 |       41 |       --- |             --- |
+| Slice Logic              |     0.009 |    12789 |       --- |             --- |
+|   LUT as Logic           |     0.007 |     5600 |    203800 |            2.75 |
 |   LUT as Distributed RAM |    <0.001 |      176 |     64000 |            0.28 |
-|   CARRY4                 |    <0.001 |      351 |     50950 |            0.69 |
-|   Register               |    <0.001 |     4996 |    407600 |            1.23 |
-|   F7/F8 Muxes            |    <0.001 |      261 |    203800 |            0.13 |
+|   CARRY4                 |    <0.001 |      344 |     50950 |            0.68 |
+|   Register               |    <0.001 |     4904 |    407600 |            1.20 |
+|   F7/F8 Muxes            |    <0.001 |      164 |    203800 |            0.08 |
 |   LUT as Shift Register  |    <0.001 |       41 |     64000 |            0.06 |
 |   BUFG                   |    <0.001 |        2 |        32 |            6.25 |
-|   Others                 |     0.000 |      526 |       --- |             --- |
+|   Others                 |     0.000 |      449 |       --- |             --- |
 |   BUFR                   |     0.000 |        2 |       208 |            0.96 |
-| Signals                  |     0.012 |    10543 |       --- |             --- |
-| Block RAM                |     0.013 |       59 |       445 |           13.26 |
+| Signals                  |     0.010 |    10070 |       --- |             --- |
+| Block RAM                |     0.006 |       33 |       445 |            7.42 |
 | MMCM                     |     0.119 |        1 |        10 |           10.00 |
-| I/O                      |     0.099 |       28 |       500 |            5.60 |
+| I/O                      |     0.102 |       28 |       500 |            5.60 |
 | GTX                      |     1.609 |        8 |        16 |           50.00 |
-| Static Power             |     0.189 |          |           |                 |
-| Total                    |     2.104 |          |           |                 |
+| Static Power             |     0.187 |          |           |                 |
+| Total                    |     2.091 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -79,16 +79,16 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
-| Vccint    |       1.000 |     0.315 |       0.234 |      0.080 |       NA    | Unspecified | NA         |
+| Vccint    |       1.000 |     0.301 |       0.221 |      0.080 |       NA    | Unspecified | NA         |
 | Vccaux    |       1.800 |     0.101 |       0.073 |      0.029 |       NA    | Unspecified | NA         |
-| Vcco33    |       3.300 |     0.014 |       0.013 |      0.001 |       NA    | Unspecified | NA         |
+| Vcco33    |       3.300 |     0.015 |       0.014 |      0.001 |       NA    | Unspecified | NA         |
 | Vcco25    |       2.500 |     0.018 |       0.017 |      0.001 |       NA    | Unspecified | NA         |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco12    |       1.200 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vccaux_io |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
-| Vccbram   |       1.000 |     0.005 |       0.001 |      0.004 |       NA    | Unspecified | NA         |
+| Vccbram   |       1.000 |     0.003 |       0.001 |      0.003 |       NA    | Unspecified | NA         |
 | MGTAVcc   |       1.000 |     0.702 |       0.697 |      0.005 |       NA    | Unspecified | NA         |
 | MGTAVtt   |       1.200 |     0.645 |       0.640 |      0.005 |       NA    | Unspecified | NA         |
 | MGTVccaux |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
@@ -155,14 +155,14 @@ Table of Contents
 +------------------------------+-----------+
 | Name                         | Power (W) |
 +------------------------------+-----------+
-| JESD204_UDP_TOP              |     1.915 |
-|   fifo_jesd_2_eth_inst       |     0.016 |
-|     U0                       |     0.016 |
-|       inst_fifo_gen          |     0.016 |
-|   net_udp_loop_inst1         |     0.024 |
+| JESD204_UDP_TOP              |     1.904 |
+|   fifo_jesd_2_eth_inst       |     0.006 |
+|     U0                       |     0.006 |
+|       inst_fifo_gen          |     0.006 |
+|   net_udp_loop_inst1         |     0.023 |
 |     inst_RTL8211_Config_IP_0 |     0.001 |
 |       inst                   |     0.001 |
-|     u_arp                    |     0.005 |
+|     u_arp                    |     0.004 |
 |       u_arp_rx               |     0.003 |
 |       u_arp_tx               |     0.001 |
 |     u_fifo_4096x32           |     0.006 |
@@ -172,11 +172,11 @@ Table of Contents
 |     u_udp                    |     0.006 |
 |       u_crc32_d8             |     0.001 |
 |       u_udp_tx               |     0.004 |
-|   top_jesd204_inst           |     1.695 |
-|     design_1_wrapper_inst    |     1.650 |
-|       design_1_i             |     1.650 |
-|   u_TX7332                   |     0.005 |
-|     Clock_Divider_Inst       |     0.003 |
+|   top_jesd204_inst           |     1.693 |
+|     design_1_wrapper_inst    |     1.648 |
+|       design_1_i             |     1.648 |
+|   u_TX7332                   |     0.004 |
+|     Clock_Divider_Inst       |     0.002 |
 |     SPI_Master_Inst          |     0.001 |
 |   u_clk_wiz                  |     0.126 |
 |     inst                     |     0.126 |

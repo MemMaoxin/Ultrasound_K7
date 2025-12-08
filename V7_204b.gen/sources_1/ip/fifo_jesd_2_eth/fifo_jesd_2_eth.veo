@@ -63,8 +63,8 @@ fifo_jesd_2_eth your_instance_name (
   .dout(dout),                    // output wire [31 : 0] dout
   .full(full),                    // output wire full
   .empty(empty),                  // output wire empty
-  .rd_data_count(rd_data_count),  // output wire [14 : 0] rd_data_count
-  .wr_data_count(wr_data_count)  // output wire [15 : 0] wr_data_count
+  .rd_data_count(rd_data_count),  // output wire [11 : 0] rd_data_count
+  .wr_data_count(wr_data_count)  // output wire [12 : 0] wr_data_count
 );
 // INST_TAG_END ------ End INSTANTIATION Template ---------
 
