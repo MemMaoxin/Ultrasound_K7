@@ -226,7 +226,8 @@ module TX7332(
           if (w_RX_DV) begin
             if (w_Read_Data == `REG_DATA(230)) begin
               // 首次进入循环时，直接进入 PRE_WRITE_H016 状态
-              r_State <= ALL_DONE;
+              // r_State <= ALL_DONE;
+              r_State <= PRE_WRITE_H016;
             end else begin
               r_Retry_Wait_Count <= 0;
               r_State <= WAIT_FOR_RETRY;
@@ -330,9 +331,10 @@ module TX7332(
         end
 
         SYNCP_LOW: begin
-          if (r_SYNCP_Low_Count >= 28'd166660) begin
+          if (r_SYNCP_Low_Count >= 28'd12000) begin
             // 循环结束，返回到写h016之前的准备状态，开始下一次循环
-            r_State <= ALL_DONE;
+            // r_State <= ALL_DONE;
+            r_State <= PRE_WRITE_H016;
           end else begin
             r_SYNCP_Low_Count <= r_SYNCP_Low_Count + 1;
           end
