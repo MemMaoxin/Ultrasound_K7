@@ -119,9 +119,9 @@ net_udp_loop  net_udp_loop_inst1(
 wire [255:0] rx_data;
 wire rx_valid;
 
-wire [15:0] fifo_din;
-assign fifo_din = rx_data[239:224];
-
+wire [255:0] fifo_din;
+//assign fifo_din = rx_data[239:224];
+assign fifo_din = rx_data[255:0];
 
  fifo_jesd_2_eth fifo_jesd_2_eth_inst (
   .wr_clk(clk_120),                // input wire wr_clk
@@ -244,6 +244,8 @@ end
   .rx_data        (rx_data ),
   .rx_valid       (rx_valid)
     ); 
+     
+     
      
     // --- ÊµÀý»¯ TX7332 Ä£¿é ---
     TX7332 u_TX7332 (

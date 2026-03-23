@@ -51,7 +51,7 @@ module TX7332(
              SYNCP_LOW = 16;
   // --- 修改结束 ---
 
-  localparam REG_COUNT = 233;
+  localparam REG_COUNT = 250;
   // --- 修改开始: 为0x1B寄存器数据文件定义行数 ---
   localparam REG_1B_COUNT = 14;
   // --- 修改结束 ---
@@ -154,15 +154,18 @@ module TX7332(
       r_Retry_Wait_Count <= 0;
       o_SYNCP <= 1'b0;
       // 初始化h016的数据
-      r_H016_Data <= 32'h00040004;
+      r_H016_Data <= 32'h80048004;
       // --- 修改开始: 初始化 o_del_num ---
-      o_del_num <= 8'b0;
+      o_del_num <= 8'd8;
       // --- 修改结束 ---
     end else begin
       case (r_State)
         IDLE: begin
           o_SYNCP <= 1'b0;
-          o_del_num <= 8'b0;
+//          o_del_num <= 8'b0;
+          r_H016_Data <= 32'h80048004;
+          o_del_num <= 8'd8;
+          
           if (w_TX_Ready) begin
             Write_SPI(10'h000, 32'h00000000);
             r_State <= RESET_00H;
@@ -216,7 +219,7 @@ module TX7332(
 
         READ_CHECK_REG: begin
           if (w_TX_Ready) begin
-            Write_SPI(`REG_ADDR(230), 32'h00000000); 
+            Write_SPI(`REG_ADDR(247), 32'h00000000); 
             r_State <= WAIT_FOR_READ_AND_CHECK;
           end
         end
@@ -224,7 +227,7 @@ module TX7332(
         WAIT_FOR_READ_AND_CHECK: begin
           Stop_TX();
           if (w_RX_DV) begin
-            if (w_Read_Data == `REG_DATA(230)) begin
+            if (w_Read_Data == `REG_DATA(247)) begin
               // 首次进入循环时，直接进入 PRE_WRITE_H016 状态
               // r_State <= ALL_DONE;
               r_State <= PRE_WRITE_H016;
@@ -256,7 +259,8 @@ module TX7332(
           if (w_TX_Ready) begin
             // 步骤2: 发送对h016的主数据写操作
             Write_SPI(10'h016, r_H016_Data);
-            r_State <= WAIT_H016_DONE;
+//            r_State <= WAIT_H016_DONE;
+            r_State <= WAIT_REG_1B_DONE;
           end
         end
 
@@ -265,7 +269,7 @@ module TX7332(
           if (w_TX_Ready) begin
             // h016写入完成。准备更新下一次循环的值，并进入写0x1B的状态。
             // 步骤3: 更新h016的数据以备下次循环使用
-            if (r_H016_Data >= 32'hD004D004) begin
+            if (r_H016_Data >= 32'hE004E004) begin
               r_H016_Data <= 32'h00040004; // 到达最大值，回滚到初始值
               o_del_num <= o_del_num + 1;
             end
@@ -279,7 +283,7 @@ module TX7332(
             end
             
             // --- 修改开始: 转换到写0x1B寄存器的状态，而不是ALL_DONE ---
-            r_State <= WRITE_REG_1B;
+            r_State <= WAIT_REG_1B_DONE;
             // --- 修改结束 ---
           end
         end
@@ -331,10 +335,10 @@ module TX7332(
         end
 
         SYNCP_LOW: begin
-          if (r_SYNCP_Low_Count >= 28'd12000) begin
+          if (r_SYNCP_Low_Count >= 28'd1200000) begin
             // 循环结束，返回到写h016之前的准备状态，开始下一次循环
-            // r_State <= ALL_DONE;
-            r_State <= PRE_WRITE_H016;
+             r_State <= ALL_DONE;
+//            r_State <= PRE_WRITE_H016;
           end else begin
             r_SYNCP_Low_Count <= r_SYNCP_Low_Count + 1;
           end

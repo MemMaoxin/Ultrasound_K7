@@ -2,8 +2,8 @@
 # Vivado v2022.2 (64-bit)
 # SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
 # IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
-# Start of session at: Thu Dec 11 20:23:21 2025
-# Process ID: 23184
+# Start of session at: Wed Mar 18 16:47:13 2026
+# Process ID: 7612
 # Current directory: C:/Users/maoxi/Desktop/CUHKProject/Ultrasonic/Kintex7/Code/V7_204b_2/V7_204b.runs/synth_1
 # Command line: vivado.exe -log JESD204_UDP_TOP.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source JESD204_UDP_TOP.tcl
 # Log file: C:/Users/maoxi/Desktop/CUHKProject/Ultrasonic/Kintex7/Code/V7_204b_2/V7_204b.runs/synth_1/JESD204_UDP_TOP.vds
@@ -28,7 +28,7 @@ INFO: [Designutils 20-5440] No compile time benefit to using incremental synthes
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 29488
+INFO: [Synth 8-7075] Helper process launched with PID 27224
 INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
 INFO: [Synth 8-11241] undeclared symbol 'capture_en', assumed default net type 'wire' [C:/Users/maoxi/Desktop/CUHKProject/Ultrasonic/Kintex7/Code/V7_204b_2/V7_204b.srcs/sources_1/new/JESD204_UDP_TOP.v:108]
 INFO: [Synth 8-11241] undeclared symbol 'o_del_num', assumed default net type 'wire' [C:/Users/maoxi/Desktop/CUHKProject/Ultrasonic/Kintex7/Code/V7_204b_2/V7_204b.srcs/sources_1/new/JESD204_UDP_TOP.v:111]
@@ -36,11 +36,11 @@ WARNING: [Synth 8-8895] 'capture_en' is already implicitly declared on line 108 
 WARNING: [Synth 8-8895] 'o_del_num' is already implicitly declared on line 111 [C:/Users/maoxi/Desktop/CUHKProject/Ultrasonic/Kintex7/Code/V7_204b_2/V7_204b.srcs/sources_1/new/JESD204_UDP_TOP.v:161]
 WARNING: [Synth 8-6901] identifier 'capture_en' is used before its declaration [C:/Users/maoxi/Desktop/CUHKProject/Ultrasonic/Kintex7/Code/V7_204b_2/V7_204b.srcs/sources_1/new/JESD204_UDP_TOP.v:62]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1802.309 ; gain = 410.594
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1801.977 ; gain = 410.148
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'JESD204_UDP_TOP' [C:/Users/maoxi/Desktop/CUHKProject/Ultrasonic/Kintex7/Code/V7_204b_2/V7_204b.srcs/sources_1/new/JESD204_UDP_TOP.v:27]
-INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [C:/Users/maoxi/Desktop/CUHKProject/Ultrasonic/Kintex7/Code/V7_204b_2/V7_204b.runs/synth_1/.Xil/Vivado-23184-LAPTOP-QE70SMI5/realtime/clk_wiz_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (0#1) [C:/Users/maoxi/Desktop/CUHKProject/Ultrasonic/Kintex7/Code/V7_204b_2/V7_204b.runs/synth_1/.Xil/Vivado-23184-LAPTOP-QE70SMI5/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [C:/Users/maoxi/Desktop/CUHKProject/Ultrasonic/Kintex7/Code/V7_204b_2/V7_204b.runs/synth_1/.Xil/Vivado-7612-LAPTOP-QE70SMI5/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (0#1) [C:/Users/maoxi/Desktop/CUHKProject/Ultrasonic/Kintex7/Code/V7_204b_2/V7_204b.runs/synth_1/.Xil/Vivado-7612-LAPTOP-QE70SMI5/realtime/clk_wiz_0_stub.v:5]
 WARNING: [Synth 8-7071] port 'locked' of module 'clk_wiz_0' is unconnected for instance 'u_clk_wiz' [C:/Users/maoxi/Desktop/CUHKProject/Ultrasonic/Kintex7/Code/V7_204b_2/V7_204b.srcs/sources_1/new/JESD204_UDP_TOP.v:69]
 WARNING: [Synth 8-7023] instance 'u_clk_wiz' of module 'clk_wiz_0' has 8 connections declared, but only 7 given [C:/Users/maoxi/Desktop/CUHKProject/Ultrasonic/Kintex7/Code/V7_204b_2/V7_204b.srcs/sources_1/new/JESD204_UDP_TOP.v:69]
 WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [C:/Users/maoxi/Desktop/CUHKProject/Ultrasonic/Kintex7/Code/V7_204b_2/V7_204b.srcs/sources_1/new/JESD204_UDP_TOP.v:86]
@@ -121,16 +121,16 @@ INFO: [Synth 8-6157] synthesizing module 'udp_tx' [C:/Users/maoxi/Desktop/CUHKPr
 INFO: [Synth 8-6155] done synthesizing module 'udp_tx' (0#1) [C:/Users/maoxi/Desktop/CUHKProject/Ultrasonic/Kintex7/Code/V7_204b_2/V7_204b.srcs/sources_1/new/udp_tx.v:2]
 INFO: [Synth 8-6155] done synthesizing module 'udp' (0#1) [C:/Users/maoxi/Desktop/CUHKProject/Ultrasonic/Kintex7/Code/V7_204b_2/V7_204b.srcs/sources_1/new/udp.v:2]
 INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/maoxi/Desktop/CUHKProject/Ultrasonic/Kintex7/Code/V7_204b_2/V7_204b.srcs/sources_1/new/net_udp_loop.v:193]
-INFO: [Synth 8-6157] synthesizing module 'fifo_4096x32' [C:/Users/maoxi/Desktop/CUHKProject/Ultrasonic/Kintex7/Code/V7_204b_2/V7_204b.runs/synth_1/.Xil/Vivado-23184-LAPTOP-QE70SMI5/realtime/fifo_4096x32_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'fifo_4096x32' (0#1) [C:/Users/maoxi/Desktop/CUHKProject/Ultrasonic/Kintex7/Code/V7_204b_2/V7_204b.runs/synth_1/.Xil/Vivado-23184-LAPTOP-QE70SMI5/realtime/fifo_4096x32_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'fifo_4096x32' [C:/Users/maoxi/Desktop/CUHKProject/Ultrasonic/Kintex7/Code/V7_204b_2/V7_204b.runs/synth_1/.Xil/Vivado-7612-LAPTOP-QE70SMI5/realtime/fifo_4096x32_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'fifo_4096x32' (0#1) [C:/Users/maoxi/Desktop/CUHKProject/Ultrasonic/Kintex7/Code/V7_204b_2/V7_204b.runs/synth_1/.Xil/Vivado-7612-LAPTOP-QE70SMI5/realtime/fifo_4096x32_stub.v:5]
 WARNING: [Synth 8-7071] port 'wr_rst_busy' of module 'fifo_4096x32' is unconnected for instance 'u_fifo_4096x32' [C:/Users/maoxi/Desktop/CUHKProject/Ultrasonic/Kintex7/Code/V7_204b_2/V7_204b.srcs/sources_1/new/net_udp_loop.v:282]
 WARNING: [Synth 8-7071] port 'rd_rst_busy' of module 'fifo_4096x32' is unconnected for instance 'u_fifo_4096x32' [C:/Users/maoxi/Desktop/CUHKProject/Ultrasonic/Kintex7/Code/V7_204b_2/V7_204b.srcs/sources_1/new/net_udp_loop.v:282]
 WARNING: [Synth 8-7023] instance 'u_fifo_4096x32' of module 'fifo_4096x32' has 11 connections declared, but only 9 given [C:/Users/maoxi/Desktop/CUHKProject/Ultrasonic/Kintex7/Code/V7_204b_2/V7_204b.srcs/sources_1/new/net_udp_loop.v:282]
 INFO: [Synth 8-6157] synthesizing module 'net_ctrl' [C:/Users/maoxi/Desktop/CUHKProject/Ultrasonic/Kintex7/Code/V7_204b_2/V7_204b.srcs/sources_1/new/net_ctrl.v:2]
 INFO: [Synth 8-6155] done synthesizing module 'net_ctrl' (0#1) [C:/Users/maoxi/Desktop/CUHKProject/Ultrasonic/Kintex7/Code/V7_204b_2/V7_204b.srcs/sources_1/new/net_ctrl.v:2]
 INFO: [Synth 8-6155] done synthesizing module 'net_udp_loop' (0#1) [C:/Users/maoxi/Desktop/CUHKProject/Ultrasonic/Kintex7/Code/V7_204b_2/V7_204b.srcs/sources_1/new/net_udp_loop.v:1]
-INFO: [Synth 8-6157] synthesizing module 'fifo_jesd_2_eth' [C:/Users/maoxi/Desktop/CUHKProject/Ultrasonic/Kintex7/Code/V7_204b_2/V7_204b.runs/synth_1/.Xil/Vivado-23184-LAPTOP-QE70SMI5/realtime/fifo_jesd_2_eth_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'fifo_jesd_2_eth' (0#1) [C:/Users/maoxi/Desktop/CUHKProject/Ultrasonic/Kintex7/Code/V7_204b_2/V7_204b.runs/synth_1/.Xil/Vivado-23184-LAPTOP-QE70SMI5/realtime/fifo_jesd_2_eth_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'fifo_jesd_2_eth' [C:/Users/maoxi/Desktop/CUHKProject/Ultrasonic/Kintex7/Code/V7_204b_2/V7_204b.runs/synth_1/.Xil/Vivado-7612-LAPTOP-QE70SMI5/realtime/fifo_jesd_2_eth_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'fifo_jesd_2_eth' (0#1) [C:/Users/maoxi/Desktop/CUHKProject/Ultrasonic/Kintex7/Code/V7_204b_2/V7_204b.runs/synth_1/.Xil/Vivado-7612-LAPTOP-QE70SMI5/realtime/fifo_jesd_2_eth_stub.v:5]
 INFO: [Synth 8-6157] synthesizing module 'top_jesd204' [C:/Users/maoxi/Desktop/CUHKProject/Ultrasonic/Kintex7/Code/V7_204b_2/V7_204b.srcs/sources_1/new/top_jesd204.v:23]
 INFO: [Synth 8-6157] synthesizing module 'IBUFDS' [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:71342]
 	Parameter DIFF_TERM bound to: TRUE - type: string 
@@ -150,13 +150,13 @@ INFO: [Synth 8-6157] synthesizing module 'reset_204' [C:/Users/maoxi/Desktop/CUH
 INFO: [Synth 8-6155] done synthesizing module 'reset_204' (0#1) [C:/Users/maoxi/Desktop/CUHKProject/Ultrasonic/Kintex7/Code/V7_204b_2/V7_204b.srcs/sources_1/new/reset_204.v:23]
 INFO: [Synth 8-6157] synthesizing module 'design_1_wrapper' [C:/Users/maoxi/Desktop/CUHKProject/Ultrasonic/Kintex7/Code/V7_204b_2/V7_204b.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:12]
 INFO: [Synth 8-6157] synthesizing module 'design_1' [c:/Users/maoxi/Desktop/CUHKProject/Ultrasonic/Kintex7/Code/V7_204b_2/V7_204b.gen/sources_1/bd/design_1/synth/design_1.v:12]
-INFO: [Synth 8-6157] synthesizing module 'design_1_jesd204_phy_0_0' [C:/Users/maoxi/Desktop/CUHKProject/Ultrasonic/Kintex7/Code/V7_204b_2/V7_204b.runs/synth_1/.Xil/Vivado-23184-LAPTOP-QE70SMI5/realtime/design_1_jesd204_phy_0_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_jesd204_phy_0_0' (0#1) [C:/Users/maoxi/Desktop/CUHKProject/Ultrasonic/Kintex7/Code/V7_204b_2/V7_204b.runs/synth_1/.Xil/Vivado-23184-LAPTOP-QE70SMI5/realtime/design_1_jesd204_phy_0_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'design_1_jesd204_phy_0_0' [C:/Users/maoxi/Desktop/CUHKProject/Ultrasonic/Kintex7/Code/V7_204b_2/V7_204b.runs/synth_1/.Xil/Vivado-7612-LAPTOP-QE70SMI5/realtime/design_1_jesd204_phy_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_jesd204_phy_0_0' (0#1) [C:/Users/maoxi/Desktop/CUHKProject/Ultrasonic/Kintex7/Code/V7_204b_2/V7_204b.runs/synth_1/.Xil/Vivado-7612-LAPTOP-QE70SMI5/realtime/design_1_jesd204_phy_0_0_stub.v:5]
 WARNING: [Synth 8-7071] port 'txoutclk' of module 'design_1_jesd204_phy_0_0' is unconnected for instance 'jesd204_phy_0' [c:/Users/maoxi/Desktop/CUHKProject/Ultrasonic/Kintex7/Code/V7_204b_2/V7_204b.gen/sources_1/bd/design_1/synth/design_1.v:262]
 WARNING: [Synth 8-7071] port 'rxoutclk' of module 'design_1_jesd204_phy_0_0' is unconnected for instance 'jesd204_phy_0' [c:/Users/maoxi/Desktop/CUHKProject/Ultrasonic/Kintex7/Code/V7_204b_2/V7_204b.gen/sources_1/bd/design_1/synth/design_1.v:262]
 WARNING: [Synth 8-7023] instance 'jesd204_phy_0' of module 'design_1_jesd204_phy_0_0' has 66 connections declared, but only 64 given [c:/Users/maoxi/Desktop/CUHKProject/Ultrasonic/Kintex7/Code/V7_204b_2/V7_204b.gen/sources_1/bd/design_1/synth/design_1.v:262]
-INFO: [Synth 8-6157] synthesizing module 'design_1_jesd204_0_1' [C:/Users/maoxi/Desktop/CUHKProject/Ultrasonic/Kintex7/Code/V7_204b_2/V7_204b.runs/synth_1/.Xil/Vivado-23184-LAPTOP-QE70SMI5/realtime/design_1_jesd204_0_1_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_jesd204_0_1' (0#1) [C:/Users/maoxi/Desktop/CUHKProject/Ultrasonic/Kintex7/Code/V7_204b_2/V7_204b.runs/synth_1/.Xil/Vivado-23184-LAPTOP-QE70SMI5/realtime/design_1_jesd204_0_1_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'design_1_jesd204_0_1' [C:/Users/maoxi/Desktop/CUHKProject/Ultrasonic/Kintex7/Code/V7_204b_2/V7_204b.runs/synth_1/.Xil/Vivado-7612-LAPTOP-QE70SMI5/realtime/design_1_jesd204_0_1_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_jesd204_0_1' (0#1) [C:/Users/maoxi/Desktop/CUHKProject/Ultrasonic/Kintex7/Code/V7_204b_2/V7_204b.runs/synth_1/.Xil/Vivado-7612-LAPTOP-QE70SMI5/realtime/design_1_jesd204_0_1_stub.v:5]
 WARNING: [Synth 8-7071] port 'rx_aresetn' of module 'design_1_jesd204_0_1' is unconnected for instance 'jesd204_rec' [c:/Users/maoxi/Desktop/CUHKProject/Ultrasonic/Kintex7/Code/V7_204b_2/V7_204b.gen/sources_1/bd/design_1/synth/design_1.v:327]
 WARNING: [Synth 8-7071] port 'rx_start_of_frame' of module 'design_1_jesd204_0_1' is unconnected for instance 'jesd204_rec' [c:/Users/maoxi/Desktop/CUHKProject/Ultrasonic/Kintex7/Code/V7_204b_2/V7_204b.gen/sources_1/bd/design_1/synth/design_1.v:327]
 WARNING: [Synth 8-7071] port 'rx_end_of_frame' of module 'design_1_jesd204_0_1' is unconnected for instance 'jesd204_rec' [c:/Users/maoxi/Desktop/CUHKProject/Ultrasonic/Kintex7/Code/V7_204b_2/V7_204b.gen/sources_1/bd/design_1/synth/design_1.v:327]
@@ -164,8 +164,8 @@ WARNING: [Synth 8-7071] port 'rx_start_of_multiframe' of module 'design_1_jesd20
 WARNING: [Synth 8-7071] port 'rx_end_of_multiframe' of module 'design_1_jesd204_0_1' is unconnected for instance 'jesd204_rec' [c:/Users/maoxi/Desktop/CUHKProject/Ultrasonic/Kintex7/Code/V7_204b_2/V7_204b.gen/sources_1/bd/design_1/synth/design_1.v:327]
 WARNING: [Synth 8-7071] port 'rx_frame_error' of module 'design_1_jesd204_0_1' is unconnected for instance 'jesd204_rec' [c:/Users/maoxi/Desktop/CUHKProject/Ultrasonic/Kintex7/Code/V7_204b_2/V7_204b.gen/sources_1/bd/design_1/synth/design_1.v:327]
 WARNING: [Synth 8-7023] instance 'jesd204_rec' of module 'design_1_jesd204_0_1' has 66 connections declared, but only 60 given [c:/Users/maoxi/Desktop/CUHKProject/Ultrasonic/Kintex7/Code/V7_204b_2/V7_204b.gen/sources_1/bd/design_1/synth/design_1.v:327]
-INFO: [Synth 8-6157] synthesizing module 'design_1_jesd204_0_0' [C:/Users/maoxi/Desktop/CUHKProject/Ultrasonic/Kintex7/Code/V7_204b_2/V7_204b.runs/synth_1/.Xil/Vivado-23184-LAPTOP-QE70SMI5/realtime/design_1_jesd204_0_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_jesd204_0_0' (0#1) [C:/Users/maoxi/Desktop/CUHKProject/Ultrasonic/Kintex7/Code/V7_204b_2/V7_204b.runs/synth_1/.Xil/Vivado-23184-LAPTOP-QE70SMI5/realtime/design_1_jesd204_0_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'design_1_jesd204_0_0' [C:/Users/maoxi/Desktop/CUHKProject/Ultrasonic/Kintex7/Code/V7_204b_2/V7_204b.runs/synth_1/.Xil/Vivado-7612-LAPTOP-QE70SMI5/realtime/design_1_jesd204_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_jesd204_0_0' (0#1) [C:/Users/maoxi/Desktop/CUHKProject/Ultrasonic/Kintex7/Code/V7_204b_2/V7_204b.runs/synth_1/.Xil/Vivado-7612-LAPTOP-QE70SMI5/realtime/design_1_jesd204_0_0_stub.v:5]
 WARNING: [Synth 8-7071] port 'tx_aresetn' of module 'design_1_jesd204_0_0' is unconnected for instance 'jesd204_trans' [c:/Users/maoxi/Desktop/CUHKProject/Ultrasonic/Kintex7/Code/V7_204b_2/V7_204b.gen/sources_1/bd/design_1/synth/design_1.v:388]
 WARNING: [Synth 8-7071] port 'tx_start_of_frame' of module 'design_1_jesd204_0_0' is unconnected for instance 'jesd204_trans' [c:/Users/maoxi/Desktop/CUHKProject/Ultrasonic/Kintex7/Code/V7_204b_2/V7_204b.gen/sources_1/bd/design_1/synth/design_1.v:388]
 WARNING: [Synth 8-7071] port 'tx_start_of_multiframe' of module 'design_1_jesd204_0_0' is unconnected for instance 'jesd204_trans' [c:/Users/maoxi/Desktop/CUHKProject/Ultrasonic/Kintex7/Code/V7_204b_2/V7_204b.gen/sources_1/bd/design_1/synth/design_1.v:388]
@@ -178,9 +178,9 @@ INFO: [Synth 8-6155] done synthesizing module 'top_jesd204' (0#1) [C:/Users/maox
 INFO: [Synth 8-6157] synthesizing module 'TX7332' [C:/Users/maoxi/Desktop/CUHKProject/Ultrasonic/Kintex7/Code/V7_204b_2/V7_204b.srcs/sources_1/new/TX7332.v:22]
 INFO: [Synth 8-3876] $readmem data file 'reg_init_data.mem' is read successfully [C:/Users/maoxi/Desktop/CUHKProject/Ultrasonic/Kintex7/Code/V7_204b_2/V7_204b.srcs/sources_1/new/TX7332.v:88]
 INFO: [Synth 8-3876] $readmem data file 'reg_1B_9channel.mem' is read successfully [C:/Users/maoxi/Desktop/CUHKProject/Ultrasonic/Kintex7/Code/V7_204b_2/V7_204b.srcs/sources_1/new/TX7332.v:91]
-INFO: [Synth 8-6157] synthesizing module 'Clock_Divider' [C:/Users/maoxi/Desktop/CUHKProject/Ultrasonic/Kintex7/Code/V7_204b_2/V7_204b.srcs/sources_1/new/TX7332.v:358]
+INFO: [Synth 8-6157] synthesizing module 'Clock_Divider' [C:/Users/maoxi/Desktop/CUHKProject/Ultrasonic/Kintex7/Code/V7_204b_2/V7_204b.srcs/sources_1/new/TX7332.v:362]
 	Parameter DIVISOR bound to: 16 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'Clock_Divider' (0#1) [C:/Users/maoxi/Desktop/CUHKProject/Ultrasonic/Kintex7/Code/V7_204b_2/V7_204b.srcs/sources_1/new/TX7332.v:358]
+INFO: [Synth 8-6155] done synthesizing module 'Clock_Divider' (0#1) [C:/Users/maoxi/Desktop/CUHKProject/Ultrasonic/Kintex7/Code/V7_204b_2/V7_204b.srcs/sources_1/new/TX7332.v:362]
 INFO: [Synth 8-6157] synthesizing module 'SPI_Master_42Bit' [C:/Users/maoxi/Desktop/CUHKProject/Ultrasonic/Kintex7/Code/V7_204b_2/V7_204b.srcs/sources_1/new/SPI_Master_42Bit.v:23]
 	Parameter CLKS_PER_HALF_BIT bound to: 4 - type: integer 
 INFO: [Synth 8-6155] done synthesizing module 'SPI_Master_42Bit' (0#1) [C:/Users/maoxi/Desktop/CUHKProject/Ultrasonic/Kintex7/Code/V7_204b_2/V7_204b.srcs/sources_1/new/SPI_Master_42Bit.v:23]
@@ -297,18 +297,18 @@ WARNING: [Synth 8-7129] Port tx_data[30] in module top_jesd204 is either unconne
 WARNING: [Synth 8-7129] Port tx_data[29] in module top_jesd204 is either unconnected or has no load
 INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1928.707 ; gain = 536.992
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1927.230 ; gain = 535.402
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1928.707 ; gain = 536.992
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1927.230 ; gain = 535.402
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1928.707 ; gain = 536.992
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1927.230 ; gain = 535.402
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.100 . Memory (MB): peak = 1928.707 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.096 . Memory (MB): peak = 1927.230 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 17 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -321,12 +321,12 @@ Parsing XDC File [c:/Users/maoxi/Desktop/CUHKProject/Ultrasonic/Kintex7/Code/V7_
 Finished Parsing XDC File [c:/Users/maoxi/Desktop/CUHKProject/Ultrasonic/Kintex7/Code/V7_204b_2/V7_204b.gen/sources_1/bd/design_1/ip/design_1_jesd204_0_1/design_1_jesd204_0_1/design_1_jesd204_0_1_in_context.xdc] for cell 'top_jesd204_inst/design_1_wrapper_inst/design_1_i/jesd204_rec'
 Parsing XDC File [c:/Users/maoxi/Desktop/CUHKProject/Ultrasonic/Kintex7/Code/V7_204b_2/V7_204b.gen/sources_1/bd/design_1/ip/design_1_jesd204_phy_0_0/design_1_jesd204_phy_0_0/design_1_jesd204_phy_0_0_in_context.xdc] for cell 'top_jesd204_inst/design_1_wrapper_inst/design_1_i/jesd204_phy_0'
 Finished Parsing XDC File [c:/Users/maoxi/Desktop/CUHKProject/Ultrasonic/Kintex7/Code/V7_204b_2/V7_204b.gen/sources_1/bd/design_1/ip/design_1_jesd204_phy_0_0/design_1_jesd204_phy_0_0/design_1_jesd204_phy_0_0_in_context.xdc] for cell 'top_jesd204_inst/design_1_wrapper_inst/design_1_i/jesd204_phy_0'
+Parsing XDC File [c:/Users/maoxi/Desktop/CUHKProject/Ultrasonic/Kintex7/Code/V7_204b_2/V7_204b.gen/sources_1/ip/fifo_jesd_2_eth/fifo_jesd_2_eth/fifo_jesd_2_eth_in_context.xdc] for cell 'fifo_jesd_2_eth_inst'
+Finished Parsing XDC File [c:/Users/maoxi/Desktop/CUHKProject/Ultrasonic/Kintex7/Code/V7_204b_2/V7_204b.gen/sources_1/ip/fifo_jesd_2_eth/fifo_jesd_2_eth/fifo_jesd_2_eth_in_context.xdc] for cell 'fifo_jesd_2_eth_inst'
 Parsing XDC File [c:/Users/maoxi/Desktop/CUHKProject/Ultrasonic/Kintex7/Code/V7_204b_2/V7_204b.gen/sources_1/ip/fifo_4096x32/fifo_4096x32/fifo_4096x32_in_context.xdc] for cell 'net_udp_loop_inst1/u_fifo_4096x32'
 Finished Parsing XDC File [c:/Users/maoxi/Desktop/CUHKProject/Ultrasonic/Kintex7/Code/V7_204b_2/V7_204b.gen/sources_1/ip/fifo_4096x32/fifo_4096x32/fifo_4096x32_in_context.xdc] for cell 'net_udp_loop_inst1/u_fifo_4096x32'
 Parsing XDC File [c:/Users/maoxi/Desktop/CUHKProject/Ultrasonic/Kintex7/Code/V7_204b_2/V7_204b.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'u_clk_wiz'
 Finished Parsing XDC File [c:/Users/maoxi/Desktop/CUHKProject/Ultrasonic/Kintex7/Code/V7_204b_2/V7_204b.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'u_clk_wiz'
-Parsing XDC File [c:/Users/maoxi/Desktop/CUHKProject/Ultrasonic/Kintex7/Code/V7_204b_2/V7_204b.gen/sources_1/ip/fifo_jesd_2_eth/fifo_jesd_2_eth/fifo_jesd_2_eth_in_context.xdc] for cell 'fifo_jesd_2_eth_inst'
-Finished Parsing XDC File [c:/Users/maoxi/Desktop/CUHKProject/Ultrasonic/Kintex7/Code/V7_204b_2/V7_204b.gen/sources_1/ip/fifo_jesd_2_eth/fifo_jesd_2_eth/fifo_jesd_2_eth_in_context.xdc] for cell 'fifo_jesd_2_eth_inst'
 Parsing XDC File [C:/Users/maoxi/Desktop/CUHKProject/Ultrasonic/Kintex7/Code/V7_204b_2/V7_204b.srcs/constrs_1/new/top.xdc]
 Finished Parsing XDC File [C:/Users/maoxi/Desktop/CUHKProject/Ultrasonic/Kintex7/Code/V7_204b_2/V7_204b.srcs/constrs_1/new/top.xdc]
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/maoxi/Desktop/CUHKProject/Ultrasonic/Kintex7/Code/V7_204b_2/V7_204b.srcs/constrs_1/new/top.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/JESD204_UDP_TOP_propImpl.xdc].
@@ -335,26 +335,26 @@ Parsing XDC File [C:/Users/maoxi/Desktop/CUHKProject/Ultrasonic/Kintex7/Code/V7_
 Finished Parsing XDC File [C:/Users/maoxi/Desktop/CUHKProject/Ultrasonic/Kintex7/Code/V7_204b_2/V7_204b.runs/synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2010.590 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 2005.898 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 1 instances were transformed.
   OBUFDS => OBUFDS: 1 instance 
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.026 . Memory (MB): peak = 2010.590 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.022 . Memory (MB): peak = 2005.898 ; gain = 0.000
 WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'fifo_jesd_2_eth_inst' at clock pin 'rd_clk' is different from the actual clock period '8.000', this can lead to different synthesis results.
 WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'net_udp_loop_inst1/u_fifo_4096x32' at clock pin 'clk' is different from the actual clock period '8.000', this can lead to different synthesis results.
 INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 2012.133 ; gain = 620.418
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 2009.090 ; gain = 617.262
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7k325tffg900-2
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 2012.133 ; gain = 620.418
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 2009.090 ; gain = 617.262
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -367,12 +367,12 @@ Applied set_property KEEP_HIERARCHY = SOFT for top_jesd204_inst/design_1_wrapper
 Applied set_property KEEP_HIERARCHY = SOFT for top_jesd204_inst/design_1_wrapper_inst/design_1_i/jesd204_trans. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for top_jesd204_inst/design_1_wrapper_inst/design_1_i/jesd204_rec. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for top_jesd204_inst/design_1_wrapper_inst/design_1_i/jesd204_phy_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for fifo_jesd_2_eth_inst. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for net_udp_loop_inst1/u_fifo_4096x32. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for net_udp_loop_inst1/inst_RTL8211_Config_IP_0. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for u_clk_wiz. (constraint file  auto generated constraint).
-Applied set_property KEEP_HIERARCHY = SOFT for fifo_jesd_2_eth_inst. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 2012.133 ; gain = 620.418
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 2009.090 ; gain = 617.262
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'cur_state_reg' in module 'mdio_dri'
 INFO: [Synth 8-802] inferred FSM for state register 'flow_cnt_reg' in module 'mdio_ctrl'
@@ -488,23 +488,21 @@ INFO: [Synth 8-3354] encoded FSM with state register 'r_State_reg' using encodin
 ---------------------------------------------------------------------------------------------------
                    State |                     New Encoding |                Previous Encoding 
 ---------------------------------------------------------------------------------------------------
-                    IDLE |                            00000 |                           000000
-               RESET_00H |                            00001 |                           000001
-             WAIT_50_CLK |                            00010 |                           000010
-              RESET_DONE |                            00011 |                           000011
-         WRITE_REG_START |                            00100 |                           000100
-            WRITE_TO_00H |                            00101 |                           000101
-          READ_CHECK_REG |                            00110 |                           000110
- WAIT_FOR_READ_AND_CHECK |                            00111 |                           000111
-          PRE_WRITE_H016 |                            01000 |                           001001
-         WRITE_H016_MAIN |                            01001 |                           001010
-          WAIT_H016_DONE |                            01010 |                           001011
-            WRITE_REG_1B |                            01011 |                           001100
-        WAIT_REG_1B_DONE |                            01100 |                           001101
-                ALL_DONE |                            01101 |                           001110
-              SYNCP_HIGH |                            01110 |                           001111
-               SYNCP_LOW |                            01111 |                           010000
-          WAIT_FOR_RETRY |                            10000 |                           001000
+                    IDLE |                             0000 |                           000000
+               RESET_00H |                             0001 |                           000001
+             WAIT_50_CLK |                             0010 |                           000010
+              RESET_DONE |                             0011 |                           000011
+         WRITE_REG_START |                             0100 |                           000100
+            WRITE_TO_00H |                             0101 |                           000101
+          READ_CHECK_REG |                             0110 |                           000110
+ WAIT_FOR_READ_AND_CHECK |                             0111 |                           000111
+          PRE_WRITE_H016 |                             1000 |                           001001
+         WRITE_H016_MAIN |                             1001 |                           001010
+        WAIT_REG_1B_DONE |                             1010 |                           001101
+                ALL_DONE |                             1011 |                           001110
+              SYNCP_HIGH |                             1100 |                           001111
+               SYNCP_LOW |                             1101 |                           010000
+          WAIT_FOR_RETRY |                             1110 |                           001000
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'r_State_reg' using encoding 'sequential' in module 'TX7332'
 ---------------------------------------------------------------------------------------------------
@@ -516,14 +514,14 @@ INFO: [Synth 8-3354] encoded FSM with state register 'r_State_reg' using encodin
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'capture_state_reg' using encoding 'one-hot' in module 'JESD204_UDP_TOP'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 2012.133 ; gain = 620.418
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 2009.090 ; gain = 617.262
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
 +---Adders : 
-	   2 Input   32 Bit       Adders := 1     
+	   2 Input   32 Bit       Adders := 2     
 	   2 Input   28 Bit       Adders := 1     
 	   2 Input   24 Bit       Adders := 1     
 	  10 Input   20 Bit       Adders := 1     
@@ -554,7 +552,7 @@ Detailed RTL Component Info :
 +---Registers : 
 	               48 Bit    Registers := 4     
 	               42 Bit    Registers := 1     
-	               32 Bit    Registers := 19    
+	               32 Bit    Registers := 20    
 	               28 Bit    Registers := 1     
 	               24 Bit    Registers := 1     
 	               16 Bit    Registers := 15    
@@ -573,12 +571,12 @@ Detailed RTL Component Info :
 	   5 Input   48 Bit        Muxes := 1     
 	   2 Input   48 Bit        Muxes := 1     
 	   3 Input   42 Bit        Muxes := 1     
-	   2 Input   32 Bit        Muxes := 10    
+	   2 Input   32 Bit        Muxes := 11    
 	   4 Input   32 Bit        Muxes := 1     
 	   7 Input   32 Bit        Muxes := 1     
 	   8 Input   32 Bit        Muxes := 2     
-	  17 Input   32 Bit        Muxes := 1     
-	  17 Input   28 Bit        Muxes := 1     
+	  15 Input   32 Bit        Muxes := 2     
+	  15 Input   28 Bit        Muxes := 1     
 	   2 Input   25 Bit        Muxes := 1     
 	   2 Input   24 Bit        Muxes := 1     
 	  22 Input   16 Bit        Muxes := 2     
@@ -589,15 +587,15 @@ Detailed RTL Component Info :
 	   3 Input   16 Bit        Muxes := 1     
 	   4 Input   16 Bit        Muxes := 1     
 	   3 Input   15 Bit        Muxes := 1     
-	  17 Input   14 Bit        Muxes := 1     
+	  15 Input   14 Bit        Muxes := 1     
 	   3 Input   13 Bit        Muxes := 1     
 	   2 Input   10 Bit        Muxes := 2     
-	  17 Input   10 Bit        Muxes := 1     
+	  15 Input   10 Bit        Muxes := 1     
 	   2 Input    8 Bit        Muxes := 21    
 	   4 Input    8 Bit        Muxes := 4     
 	   5 Input    8 Bit        Muxes := 2     
 	   8 Input    8 Bit        Muxes := 1     
-	  17 Input    8 Bit        Muxes := 2     
+	  15 Input    8 Bit        Muxes := 2     
 	   2 Input    7 Bit        Muxes := 18    
 	   6 Input    7 Bit        Muxes := 1     
 	  12 Input    7 Bit        Muxes := 1     
@@ -610,19 +608,19 @@ Detailed RTL Component Info :
 	   4 Input    6 Bit        Muxes := 1     
 	   5 Input    6 Bit        Muxes := 1     
 	   3 Input    6 Bit        Muxes := 1     
-	  17 Input    6 Bit        Muxes := 1     
-	   2 Input    5 Bit        Muxes := 49    
+	  15 Input    6 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 47    
 	  19 Input    5 Bit        Muxes := 3     
 	   4 Input    5 Bit        Muxes := 3     
 	   5 Input    5 Bit        Muxes := 1     
 	   3 Input    5 Bit        Muxes := 3     
 	   6 Input    5 Bit        Muxes := 4     
 	   7 Input    5 Bit        Muxes := 1     
-	  17 Input    5 Bit        Muxes := 1     
-	   2 Input    4 Bit        Muxes := 6     
+	   2 Input    4 Bit        Muxes := 8     
 	   4 Input    4 Bit        Muxes := 1     
+	  15 Input    4 Bit        Muxes := 1     
 	   2 Input    3 Bit        Muxes := 4     
-	  17 Input    3 Bit        Muxes := 1     
+	  15 Input    3 Bit        Muxes := 1     
 	   2 Input    2 Bit        Muxes := 15    
 	   2 Input    1 Bit        Muxes := 83    
 	  22 Input    1 Bit        Muxes := 8     
@@ -634,7 +632,7 @@ Detailed RTL Component Info :
 	   4 Input    1 Bit        Muxes := 15    
 	   8 Input    1 Bit        Muxes := 4     
 	   3 Input    1 Bit        Muxes := 9     
-	  17 Input    1 Bit        Muxes := 13    
+	  15 Input    1 Bit        Muxes := 12    
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -652,25 +650,25 @@ Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 2012.133 ; gain = 620.418
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 2009.090 ; gain = 617.262
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 2012.133 ; gain = 620.418
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 2009.090 ; gain = 617.262
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 2012.133 ; gain = 620.418
+Finished Timing Optimization : Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 2009.090 ; gain = 617.262
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 2012.133 ; gain = 620.418
+Finished Technology Mapping : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 2009.090 ; gain = 617.262
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -688,37 +686,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:41 ; elapsed = 00:00:43 . Memory (MB): peak = 2012.133 ; gain = 620.418
+Finished IO Insertion : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 2009.090 ; gain = 617.262
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:41 ; elapsed = 00:00:43 . Memory (MB): peak = 2012.133 ; gain = 620.418
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 2009.090 ; gain = 617.262
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:41 ; elapsed = 00:00:43 . Memory (MB): peak = 2012.133 ; gain = 620.418
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:38 ; elapsed = 00:00:39 . Memory (MB): peak = 2009.090 ; gain = 617.262
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:41 ; elapsed = 00:00:43 . Memory (MB): peak = 2012.133 ; gain = 620.418
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:38 ; elapsed = 00:00:39 . Memory (MB): peak = 2009.090 ; gain = 617.262
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:41 ; elapsed = 00:00:43 . Memory (MB): peak = 2012.133 ; gain = 620.418
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:38 ; elapsed = 00:00:39 . Memory (MB): peak = 2009.090 ; gain = 617.262
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:41 ; elapsed = 00:00:43 . Memory (MB): peak = 2012.133 ; gain = 620.418
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:38 ; elapsed = 00:00:39 . Memory (MB): peak = 2009.090 ; gain = 617.262
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -746,52 +744,51 @@ Report Cell Usage:
 |5     |fifo_4096x32           |     1|
 |6     |fifo_jesd_2_eth        |     1|
 |7     |BUFG                   |     3|
-|8     |CARRY4                 |    98|
+|8     |CARRY4                 |    92|
 |9     |IBUFDS_GTE2            |     1|
 |10    |IDDR                   |     5|
 |11    |IDELAYCTRL             |     1|
 |12    |IDELAYE2               |     5|
 |13    |LUT1                   |    36|
-|14    |LUT2                   |   286|
-|15    |LUT3                   |   125|
-|16    |LUT4                   |   301|
-|17    |LUT5                   |   357|
-|18    |LUT6                   |   518|
-|19    |MUXF7                  |    11|
-|20    |MUXF8                  |     2|
-|21    |ODDR                   |     5|
-|22    |FDCE                   |   910|
-|23    |FDPE                   |   138|
-|24    |FDRE                   |    37|
-|25    |IBUF                   |    26|
-|26    |IBUFDS                 |     1|
-|27    |IOBUF                  |     1|
-|28    |OBUF                   |    13|
-|29    |OBUFDS                 |     1|
+|14    |LUT2                   |   289|
+|15    |LUT3                   |   126|
+|16    |LUT4                   |   275|
+|17    |LUT5                   |   330|
+|18    |LUT6                   |   515|
+|19    |MUXF7                  |     2|
+|20    |ODDR                   |     5|
+|21    |FDCE                   |   873|
+|22    |FDPE                   |   138|
+|23    |FDRE                   |    37|
+|24    |IBUF                   |    26|
+|25    |IBUFDS                 |     1|
+|26    |IOBUF                  |     1|
+|27    |OBUF                   |    13|
+|28    |OBUFDS                 |     1|
 +------+-----------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:41 ; elapsed = 00:00:43 . Memory (MB): peak = 2012.133 ; gain = 620.418
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:38 ; elapsed = 00:00:39 . Memory (MB): peak = 2009.090 ; gain = 617.262
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 19 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:32 ; elapsed = 00:00:40 . Memory (MB): peak = 2012.133 ; gain = 536.992
-Synthesis Optimization Complete : Time (s): cpu = 00:00:42 ; elapsed = 00:00:43 . Memory (MB): peak = 2012.133 ; gain = 620.418
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:29 ; elapsed = 00:00:36 . Memory (MB): peak = 2009.090 ; gain = 535.402
+Synthesis Optimization Complete : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 2009.090 ; gain = 617.262
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.051 . Memory (MB): peak = 2012.133 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 129 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.054 . Memory (MB): peak = 2009.090 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 112 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2012.133 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2009.090 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 2 instances were transformed.
   IOBUF => IOBUF (IBUF, OBUFT): 1 instance 
   OBUFDS => OBUFDS_DUAL_BUF (INV, OBUFDS(x2)): 1 instance 
 
-Synth Design complete, checksum: ede33ab2
+Synth Design complete, checksum: a0424588
 INFO: [Common 17-83] Releasing license: Synthesis
 132 Infos, 140 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:47 ; elapsed = 00:00:50 . Memory (MB): peak = 2012.133 ; gain = 1060.797
+synth_design: Time (s): cpu = 00:00:43 ; elapsed = 00:00:46 . Memory (MB): peak = 2009.090 ; gain = 1057.988
 INFO: [Common 17-1381] The checkpoint 'C:/Users/maoxi/Desktop/CUHKProject/Ultrasonic/Kintex7/Code/V7_204b_2/V7_204b.runs/synth_1/JESD204_UDP_TOP.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file JESD204_UDP_TOP_utilization_synth.rpt -pb JESD204_UDP_TOP_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Thu Dec 11 20:24:25 2025...
+INFO: [Common 17-206] Exiting Vivado at Wed Mar 18 16:48:11 2026...
