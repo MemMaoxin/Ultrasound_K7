@@ -1,7 +1,7 @@
 // Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
-// Date        : Thu Dec  4 17:25:19 2025
+// Date        : Fri Dec  5 17:06:26 2025
 // Host        : LAPTOP-QE70SMI5 running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode synth_stub -rename_top fifo_jesd_2_eth -prefix
 //               fifo_jesd_2_eth_ fifo_jesd_2_eth_stub.v
@@ -16,15 +16,15 @@
 (* x_core_info = "fifo_generator_v13_2_7,Vivado 2022.2" *)
 module fifo_jesd_2_eth(wr_clk, rd_clk, din, wr_en, rd_en, dout, full, empty, 
   rd_data_count, wr_data_count)
-/* synthesis syn_black_box black_box_pad_pin="wr_clk,rd_clk,din[255:0],wr_en,rd_en,dout[31:0],full,empty,rd_data_count[15:0],wr_data_count[12:0]" */;
+/* synthesis syn_black_box black_box_pad_pin="wr_clk,rd_clk,din[15:0],wr_en,rd_en,dout[31:0],full,empty,rd_data_count[11:0],wr_data_count[12:0]" */;
   input wr_clk;
   input rd_clk;
-  input [255:0]din;
+  input [15:0]din;
   input wr_en;
   input rd_en;
   output [31:0]dout;
   output full;
   output empty;
-  output [15:0]rd_data_count;
+  output [11:0]rd_data_count;
   output [12:0]wr_data_count;
 endmodule

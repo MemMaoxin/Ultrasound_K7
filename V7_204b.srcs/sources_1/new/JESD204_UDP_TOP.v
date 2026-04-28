@@ -77,8 +77,7 @@ clk_wiz_0 u_clk_wiz
     .reset    (~sys_rst_n)
 );
     
-  
-    
+
     
     ///////////////////    udp_TOP  //////////////////////////////////////////////////////
     
@@ -119,9 +118,10 @@ net_udp_loop  net_udp_loop_inst1(
 wire [255:0] rx_data;
 wire rx_valid;
 
-wire [255:0] fifo_din;
-//assign fifo_din = rx_data[239:224];
-assign fifo_din = rx_data[255:0];
+// wire [255:0] fifo_din;
+wire [15:0] fifo_din;
+assign fifo_din = rx_data[127:112];
+// assign fifo_din = rx_data[255:0];
 
  fifo_jesd_2_eth fifo_jesd_2_eth_inst (
   .wr_clk(clk_120),                // input wire wr_clk
@@ -150,8 +150,10 @@ localparam S_DELAY   = 2'b01; // 触发后延时状态
 localparam S_CAPTURE = 2'b10; // 捕获数据状态
 
 // 延时和捕获周期参数
-localparam DELAY_CYCLES   = 1000; //871;
-localparam CAPTURE_CYCLES = 7000; //10000; //1500;
+//localparam DELAY_CYCLES   = 1000; //871;
+//localparam CAPTURE_CYCLES = 8500; //10000; //1500;
+localparam DELAY_CYCLES   = 2000; //871;
+localparam CAPTURE_CYCLES = 9800; //10000; //1500;
 
 // 寄存器定义
 reg capture_en = 1'b0;

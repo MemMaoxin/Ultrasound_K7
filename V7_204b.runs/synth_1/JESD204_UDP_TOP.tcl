@@ -93,6 +93,8 @@ OPTRACE "Adding files" START { }
 read_mem {
   C:/Users/maoxi/Desktop/CUHKProject/Ultrasonic/Kintex7/Code/V7_204b_2/V7_204b.srcs/sources_1/new/reg_init_data.mem
   C:/Users/maoxi/Desktop/CUHKProject/Ultrasonic/Kintex7/Code/V7_204b_2/V7_204b.srcs/sources_1/new/reg_1B_9channel.mem
+  C:/Users/maoxi/Desktop/CUHKProject/Ultrasonic/Kintex7/Code/V7_204b_2/V7_204b.srcs/sources_1/new/reg_16channel_32xFocus_1.mem
+  C:/Users/maoxi/Desktop/CUHKProject/Ultrasonic/Kintex7/Code/V7_204b_2/V7_204b.srcs/sources_1/new/reg_16channel_32xFocus_2.mem
 }
 read_verilog -library xil_defaultlib {
   C:/Users/maoxi/Desktop/CUHKProject/Ultrasonic/Kintex7/Code/V7_204b_2/V7_204b.srcs/sources_1/new/SPI_Master_42Bit.v

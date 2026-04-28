@@ -65,13 +65,13 @@
     <Option Name="WTVcsLaunchSim" Val="0"/>
     <Option Name="WTRivieraLaunchSim" Val="0"/>
     <Option Name="WTActivehdlLaunchSim" Val="0"/>
-    <Option Name="WTXSimExportSim" Val="88"/>
-    <Option Name="WTModelSimExportSim" Val="88"/>
-    <Option Name="WTQuestaExportSim" Val="88"/>
+    <Option Name="WTXSimExportSim" Val="89"/>
+    <Option Name="WTModelSimExportSim" Val="89"/>
+    <Option Name="WTQuestaExportSim" Val="89"/>
     <Option Name="WTIesExportSim" Val="0"/>
-    <Option Name="WTVcsExportSim" Val="88"/>
-    <Option Name="WTRivieraExportSim" Val="88"/>
-    <Option Name="WTActivehdlExportSim" Val="88"/>
+    <Option Name="WTVcsExportSim" Val="89"/>
+    <Option Name="WTRivieraExportSim" Val="89"/>
+    <Option Name="WTActivehdlExportSim" Val="89"/>
     <Option Name="GenerateIPUpgradeLog" Val="TRUE"/>
     <Option Name="XSimRadix" Val="hex"/>
     <Option Name="XSimTimeUnit" Val="ns"/>
@@ -95,14 +95,14 @@
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
-        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="ip/design_1_jesd204_0_1/design_1_jesd204_0_1.xci">
-          <Proxy FileSetName="design_1_jesd204_0_1"/>
-        </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="ip/design_1_jesd204_phy_0_0/design_1_jesd204_phy_0_0.xci">
           <Proxy FileSetName="design_1_jesd204_phy_0_0"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="ip/design_1_jesd204_0_0/design_1_jesd204_0_0.xci">
           <Proxy FileSetName="design_1_jesd204_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="ip/design_1_jesd204_0_1/design_1_jesd204_0_1.xci">
+          <Proxy FileSetName="design_1_jesd204_0_1"/>
         </CompFileExtendedInfo>
       </File>
       <File Path="$PSRCDIR/sources_1/ip/fifo_jesd_2_eth/fifo_jesd_2_eth.xci">
@@ -281,6 +281,26 @@
         </FileInfo>
       </File>
       <File Path="$PSRCDIR/sources_1/new/reg_1B_9channel.mem">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/reg_16channel_32xFocus_2.v">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/reg_16channel_32xFocus_1.mem">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/reg_16channel_32xFocus_2.mem">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
