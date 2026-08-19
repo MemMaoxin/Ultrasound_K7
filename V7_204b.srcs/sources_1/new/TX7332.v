@@ -33,6 +33,9 @@ module TX7332(
   localparam INIT_REG_COUNT    = 9;
   localparam PROFILE_REG_COUNT = 256;
 
+  // H016 data for slot 8: 32'h00040004 + 8 * 32'h10001000 = 32'h80048004
+  localparam H016_SLOT8_DATA = 32'h80048004;
+
   reg [5:0]   r_State;
   reg [9:0]   r_Address;
   reg [31:0]  r_Write_Data;
@@ -50,19 +53,12 @@ module TX7332(
   reg [27:0]  r_SYNCP_Low_Count;
   reg [13:0]  r_Retry_Wait_Count;
 
-  reg [31:0]  r_H016_Data;
-
-  reg [4:0]   r_Profile_Slot;   // 0~15
-  reg         r_Profile_Group;  // 0: profile1, 1: profile2
-
   reg [41:0]  r_Init_Data     [0:INIT_REG_COUNT-1];
   reg [41:0]  r_Profile1_Data [0:PROFILE_REG_COUNT-1];
-  reg [41:0]  r_Profile2_Data [0:PROFILE_REG_COUNT-1];
 
   initial begin
     $readmemh("reg_init_data.mem",            r_Init_Data);
     $readmemh("reg_16channel_32xFocus_1.mem", r_Profile1_Data);
-    $readmemh("reg_16channel_32xFocus_2.mem", r_Profile2_Data);
   end
 
   Clock_Divider #(
@@ -79,8 +75,6 @@ module TX7332(
   `define INIT_DATA(idx)      r_Init_Data[idx][31:0]
   `define PROFILE1_ADDR(idx)  r_Profile1_Data[idx][41:32]
   `define PROFILE1_DATA(idx)  r_Profile1_Data[idx][31:0]
-  `define PROFILE2_ADDR(idx)  r_Profile2_Data[idx][41:32]
-  `define PROFILE2_DATA(idx)  r_Profile2_Data[idx][31:0]
 
   SPI_Master_42Bit #(.CLKS_PER_HALF_BIT(4)) SPI_Master_Inst (
     .i_Rst_L(i_Rst_L),
@@ -123,21 +117,14 @@ module TX7332(
       r_SYNCP_Low_Count   <= 28'd0;
       r_Retry_Wait_Count  <= 14'd0;
       o_SYNCP             <= 1'b0;
-
-      r_H016_Data         <= 32'h00040004;
-      r_Profile_Slot      <= 5'd0;
-      r_Profile_Group     <= 1'b0;
       o_del_num           <= 8'd0;
     end
     else begin
       case (r_State)
 
         IDLE: begin
-          o_SYNCP         <= 1'b0;
-          r_H016_Data     <= 32'h00040004;
-          r_Profile_Slot  <= 5'd0;
-          r_Profile_Group <= 1'b0;
-          o_del_num       <= 8'd0;
+          o_SYNCP   <= 1'b0;
+          o_del_num <= 8'd0;
 
           if (w_TX_Ready) begin
             Write_SPI(10'h000, 32'h00000000);
@@ -213,11 +200,7 @@ module TX7332(
 
         LOAD_PROFILE_START: begin
           if (w_TX_Ready) begin
-            if (r_Profile_Group == 1'b0)
-              Write_SPI(`PROFILE1_ADDR(r_Profile_Index), `PROFILE1_DATA(r_Profile_Index));
-            else
-              Write_SPI(`PROFILE2_ADDR(r_Profile_Index), `PROFILE2_DATA(r_Profile_Index));
-
+            Write_SPI(`PROFILE1_ADDR(r_Profile_Index), `PROFILE1_DATA(r_Profile_Index));
             r_State <= LOAD_PROFILE_WAIT;
           end
         end
@@ -239,9 +222,7 @@ module TX7332(
         LOAD_PROFILE_COMMIT_00H: begin
           Stop_TX();
           if (w_TX_Ready) begin
-            r_H016_Data    <= 32'h00040004;
-            r_Profile_Slot <= 5'd0;
-            r_State        <= PRE_WRITE_H016;
+            r_State <= PRE_WRITE_H016;
           end
         end
 
@@ -255,7 +236,7 @@ module TX7332(
         WRITE_H016_MAIN: begin
           Stop_TX();
           if (w_TX_Ready) begin
-            Write_SPI(10'h016, r_H016_Data);
+            Write_SPI(10'h016, H016_SLOT8_DATA);
             r_State <= WAIT_H016_DONE;
           end
         end
@@ -263,7 +244,7 @@ module TX7332(
         WAIT_H016_DONE: begin
           Stop_TX();
           if (w_TX_Ready) begin
-            o_del_num <= (r_Profile_Group == 1'b0) ? r_Profile_Slot : (r_Profile_Slot + 8'd16);
+            o_del_num <= 8'd8;
             r_State   <= ALL_DONE;
           end
         end
@@ -286,17 +267,8 @@ module TX7332(
         end
 
         SYNCP_LOW: begin
-          if (r_SYNCP_Low_Count >= 28'd12000) begin
-            if (r_Profile_Slot >= 5'd15) begin
-              r_Profile_Group <= ~r_Profile_Group;
-              r_Profile_Index <= 9'd0;
-              r_State         <= LOAD_PROFILE_START;
-            end
-            else begin
-              r_Profile_Slot <= r_Profile_Slot + 1'b1;
-              r_H016_Data    <= r_H016_Data + 32'h10001000;
-              r_State        <= PRE_WRITE_H016;
-            end
+          if (r_SYNCP_Low_Count >= 28'd24400) begin
+            r_State <= ALL_DONE;
           end
           else begin
             r_SYNCP_Low_Count <= r_SYNCP_Low_Count + 1'b1;

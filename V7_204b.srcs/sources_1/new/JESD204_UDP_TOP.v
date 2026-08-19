@@ -152,7 +152,7 @@ localparam S_CAPTURE = 2'b10; // 捕获数据状态
 // 延时和捕获周期参数
 //localparam DELAY_CYCLES   = 1000; //871;
 //localparam CAPTURE_CYCLES = 8500; //10000; //1500;
-localparam DELAY_CYCLES   = 2000; //871;
+localparam DELAY_CYCLES   = 1500; //871;
 localparam CAPTURE_CYCLES = 9800; //10000; //1500;
 
 // 寄存器定义
@@ -246,7 +246,6 @@ end
   .rx_data        (rx_data ),
   .rx_valid       (rx_valid)
     ); 
-     
      
      
     // --- 实例化 TX7332 模块 ---

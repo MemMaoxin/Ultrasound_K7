@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
-| Date             : Fri Apr 24 16:36:00 2026
+| Date             : Wed Jul  8 16:49:05 2026
 | Host             : LAPTOP-QE70SMI5 running 64-bit major release  (build 9200)
 | Command          : report_power -file JESD204_UDP_TOP_power_routed.rpt -pb JESD204_UDP_TOP_power_summary_routed.pb -rpx JESD204_UDP_TOP_power_routed.rpx
 | Design           : JESD204_UDP_TOP
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 2.090        |
+| Total On-Chip Power (W)  | 2.095        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 1.903        |
+| Dynamic (W)              | 1.908        |
 | Device Static (W)        | 0.187        |
 | Effective TJA (C/W)      | 1.8          |
 | Max Ambient (C)          | 81.3         |
@@ -52,24 +52,24 @@ Table of Contents
 +--------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
-| Clocks                   |     0.051 |       41 |       --- |             --- |
-| Slice Logic              |     0.009 |    12920 |       --- |             --- |
-|   LUT as Logic           |     0.007 |     5705 |    203800 |            2.80 |
+| Clocks                   |     0.052 |       41 |       --- |             --- |
+| Slice Logic              |     0.009 |    12771 |       --- |             --- |
+|   LUT as Logic           |     0.008 |     5618 |    203800 |            2.76 |
 |   LUT as Distributed RAM |    <0.001 |      176 |     64000 |            0.28 |
-|   CARRY4                 |    <0.001 |      350 |     50950 |            0.69 |
-|   Register               |    <0.001 |     4912 |    407600 |            1.21 |
-|   F7/F8 Muxes            |    <0.001 |      172 |    203800 |            0.08 |
+|   CARRY4                 |    <0.001 |      344 |     50950 |            0.68 |
+|   Register               |    <0.001 |     4873 |    407600 |            1.20 |
+|   F7/F8 Muxes            |    <0.001 |      164 |    203800 |            0.08 |
 |   LUT as Shift Register  |    <0.001 |       41 |     64000 |            0.06 |
 |   BUFG                   |    <0.001 |        2 |        32 |            6.25 |
 |   Others                 |     0.000 |      449 |       --- |             --- |
 |   BUFR                   |     0.000 |        2 |       208 |            0.96 |
-| Signals                  |     0.010 |    10149 |       --- |             --- |
+| Signals                  |     0.010 |    10049 |       --- |             --- |
 | Block RAM                |     0.006 |       33 |       445 |            7.42 |
 | MMCM                     |     0.119 |        1 |        10 |           10.00 |
-| I/O                      |     0.100 |       27 |       500 |            5.40 |
+| I/O                      |     0.103 |       27 |       500 |            5.40 |
 | GTX                      |     1.609 |        8 |        16 |           50.00 |
 | Static Power             |     0.187 |          |           |                 |
-| Total                    |     2.090 |          |           |                 |
+| Total                    |     2.095 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -79,9 +79,9 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
-| Vccint    |       1.000 |     0.302 |       0.222 |      0.080 |       NA    | Unspecified | NA         |
+| Vccint    |       1.000 |     0.303 |       0.224 |      0.080 |       NA    | Unspecified | NA         |
 | Vccaux    |       1.800 |     0.101 |       0.073 |      0.029 |       NA    | Unspecified | NA         |
-| Vcco33    |       3.300 |     0.014 |       0.013 |      0.001 |       NA    | Unspecified | NA         |
+| Vcco33    |       3.300 |     0.015 |       0.014 |      0.001 |       NA    | Unspecified | NA         |
 | Vcco25    |       2.500 |     0.018 |       0.017 |      0.001 |       NA    | Unspecified | NA         |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
@@ -155,28 +155,28 @@ Table of Contents
 +------------------------------+-----------+
 | Name                         | Power (W) |
 +------------------------------+-----------+
-| JESD204_UDP_TOP              |     1.903 |
-|   fifo_jesd_2_eth_inst       |     0.006 |
-|     U0                       |     0.006 |
-|       inst_fifo_gen          |     0.006 |
-|   net_udp_loop_inst1         |     0.024 |
+| JESD204_UDP_TOP              |     1.908 |
+|   fifo_jesd_2_eth_inst       |     0.007 |
+|     U0                       |     0.007 |
+|       inst_fifo_gen          |     0.007 |
+|   net_udp_loop_inst1         |     0.023 |
 |     inst_RTL8211_Config_IP_0 |     0.001 |
 |       inst                   |     0.001 |
 |     u_arp                    |     0.004 |
 |       u_arp_rx               |     0.003 |
 |       u_arp_tx               |     0.001 |
-|     u_fifo_4096x32           |     0.006 |
-|       U0                     |     0.006 |
+|     u_fifo_4096x32           |     0.005 |
+|       U0                     |     0.005 |
 |     u_gmii_to_rgmii          |     0.006 |
 |       u_rgmii_rx             |     0.005 |
 |     u_udp                    |     0.006 |
 |       u_crc32_d8             |     0.001 |
-|       u_udp_tx               |     0.005 |
-|   top_jesd204_inst           |     1.693 |
-|     design_1_wrapper_inst    |     1.648 |
-|       design_1_i             |     1.648 |
+|       u_udp_tx               |     0.004 |
+|   top_jesd204_inst           |     1.695 |
+|     design_1_wrapper_inst    |     1.650 |
+|       design_1_i             |     1.650 |
 |   u_TX7332                   |     0.004 |
-|     Clock_Divider_Inst       |     0.003 |
+|     Clock_Divider_Inst       |     0.002 |
 |   u_clk_wiz                  |     0.126 |
 |     inst                     |     0.126 |
 +------------------------------+-----------+
