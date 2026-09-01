@@ -70,6 +70,7 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
+set_param chipscope.maxJobs 4
 set_param xicom.use_bs_reader 1
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7k325tffg900-2
@@ -94,6 +95,8 @@ read_mem {
   C:/Users/maoxi/Desktop/CUHKProject/Ultrasonic/Kintex7/Code/V7_204b_2/V7_204b.srcs/sources_1/new/reg_1B_9channel.mem
   C:/Users/maoxi/Desktop/CUHKProject/Ultrasonic/Kintex7/Code/V7_204b_2/V7_204b.srcs/sources_1/new/reg_16channel_32xFocus_1.mem
   C:/Users/maoxi/Desktop/CUHKProject/Ultrasonic/Kintex7/Code/V7_204b_2/V7_204b.srcs/sources_1/new/reg_16channel_32xFocus_2.mem
+  C:/Users/maoxi/Desktop/CUHKProject/Ultrasonic/Kintex7/Code/V7_204b_2/V7_204b.srcs/sources_1/new/reg_1B_3channel_16group.mem
+  C:/Users/maoxi/Desktop/CUHKProject/Ultrasonic/Kintex7/Code/V7_204b_2/V7_204b.srcs/sources_1/new/reg_init_data_3channel_16group.mem
 }
 read_verilog -library xil_defaultlib {
   C:/Users/maoxi/Desktop/CUHKProject/Ultrasonic/Kintex7/Code/V7_204b_2/V7_204b.srcs/sources_1/new/SPI_Master_42Bit.v

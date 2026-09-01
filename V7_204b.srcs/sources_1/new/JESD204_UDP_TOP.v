@@ -119,9 +119,12 @@ wire [255:0] rx_data;
 wire rx_valid;
 
 // wire [255:0] fifo_din;
-wire [15:0] fifo_din;
-assign fifo_din = rx_data[127:112];
+//wire [15:0] fifo_din;
+//assign fifo_din = rx_data[127:112];
 // assign fifo_din = rx_data[255:0];
+
+wire [15:0] fifo_din;
+assign fifo_din = rx_data[o_del_num[3:0]*16 +: 16];
 
  fifo_jesd_2_eth fifo_jesd_2_eth_inst (
   .wr_clk(clk_120),                // input wire wr_clk
