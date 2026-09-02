@@ -124,7 +124,8 @@ wire rx_valid;
 // assign fifo_din = rx_data[255:0];
 
 wire [15:0] fifo_din;
-assign fifo_din = rx_data[o_del_num[3:0]*16 +: 16];
+// assign fifo_din = rx_data[o_del_num[3:0]*16 +: 16];
+assign fifo_din = rx_data[127:112];
 
  fifo_jesd_2_eth fifo_jesd_2_eth_inst (
   .wr_clk(clk_120),                // input wire wr_clk
@@ -155,7 +156,7 @@ localparam S_CAPTURE = 2'b10; // 捕获数据状态
 // 延时和捕获周期参数
 //localparam DELAY_CYCLES   = 1000; //871;
 //localparam CAPTURE_CYCLES = 8500; //10000; //1500;
-localparam DELAY_CYCLES   = 1500; //871;
+localparam DELAY_CYCLES   = 1000; //871;
 localparam CAPTURE_CYCLES = 9800; //10000; //1500;
 
 // 寄存器定义
@@ -249,7 +250,7 @@ end
   .rx_data        (rx_data ),
   .rx_valid       (rx_valid)
     ); 
-     
+    
      
     // --- 实例化 TX7332 模块 ---
     TX7332 u_TX7332 (
