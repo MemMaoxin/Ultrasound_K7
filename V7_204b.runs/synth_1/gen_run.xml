@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="synth_1" LaunchPart="xc7k325tffg900-2" LaunchTime="1788338293" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/top_jesd204.dcp">
   <File Type="PA-TCL" Name="JESD204_UDP_TOP.tcl"/>
-  <File Type="RDS-PROPCONSTRS" Name="JESD204_UDP_TOP_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="JESD204_UDP_TOP_reports.tcl"/>
   <File Type="RDS-RDS" Name="JESD204_UDP_TOP.vds"/>
   <File Type="RDS-UTIL" Name="JESD204_UDP_TOP_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="JESD204_UDP_TOP_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="JESD204_UDP_TOP.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="JESD204_UDP_TOP_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="JESD204_UDP_TOP_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/bd/design_1/design_1.bd">
